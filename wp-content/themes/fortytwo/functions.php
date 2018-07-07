@@ -1,4 +1,6 @@
 <?php
+require get_stylesheet_directory() . '/inc/home-sidebars.php';
+
 function understrap_remove_scripts() {
     wp_dequeue_style( 'understrap-styles' );
     wp_deregister_style( 'understrap-styles' );

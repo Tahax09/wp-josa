@@ -1,3 +1,4 @@
+$gray-800: #1a485b;
 // Some basic padding for all wrappers
 .wrapper {
   padding: $grid-gutter-width 0; }
@@ -17,7 +18,7 @@
 
 // Adding some contrast background color to footer full widget
 #wrapper-footer-full,
-#wrapper-static-hero { background-color: $gray-200; }
+#wrapper-static-hero { background-color: $gray-800; }
 
 // Necessary WP classes
 .wp-caption { font-size: inherit; }
@@ -44,8 +45,8 @@
 .entry-footer span { padding-right: 10px; }
 
 //Woocommerce product gallery slider width fix
-figure.woocommerce-product-gallery__wrapper { 
-  max-width: inherit !important; 
+figure.woocommerce-product-gallery__wrapper {
+  max-width: inherit !important;
 }
 
 // Limit featured image size to 100%
