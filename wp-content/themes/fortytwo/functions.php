@@ -1,5 +1,6 @@
 <?php
 require get_stylesheet_directory() . '/inc/home-sidebars.php';
+require get_stylesheet_directory() . '/inc/content-types.php';
 
 function understrap_remove_scripts() {
     wp_dequeue_style( 'understrap-styles' );
