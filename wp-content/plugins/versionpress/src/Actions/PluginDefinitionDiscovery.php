@@ -31,6 +31,7 @@ class PluginDefinitionDiscovery
         }
 
         $plugins = get_option('active_plugins');
+        $plugins = $plugins ? $plugins : [];
 
         foreach ($plugins as $pluginFile) {
             $pluginSlug = dirname($pluginFile);

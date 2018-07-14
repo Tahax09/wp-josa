@@ -42,3 +42,7 @@ access_log
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
+
+
+
+package-lock.json
