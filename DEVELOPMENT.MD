@@ -19,12 +19,16 @@ wp vp apply-changes
 The setup should be complete by now and you should see the josa home page.
 
 If `permission denied` error occured on any of the previous steps:
+
 1- ssh to your docker machine
+
 2- add `www-data` to your sudoers file (you may have to install vim or a terminal text editor at this step)
 run `visudo`
 add this line below the root entry:
 `www-data        ALL=(ALL:ALL) ALL`
+
 3- check direcotry permissions using this command: `ls -lah` it should be owned by `www-data` 
+
 4- if it wasn't owned by `www-data`
 	- make sure your in the project directory 
 	- change the owner with this command `chown -R www-data:www-data .`
