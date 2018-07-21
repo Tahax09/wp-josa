@@ -27,7 +27,17 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'loop-templates/content', 'page' ); ?>
+					<div class="entry-content">
+
+						<?php the_content(); ?>
+
+						<?php
+						wp_link_pages( array(
+							'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
+							'after'  => '</div>',
+						) );
+						?>
+					</div>
 
 					<?php
 					// If comments are open or we have at least one comment, load up the comment template.
@@ -47,3 +57,19 @@ $container   = get_theme_mod( 'understrap_container_type' );
 </div><!-- Wrapper end -->
 
 <?php get_footer(); ?>
+
+
+<div class="row">
+<div class="col-6 col-xs-12">
+	<h2>
+	orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+	</h2>
+	<p>
+	orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+	</p>
+
+	<a href="/" class="btn btn-light">Light</a>
+
+</div>
+<div class="col-6 col-xs-12">[widget widget_name="instagram_widget"]</div>
+</div>

@@ -9,3 +9,18 @@
 
 // Any additional imported files //
 @import "theme/child_theme";  // <--------- Add your styles into this file
+
+.instagram-container {
+  .row {
+    div {
+      padding: 0px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.jumbotron {
+  background-color: transparent;
+}
