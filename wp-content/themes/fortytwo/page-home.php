@@ -57,19 +57,3 @@ $container   = get_theme_mod( 'understrap_container_type' );
 </div><!-- Wrapper end -->
 
 <?php get_footer(); ?>
-
-
-<div class="row">
-<div class="col-6 col-xs-12">
-	<h2>
-	orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-	</h2>
-	<p>
-	orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-	</p>
-
-	<a href="/" class="btn btn-light">Light</a>
-
-</div>
-<div class="col-6 col-xs-12">[widget widget_name="instagram_widget"]</div>
-</div>
