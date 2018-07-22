@@ -4,11 +4,12 @@ First time you clone this repo, you will need to run docker, then you will need 
 1- Run Docker using (note you might need to use 'sudo' depending on your installation of docker) 
 `dockerd`
 
-2- cd to your clone of wp-josa
-3- run the following command to initialize the docker environment: 
+2- `cd` to your clone of wp-josa
+
+3- Run the following command to initialize the docker environment: 
 `docker-compose up -d`
 
-Wait for few minutes, when dcoker is done pulling images and setting up containers, login into your wp continer bash and apply the following commands
+Wait for few minutes, when docker is done pulling images and setting up containers, login into your wp container bash and apply the following commands
 
 ```
 wp core install --url=http://localhost:8080 --title=JOSADev --admin_user=admin --admin_password=JOSAIsAwesome --admin_email=dev@josa.org
