@@ -28,8 +28,8 @@ run `visudo`
 add this line below the root entry:
 `www-data        ALL=(ALL:ALL) ALL`
 
-3- check direcotry permissions using this command: `ls -lah` it should be owned by `www-data` 
+3- Check directory permissions using this command: `ls -lah` it should be owned by `www-data` 
 
-4- if it wasn't owned by `www-data`
+4- If it wasn't owned by `www-data`
 	- make sure your in the project directory 
 	- change the owner with this command `chown -R www-data:www-data .`
