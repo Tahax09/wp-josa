@@ -13,7 +13,9 @@ class Instagram_widget extends WP_Widget {
     $query = new WP_Query(array(
       'post_type' => 'instagram',
       'post_status' => 'publish',
-      'posts_per_page' => 6
+      'posts_per_page' => 6,
+      'orderby' => 'ID',
+      'order' => 'DESC'
     ));
 
     echo $before_widget;

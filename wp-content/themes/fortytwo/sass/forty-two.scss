@@ -20,6 +20,12 @@ body {
   font-family: 'Aleo', Arial, sans-serif;
   color: $josaBlack;
 }
+.wrapper {
+  background-color: $josaLightWarmGrey;
+}
+#wrapper-static-hero {
+  background-color: $josaDarkBue;
+}
 
 .instagram-container {
   .row {
@@ -31,6 +37,17 @@ body {
     }
   }
 }
+
+h1, h2 {
+  font-family: aleoLight;
+  font-weight: light;
+}
+#page-wrapper {
+  .row {
+    background-color: $josaWhite;
+  }
+}
+
 
 .jumbotron {
   background-color: transparent;

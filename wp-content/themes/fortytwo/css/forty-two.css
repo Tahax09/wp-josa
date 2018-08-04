@@ -10800,10 +10800,23 @@ body {
   font-family: 'Aleo', Arial, sans-serif;
   color: #2e3436; }
 
+.wrapper {
+  background-color: #f7f6f5; }
+
+#wrapper-static-hero {
+  background-color: #1a485b; }
+
 .instagram-container .row div {
   padding: 0px; }
   .instagram-container .row div img {
     width: 100%; }
+
+h1, h2 {
+  font-family: aleoLight;
+  font-weight: light; }
+
+#page-wrapper .row {
+  background-color: #ffffff; }
 
 .jumbotron {
   background-color: transparent; }
