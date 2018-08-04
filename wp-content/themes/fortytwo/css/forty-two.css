@@ -15,7 +15,7 @@
   --yellow: #ffc107;
   --green: #28a745;
   --teal: #20c997;
-  --cyan: #3897c0;
+  --cyan: #17a2b8;
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
@@ -10771,6 +10771,34 @@ a.skip-link {
 
 .gallery-caption {
   display: block; }
+
+@font-face {
+  font-family: "Aleo";
+  font-style: eot woff2 woff ttf otf;
+  font-weight: normal;
+  src: url("./../fonts/aleo/regular/Aleo-Regular.eot?") format("eot"), url("./../fonts/aleo/regular/Aleo-Regular.woff2") format("woff2"), url("./../fonts/aleo/regular/Aleo-Regular.woff") format("woff"), url("./../fonts/aleo/regular/Aleo-Regular.ttf") format("truetype"), url("./../fonts/aleo/regular/Aleo-Regular.svg#Aleo") format("svg"); }
+
+@font-face {
+  font-family: "AleoLight";
+  font-style: eot woff2 woff ttf otf;
+  font-weight: light;
+  src: url("./../fonts/aleo/light/Aleo-Light.eot?") format("eot"), url("./../fonts/aleo/light/Aleo-Light.woff2") format("woff2"), url("./../fonts/aleo/light/Aleo-Light.woff") format("woff"), url("./../fonts/aleo/light/Aleo-Light.ttf") format("truetype"), url("./../fonts/aleo/light/Aleo-Light.svg#AleoLight") format("svg"); }
+
+@font-face {
+  font-family: "AleoItalic";
+  font-style: eot woff2 woff ttf otf;
+  font-weight: italic;
+  src: url("./../fonts/aleo/italic/Aleo-Italic.eot?") format("eot"), url("./../fonts/aleo/italic/Aleo-Italic.woff2") format("woff2"), url("./../fonts/aleo/italic/Aleo-Italic.woff") format("woff"), url("./../fonts/aleo/italic/Aleo-Italic.ttf") format("truetype"), url("./../fonts/aleo/italic/Aleo-Italic.svg#AleoItalic") format("svg"); }
+
+@font-face {
+  font-family: "AleoBold";
+  font-style: eot woff2 woff ttf otf;
+  font-weight: bold;
+  src: url("./../fonts/aleo/bold/Aleo-Bold.eot?") format("eot"), url("./../fonts/aleo/bold/Aleo-Bold.woff2") format("woff2"), url("./../fonts/aleo/bold/Aleo-Bold.woff") format("woff"), url("./../fonts/aleo/bold/Aleo-Bold.ttf") format("truetype"), url("./../fonts/aleo/bold/Aleo-Bold.svg#AleoBold") format("svg"); }
+
+body {
+  font-family: 'Aleo', Arial, sans-serif;
+  color: #2e3436; }
 
 .instagram-container .row div {
   padding: 0px; }

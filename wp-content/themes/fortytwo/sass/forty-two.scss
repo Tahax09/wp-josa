@@ -1,4 +1,5 @@
-@import "theme/child_theme_variables";  // <--------- Add your variables into this file. Also add variables to overwrite Bootstrap variables here
+@import "theme/forty-two_variables";  // <--------- Add your variables into this file. Also add variables to overwrite Bootstrap variables here
+@import "theme/forty-two_mixins";
 @import "assets/bootstrap4";// <--------- Loads Bootstrap3 or Bootstrap4. Change from /bootstrap3 to /bootstrap4 Watch out! just for testing in the moment!
 @import "../src/sass/understrap/understrap/understrap";// <-------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
 @import "../src/sass/understrap/theme/contact-form7";// <-------- Loads some basic styling for contact form 7 plugin
@@ -8,7 +9,17 @@
 @import "assets/underscores"; // <------- Underscores media styles
 
 // Any additional imported files //
-@import "theme/child_theme";  // <--------- Add your styles into this file
+@import "theme/forty-two";  // <--------- Add your styles into this file
+
+@include font-face(Aleo, "./../fonts/aleo/regular/Aleo-Regular", normal, eot woff2 woff ttf otf);
+@include font-face(AleoLight, "./../fonts/aleo/light/Aleo-Light", light, eot woff2 woff ttf otf);
+@include font-face(AleoItalic, "./../fonts/aleo/italic/Aleo-Italic", italic, eot woff2 woff ttf otf);
+@include font-face(AleoBold, "./../fonts/aleo/bold/Aleo-Bold", bold, eot woff2 woff ttf otf);
+
+body {
+  font-family: 'Aleo', Arial, sans-serif;
+  color: $josaBlack;
+}
 
 .instagram-container {
   .row {

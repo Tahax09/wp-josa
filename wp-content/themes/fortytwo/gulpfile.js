@@ -48,7 +48,7 @@ gulp.task( 'sass', function() {
 // Starts watcher. Watcher runs gulp sass task on changes
 gulp.task( 'watch', function() {
     gulp.watch( paths.sass + '/**/*.scss', ['styles'] );
-    gulp.watch( [paths.dev + '/js/**/*.js', 'js/**/*.js', '!js/child-theme.js', '!js/child-theme.min.js'], ['scripts'] );
+    gulp.watch( [paths.dev + '/js/**/*.js', 'js/**/*.js', '!js/forty-two.js', '!js/forty-two.min.js'], ['scripts'] );
 
     //Inside the watch task.
     gulp.watch( paths.imgsrc + '/**', ['imagemin-watch'] );
@@ -76,7 +76,7 @@ gulp.task( 'imagemin-watch', ['imagemin'], function( ) {
 // gulp cssnano
 // Minifies CSS files
 gulp.task( 'cssnano', function() {
-  return gulp.src( paths.css + '/child-theme.css' )
+  return gulp.src( paths.css + '/forty-two.css' )
     .pipe( sourcemaps.init( { loadMaps: true } ) )
     .pipe( plumber( {
             errorHandler: function( err ) {
@@ -91,7 +91,7 @@ gulp.task( 'cssnano', function() {
 });
 
 gulp.task( 'minifycss', function() {
-  return gulp.src( paths.css + '/child-theme.css' )
+  return gulp.src( paths.css + '/forty-two.css' )
   .pipe( sourcemaps.init( { loadMaps: true } ) )
     .pipe( cleanCSS( { compatibility: '*' } ) )
     .pipe( plumber( {
@@ -107,7 +107,7 @@ gulp.task( 'minifycss', function() {
 
 gulp.task( 'cleancss', function() {
   return gulp.src( paths.css + '/*.min.css', { read: false } ) // Much faster
-    .pipe( ignore( 'child-theme.css' ) )
+    .pipe( ignore( 'forty-two.css' ) )
     .pipe( rimraf() );
 });
 
@@ -125,11 +125,11 @@ gulp.task( 'browser-sync', function() {
 // Run:
 // gulp watch-bs
 // Starts watcher with browser-sync. Browser-sync reloads page automatically on your browser
-gulp.task( 'watch-bs', ['browser-sync', 'watch', 'scripts'], function() { 
+gulp.task( 'watch-bs', ['browser-sync', 'watch', 'scripts'], function() {
 } );
 
-// Run: 
-// gulp scripts. 
+// Run:
+// gulp scripts.
 // Uglifies and concat all JS files into one
 gulp.task( 'scripts', function() {
     var scripts = [
@@ -146,12 +146,12 @@ gulp.task( 'scripts', function() {
         paths.dev + '/js/custom-javascript.js'
     ];
   gulp.src( scripts )
-    .pipe( concat( 'child-theme.min.js' ) )
+    .pipe( concat( 'forty-two.min.js' ) )
     .pipe( uglify() )
     .pipe( gulp.dest( paths.js ) );
 
   gulp.src( scripts )
-    .pipe( concat( 'child-theme.js' ) )
+    .pipe( concat( 'forty-two.js' ) )
     .pipe( gulp.dest( paths.js ) );
 });
 
@@ -203,7 +203,7 @@ gulp.task( 'copy-assets', function() {
 
 // UnderStrap SCSS files
     gulp.src( paths.node + 'understrap/sass/**/*.scss' )
-        .pipe( gulp.dest( paths.dev + '/sass/understrap' ) );    
+        .pipe( gulp.dest( paths.dev + '/sass/understrap' ) );
 
     return stream;
 });

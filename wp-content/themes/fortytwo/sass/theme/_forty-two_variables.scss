@@ -6,10 +6,22 @@
 // Just add your color code here, compile the theme.scss file to change this color everywhere
 
 
+// JOSA colors
+$josaBlue: #3897c0; // Accent color.
+$josaDarkBue: #1a485b; //
+$josaVeryDarkBlue: #163e4e; // For footer, and inverted textual blocks.
+$josaWhite: #ffffff; // For backgrounds with texts and textual blocks.
+$josaLightWarmGrey: #f7f6f5; // For page background.
+$josaWarmGrey: #aea79f;
+$josaDarkWarmGrey: #aea79f;// For secondary outline buttons.
+$josaBlack: #2e3436;
 //
 // Color system
 //
+$primary: $josaDarkBue;
+$gray-200: $josaLightWarmGrey;
+$info: $josaBlue;
 
-$primary: #1a485b;
-$gray-200: #f7f6f5;
-$cyan:    #3897c0;
+
+
+
