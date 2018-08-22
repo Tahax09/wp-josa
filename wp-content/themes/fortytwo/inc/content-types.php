@@ -5,7 +5,7 @@ add_action( 'init', function() {
   register_publications();
   register_organizations();
   register_events();
-  register_instagram();
+	register_social();
   register_taxonomies();
 
 });
@@ -79,13 +79,12 @@ function register_events() {
 	);
 }
 
-// Instagram
-function register_instagram() {
-  register_post_type( 'instagram',
+function register_social() {
+  register_post_type( 'social',
 		array(
 			'labels' => array(
-				'name' => __( 'Instagram' ),
-				'singular_name' => __( 'Instagram posts' )
+				'name' => __( 'Social' ),
+				'singular_name' => __( 'Social posts' )
 			),
 			'public' => true,
       'has_archive' => true,
@@ -94,7 +93,6 @@ function register_instagram() {
 		)
 	);
 }
-
 
 // Taxonomies
 

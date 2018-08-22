@@ -44,11 +44,34 @@ h1, h2 {
 }
 #page-wrapper {
   .row {
-    background-color: $josaWhite;
+   // background-color: $josaWhite;
   }
 }
 
 
 .jumbotron {
   background-color: transparent;
+}
+
+.social-post-img {
+  object-fit: cover;
+  max-height: 230px;
+  width: 100%;
+}
+.text-break {
+  word-wrap: break-word;
+}
+
+.title {
+  position: relative;
+  padding: 1.5rem 0;
+  &:before {
+    content: '';
+      position: absolute;
+      width: 20%;
+      height: 10px;
+      left: 0;
+      top: 0;
+      border-top: 10px solid $josaBlue;
+  }
 }

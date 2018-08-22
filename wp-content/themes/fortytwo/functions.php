@@ -2,6 +2,7 @@
 require get_stylesheet_directory() . '/inc/home-sidebars.php';
 require get_stylesheet_directory() . '/inc/content-types.php';
 require get_stylesheet_directory() . '/widgets/instagram-widget.php';
+require get_stylesheet_directory() . '/widgets/social-widget.php';
 require get_stylesheet_directory() . '/shortcodes/widget.php';
 
 function understrap_remove_scripts() {

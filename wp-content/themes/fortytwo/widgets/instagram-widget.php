@@ -11,7 +11,8 @@ class Instagram_widget extends WP_Widget {
   function widget($args, $instance) {
     extract( $args );
     $query = new WP_Query(array(
-      'post_type' => 'instagram',
+      'post_type' => 'social',
+      'category_name' => 'instagram-feed',
       'post_status' => 'publish',
       'posts_per_page' => 6,
       'orderby' => 'ID',
