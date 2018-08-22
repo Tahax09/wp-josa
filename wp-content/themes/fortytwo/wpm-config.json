@@ -1,0 +1,20 @@
+{
+  "post_types": {
+    "page": {},
+    "post": {},
+    "social": {},
+    "activity": {},
+    "publication": {},
+    "organization": {},
+    "event": {}
+  },
+  "taxonomies": {
+    "category" : {},
+    "post_tag" : {},
+    "topics": {},
+    "programs": {},
+    "projects": {},
+    "publication-types": {},
+    "organization-types": {}
+  }
+}
