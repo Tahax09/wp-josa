@@ -22,34 +22,26 @@ $container   = get_theme_mod( 'understrap_container_type' );
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
+			<main class="col-12">
 
-			<main class="site-main" id="main">
-
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<div class="entry-content">
-
-						<?php the_content(); ?>
+					<?php while ( have_posts() ) : the_post(); ?>
+							<?php the_content(); ?>
+							<?php
+							wp_link_pages( array(
+								'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
+								'after'  => '</div>',
+							) );
+							?>
 
 						<?php
-						wp_link_pages( array(
-							'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
-							'after'  => '</div>',
-						) );
+						// If comments are open or we have at least one comment, load up the comment template.
+						if ( comments_open() || get_comments_number() ) :
+							comments_template();
+						endif;
 						?>
-					</div>
 
-					<?php
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-					?>
-
-				<?php endwhile; // end of the loop. ?>
-
-			</main><!-- #main -->
-		</div><!-- #primary -->
+					<?php endwhile; // end of the loop. ?>
+		</main> <!-- .col-12 -->
 	</div><!-- .row -->
 
 </div><!-- Container end -->
