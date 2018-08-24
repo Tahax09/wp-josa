@@ -7,8 +7,6 @@
 
 @import "../../src/sass/bootstrap4/functions";
 @import "../../src/sass/bootstrap4/variables";
-$gray-800: #1a485b;
-$dark: $gray-800;
 $theme-colors: ();
 $theme-colors: map-merge((
   "primary":    $primary,
