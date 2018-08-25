@@ -6,6 +6,8 @@ require get_stylesheet_directory() . '/widgets/social-widget.php';
 require get_stylesheet_directory() . '/widgets/programs-widget.php';
 require get_stylesheet_directory() . '/shortcodes/widget.php';
 
+define('ACF_EARLY_ACCESS', '5');
+
 function understrap_remove_scripts() {
   wp_dequeue_style( 'understrap-styles' );
   wp_deregister_style( 'understrap-styles' );

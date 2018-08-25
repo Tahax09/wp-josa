@@ -100,9 +100,9 @@ function register_taxonomies() {
 
   // topics
   $labels = array(
-    'name'              => _x( 'Topics', 'taxonomy general name', 'understrap-child' ),
-    'singular_name'     => _x( 'Topic', 'taxonomy singular name', 'understrap-child' ),
-    'menu_name'         => __( 'Topics', 'understrap-child' ),
+    'name'              => _x( 'Topics', 'taxonomy general name', 'fortytwo' ),
+    'singular_name'     => _x( 'Topic', 'taxonomy singular name', 'fortytwo' ),
+    'menu_name'         => __( 'Topics', 'fortytwo' ),
   );
 
   $args = array(
@@ -119,9 +119,9 @@ function register_taxonomies() {
 
   // programs
   $labels = array(
-    'name'              => _x( 'Programs', 'taxonomy general name', 'understrap-child' ),
-    'singular_name'     => _x( 'Program', 'taxonomy singular name', 'understrap-child' ),
-    'menu_name'         => __( 'Programs', 'understrap-child' ),
+    'name'              => _x( 'Programs', 'taxonomy general name', 'fortytwo' ),
+    'singular_name'     => _x( 'Program', 'taxonomy singular name', 'fortytwo' ),
+    'menu_name'         => __( 'Programs', 'fortytwo' ),
   );
 
   $args = array(
@@ -137,9 +137,9 @@ function register_taxonomies() {
 
   // projects
   $labels = array(
-    'name'              => _x( 'Projects', 'taxonomy general name', 'understrap-child' ),
-    'singular_name'     => _x( 'Project', 'taxonomy singular name', 'understrap-child' ),
-    'menu_name'         => __( 'Projects', 'understrap-child' ),
+    'name'              => _x( 'Projects', 'taxonomy general name', 'fortytwo' ),
+    'singular_name'     => _x( 'Project', 'taxonomy singular name', 'fortytwo' ),
+    'menu_name'         => __( 'Projects', 'fortytwo' ),
   );
 
   $args = array(
@@ -155,17 +155,17 @@ function register_taxonomies() {
 
   // Publication Types
   $labels = array(
-    'name'              => _x( 'Publication Types', 'taxonomy general name', 'understrap-child' ),
-    'singular_name'     => _x( 'Publication Type', 'taxonomy singular name', 'understrap-child' ),
-    'search_items'      => __( 'Search Publication Types', 'understrap-child' ),
-    'all_items'         => __( 'All Publication Types', 'understrap-child' ),
-    'parent_item'       => __( 'Parent Publication Type', 'understrap-child' ),
-    'parent_item_colon' => __( 'Parent Publication Type:', 'understrap-child' ),
-    'edit_item'         => __( 'Edit Publication Type', 'understrap-child' ),
-    'update_item'       => __( 'Update Publication Type', 'understrap-child' ),
-    'add_new_item'      => __( 'Add New Publication Type', 'understrap-child' ),
-    'new_item_name'     => __( 'New Publication Type Name', 'understrap-child' ),
-    'menu_name'         => __( 'Publication Types', 'understrap-child' ),
+    'name'              => _x( 'Publication Types', 'taxonomy general name', 'fortytwo' ),
+    'singular_name'     => _x( 'Publication Type', 'taxonomy singular name', 'fortytwo' ),
+    'search_items'      => __( 'Search Publication Types', 'fortytwo' ),
+    'all_items'         => __( 'All Publication Types', 'fortytwo' ),
+    'parent_item'       => __( 'Parent Publication Type', 'fortytwo' ),
+    'parent_item_colon' => __( 'Parent Publication Type:', 'fortytwo' ),
+    'edit_item'         => __( 'Edit Publication Type', 'fortytwo' ),
+    'update_item'       => __( 'Update Publication Type', 'fortytwo' ),
+    'add_new_item'      => __( 'Add New Publication Type', 'fortytwo' ),
+    'new_item_name'     => __( 'New Publication Type Name', 'fortytwo' ),
+    'menu_name'         => __( 'Publication Types', 'fortytwo' ),
   );
 
   $args = array(
@@ -181,17 +181,17 @@ function register_taxonomies() {
 
   // Organization Type
   $labels = array(
-    'name'              => _x( 'Organization Types', 'taxonomy general name', 'understrap-child' ),
-    'singular_name'     => _x( 'Organization Type', 'taxonomy singular name', 'understrap-child' ),
-    'search_items'      => __( 'Search Organization Types', 'understrap-child' ),
-    'all_items'         => __( 'All Organization Types', 'understrap-child' ),
-    'parent_item'       => __( 'Parent Organization Typ', 'understrap-child' ),
-    'parent_item_colon' => __( 'Parent Organization Type:', 'understrap-child' ),
-    'edit_item'         => __( 'Edit Organization Type', 'understrap-child' ),
-    'update_item'       => __( 'Update Organization Type', 'understrap-child' ),
-    'add_new_item'      => __( 'Add New Organization Type', 'understrap-child' ),
-    'new_item_name'     => __( 'New Organization Type Name', 'understrap-child' ),
-    'menu_name'         => __( 'Organization Types', 'understrap-child' ),
+    'name'              => _x( 'Organization Types', 'taxonomy general name', 'fortytwo' ),
+    'singular_name'     => _x( 'Organization Type', 'taxonomy singular name', 'fortytwo' ),
+    'search_items'      => __( 'Search Organization Types', 'fortytwo' ),
+    'all_items'         => __( 'All Organization Types', 'fortytwo' ),
+    'parent_item'       => __( 'Parent Organization Typ', 'fortytwo' ),
+    'parent_item_colon' => __( 'Parent Organization Type:', 'fortytwo' ),
+    'edit_item'         => __( 'Edit Organization Type', 'fortytwo' ),
+    'update_item'       => __( 'Update Organization Type', 'fortytwo' ),
+    'add_new_item'      => __( 'Add New Organization Type', 'fortytwo' ),
+    'new_item_name'     => __( 'New Organization Type Name', 'fortytwo' ),
+    'menu_name'         => __( 'Organization Types', 'fortytwo' ),
   );
 
   $args = array(
@@ -204,6 +204,32 @@ function register_taxonomies() {
   );
 
   register_taxonomy( 'organization-types', array( 'organization' ), $args );
+
+  // user intrestes
+  $labels = array(
+    'name'              => _x( 'User interests', 'taxonomy general name', 'fortytwo' ),
+    'singular_name'     => _x( 'User interests', 'taxonomy singular name', 'fortytwo' ),
+    'search_items'      => __( 'Search User interests', 'fortytwo' ),
+    'all_items'         => __( 'All User interests', 'fortytwo' ),
+    'parent_item'       => __( 'Parent Organization Typ', 'fortytwo' ),
+    'parent_item_colon' => __( 'Parent User interests:', 'fortytwo' ),
+    'edit_item'         => __( 'Edit User interests', 'fortytwo' ),
+    'update_item'       => __( 'Update User interests', 'fortytwo' ),
+    'add_new_item'      => __( 'Add New User interests', 'fortytwo' ),
+    'new_item_name'     => __( 'New User interests Name', 'fortytwo' ),
+    'menu_name'         => __( 'User interests', 'fortytwo' ),
+  );
+
+  $args = array(
+    'hierarchical'      => false,
+    'labels'            => $labels,
+    'show_ui'           => true,
+    'show_admin_column' => true,
+    'query_var'         => true,
+    'rewrite'           => array( 'slug' => 'user-interests' ),
+  );
+
+  register_taxonomy( 'user-interests', array( ), $args );
 
   add_action("programs_edit_form_fields", 'add_form_fields_example', 10, 2);
   function add_form_fields_example($term, $taxonomy){
