@@ -1,21 +1,21 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPeMatico v1.1.3\n"
+"Project-Id-Version: WPeMatico v1.1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-30 00:30-0300\n"
-"PO-Revision-Date: 2018-07-30 00:30-0300\n"
-"Last-Translator: Serg\n"
-"Language-Team: NetMdP <esteban@netmdp.com>\n"
-"Language: sk_SK\n"
+"POT-Creation-Date: 2018-07-30 00:31-0300\n"
+"PO-Revision-Date: 2018-07-30 00:31-0300\n"
+"Last-Translator: SirMghSBD <SirMghSBD@gmail.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Poedit 1.8.11\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
-"X-Poedit-Basepath: .\n"
+"X-Poedit-Basepath: ..\n"
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -125,17 +125,17 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit.php:183
 msgid "Type some feed URL."
-msgstr "Zadajte niektoré feed URL."
+msgstr "تایپ کردن چند آدرس خبرخوان"
 
 # @ wpematico
 #: app/campaign_edit.php:184
 msgid "Type some new Feed URL/s."
-msgstr "Zadajte nový Feed URL/niekt."
+msgstr "تایپ کردن چند آدرس جدید خبرخوان"
 
 # @ wpematico
 #: app/campaign_edit.php:185 app/campaigns_list.php:227
 msgid "Running Campaign..."
-msgstr "Spustená kampaň..."
+msgstr "درحال اجرای کمپین"
 
 #: app/campaign_edit.php:186
 msgid "Save before Run Campaign"
@@ -173,22 +173,22 @@ msgstr ""
 # @ default
 #: app/campaign_edit.php:201
 msgid "Public"
-msgstr "Verejnosti"
+msgstr "عمومی"
 
 # @ wpematico
 #: app/campaign_edit.php:203
 msgid "Campaign Description"
-msgstr "Kampaň Popis"
+msgstr "توضیح کمپین"
 
 # @ wpematico
 #: app/campaign_edit.php:204
 msgid "Here you can write some observations."
-msgstr "Tu môžete napísať niekoľko postrehov."
+msgstr "اینجا می توانید برخی از مشاهدات ارسال را بنویسید."
 
 # @ wpematico
 #: app/campaign_edit.php:210 app/campaign_edit_functions.php:285
 msgid "Word:"
-msgstr "Slovo:"
+msgstr "کلمه:"
 
 #: app/campaign_edit.php:211 app/campaign_edit_functions.php:286
 msgid "on Title"
@@ -198,57 +198,57 @@ msgstr ""
 #: app/campaign_edit.php:212 app/campaign_edit_functions.php:223
 #: app/campaign_edit_functions.php:287
 msgid "RegEx"
-msgstr "RegEx"
+msgstr "عبارت منظم"
 
 # @ wpematico
 #: app/campaign_edit.php:213 app/campaign_edit_functions.php:288
 msgid "Case sensitive"
-msgstr "Veľké a malé písmená"
+msgstr "حساس به حروف"
 
 # @ wpematico
 #: app/campaign_edit.php:214 app/campaign_edit_functions.php:291
 msgid "To Category:"
-msgstr "Kategórie:"
+msgstr "به دسته:"
 
 # @ wpematico
 #: app/campaign_edit.php:215 app/campaign_edit_functions.php:237
 #: app/campaign_edit_functions.php:309 app/campaign_edit_functions.php:998
 msgid "Delete this item"
-msgstr "Odstrániť túto položku"
+msgstr "حذف این مورد"
 
 # @ wpematico
 #: app/campaign_edit.php:220 app/campaign_edit_functions.php:294
 msgid "Select category"
-msgstr "Vyberte kategóriu"
+msgstr "انتخاب دسته بندی"
 
 # @ wpematico
 #: app/campaign_edit.php:393
 #, php-format
 msgid "There's an error with the supplied RegEx expression in word: %s"
-msgstr "Tam je chyba s dodaným RegEx výraz v programe word: %s"
+msgstr "این خطا با بیان عبارت منظم عرضه شده در کلمه وجود دارد: %s"
 
 # @ wpematico
 #: app/campaign_edit.php:410
 #, php-format
 msgid "There's an error with the supplied RegEx expression in ReWrite: %s"
-msgstr "Tam je chyba s dodaným RegEx výraz v prepísať: %s"
+msgstr "خطا برای اینکه عبارت منظم در قسمت بازنویسی شده وجود دارد: %s"
 
 # @ wpematico
 #: app/campaign_edit.php:435
 msgid "At least one feed URL must be filled."
-msgstr "Aspoň jeden feed URL musí byť vyplnené."
+msgstr "حداقل یک آدرس خبرخوان باید وارد شود"
 
 # @ wpematico
 #: app/campaign_edit.php:454
 #, php-format
 msgid "Feed %s could not be parsed. (SimplePie said: %s)"
-msgstr "Krmivo %s nebolo možné analyzovať. (SimplePie povedal: % s)"
+msgstr "نمی تواند تحلیل شود %s خبرخوان. (سیمپل پای گفته: %s)"
 
 # @ wpematico
 #: app/campaign_edit.php:458
 #, php-format
 msgid "Feed %s could not be parsed because has an space in url."
-msgstr "Krmivo %s nie je možné analyzovať, pretože má na priestor v url."
+msgstr "نمی تواند تحلیل شود چون در آدرس فضای خالی وجود دارد %s خبرخوان"
 
 #: app/campaign_edit_functions.php:23 app/campaigns_list.php:141
 #: app/campaigns_list.php:638 app/campaigns_list_help.php:15
@@ -262,22 +262,22 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:26
 msgid "Campaign Categories"
-msgstr "Kampaň kategórie"
+msgstr "دسته بندی های کمپین"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:27
 msgid "Tags generation"
-msgstr "Tagy generácie"
+msgstr "تولید برچسب"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:28
 msgid "Send log"
-msgstr "Odoslať log"
+msgstr "ارسال ورود به سیستم"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:30
 msgid "Feeds for this Campaign"
-msgstr "Kanály pre túto kampaň"
+msgstr "خبرخوان برای این کمپین"
 
 #: app/campaign_edit_functions.php:31
 msgid "YouTube feeds for this Campaign"
@@ -286,7 +286,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:33
 msgid "Options for this campaign"
-msgstr "Možnosti pre túto kampaň"
+msgstr "گزینه ها برای این کمپین"
 
 #: app/campaign_edit_functions.php:34
 msgid "Schedule Cron"
@@ -295,7 +295,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:35
 msgid "Options for images"
-msgstr "Možnosti pre obrázky"
+msgstr "گزینه ها برای تصویر"
 
 #: app/campaign_edit_functions.php:36
 msgid "Options for audios"
@@ -312,17 +312,17 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:41
 msgid "Post Template"
-msgstr "Šablóna príspevku"
+msgstr "قالب نوشته"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:43
 msgid "Word to Category options"
-msgstr "Slovo do kategórie možnosti"
+msgstr "کلمه به گزینه های طبقه بندی"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:45
 msgid "Rewrite options"
-msgstr "Prepísať možnosti"
+msgstr "گزینه های بازنویسی"
 
 #: app/campaign_edit_functions.php:76 app/campaigns_list.php:692
 msgid "Stop and deactivate this campaign"
@@ -359,7 +359,7 @@ msgstr ""
 #: app/campaigns_list.php:741 app/campaigns_list.php:750
 #: wpematico_class.php:201
 msgid "sec."
-msgstr "SEC."
+msgstr "ثانیه"
 
 #: app/campaign_edit_functions.php:126
 msgid "Last Fetched:"
@@ -372,12 +372,12 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:140 app/campaigns_list.php:567
 msgid "Reset post count"
-msgstr "Reset post počítať"
+msgstr "بازنشانی شمارنده  ارسال"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:141 app/campaigns_list.php:572
 msgid "Delete hash code for duplicates"
-msgstr "Odstrániť hash kód pre duplikáty"
+msgstr "حذف کد هش برای موارد تکراری"
 
 #: app/campaign_edit_functions.php:142
 msgid "See last log. (Open a PopUp window)"
@@ -398,12 +398,13 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:214
 msgid "Replaces words or phrases by other that you want or turns into link."
-msgstr "Nahradí slová alebo frázy inými, ktoré chcete alebo premení odkaz."
+msgstr ""
+"جابجایی عبارات یا کلمات با چیزی که شما می خواهید یا تبدیل کردن به لینک."
 
 # @ wpematico
 #: app/campaign_edit_functions.php:221
 msgid "Origin:"
-msgstr "Pôvod:"
+msgstr "منبع:"
 
 #: app/campaign_edit_functions.php:222
 msgid "Title"
@@ -412,22 +413,22 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:228
 msgid "Rewrite to:"
-msgstr "Prepísať:"
+msgstr "بازنویسی به:"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:232
 msgid "ReLink to:"
-msgstr "Znova prepojiť na:"
+msgstr "بازلینکی به:"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:248 app/campaign_edit_functions.php:318
 msgid "Add more"
-msgstr "Pridať viac"
+msgstr "افزودن بیشتر"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:262
 msgid "Assigning categories based on content words."
-msgstr "Priradenie kategórie na základe obsahu slov."
+msgstr "تعیین دسته بندی بر اساس کلمات محتوا."
 
 #: app/campaign_edit_functions.php:267
 msgid "Only assign <strong>one</strong> category to each post."
@@ -442,10 +443,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:342
 msgid "Modify, manage or add extra content to every post fetched."
-msgstr ""
-"Upravovať, spravovať alebo pridať extra obsah na každý post pritiahnuté za "
-"vlasy.Modifique, manipule o agregue contenido extra a cada publicación "
-"analizada."
+msgstr "ویرایش، مدیریت و اضافه کردن مطالب اضافی برای هر پست فراخوانی شده."
 
 #: app/campaign_edit_functions.php:345
 msgid "Use custom posts template"
@@ -460,7 +458,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:350
 msgid "Allowed tags"
-msgstr ""
+msgstr "برچسب های مجاز"
 
 #: app/campaign_edit_functions.php:382
 msgid "Click to Show/Hide the examples"
@@ -473,7 +471,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:387 app/campaign_help.php:224
 msgid "Supported tags"
-msgstr "Podporované Tagy"
+msgstr "برچسب های پشتیبانی شده"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:388 app/campaign_help.php:225
@@ -481,15 +479,13 @@ msgid ""
 "A tag is a piece of text that gets replaced dynamically when the post is "
 "created. Currently, these tags are supported:"
 msgstr ""
-"Značka je kus textu, ktorý dostane nahradil dynamicky, keď miesto je "
-"vytvoril. V súčasnej dobe podporuje tieto značky:Una etiqueta es una porción "
-"de texto que será reemplazado dinamicamente cuando la publicación sea "
-"creada. Actualmente, estas etiquetas están permitidas:"
+"برچسب تکه ای از متن است که در هنگام ایجاد نوشته بصورت پویا جایگزین می شود. "
+"در حال حاضر، این دستورات پشتیبانی می شوند:"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:390 app/campaign_help.php:228
 msgid "The feed item title."
-msgstr "Krmivom položku názov."
+msgstr "عنوان مورد خبرخوان"
 
 #: app/campaign_edit_functions.php:391
 msgid "The parsed post content."
@@ -502,57 +498,57 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:393 app/campaign_help.php:229
 msgid "Put the featured image on content."
-msgstr "Dal Odporúčané obraz o obsahu."
+msgstr "قراردادن تصویر برجسته در محتوا"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:394 app/campaign_help.php:230
 msgid "The feed item author."
-msgstr "Krmivom položku autor."
+msgstr "نویسنده مورد خبرخوان"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:395 app/campaign_help.php:231
 msgid "The feed item author link (If exist)."
-msgstr "Krmivom položku Autor odkaz (ak existujú)."
+msgstr "لینک نویسنده مورد خبرخوان(اگر وجود دارد)"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:396 app/campaign_help.php:232
 msgid "The feed item permalink."
-msgstr "Krmivom položku permalink."
+msgstr "پرمالینک مورد خبرخوان"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:397 app/campaign_help.php:233
 msgid "The feed URL."
-msgstr "Feed URL."
+msgstr "آدرس خبرخوان"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:398 app/campaign_help.php:234
 msgid "The feed title."
-msgstr "Názov kanála."
+msgstr "عنوان خبرخوان"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:399 app/campaign_help.php:235
 msgid "The description of the feed."
-msgstr "Opis krmiva."
+msgstr "توضیحی در مورد خبرخوان"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:400 app/campaign_help.php:236
 msgid "The feed's logo image URL."
-msgstr "Feed URL obrázku loga."
+msgstr "آدرس تصویر آرم خبرخوان"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:401 app/campaign_help.php:237
 msgid "This campaign title"
-msgstr "Táto kampaň hlava"
+msgstr "عنوان کمپین"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:402 app/campaign_help.php:238
 msgid "This campaign ID."
-msgstr "Táto kampaň ID."
+msgstr "شناسه کمپین"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:405 app/campaign_help.php:240
 msgid "Examples:"
-msgstr ""
+msgstr "مثال ها:"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:407 app/campaign_help.php:242
@@ -560,30 +556,29 @@ msgid ""
 "If you want to add a link to the source at the bottom of every post and the "
 "author, the post template would look like this:"
 msgstr ""
-"Ak chcete pridať odkaz na zdroj v dolnej časti každej miesto a autor, miesto "
-"šablóny by vyzerať takto:Si desea agregar un enlace a la fuente de cada "
-"publicación y al autor, la plantilla se vería así:"
+"اگر می خواهید لینک یا نویسنده ای را در زیر هر منبع بنویسید،قالب به شکل زیر "
+"خواهد بود:"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:408 app/campaign_edit_functions.php:411
 #: app/campaign_help.php:243 app/campaign_help.php:246
 msgid "Go to Source"
-msgstr "Prejdite na zdroj"
+msgstr "رفتن به منبع"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:409 app/campaign_help.php:244
 msgid "will be replaced with the feed item content"
-msgstr "budú nahradené s krmivom položku obsahu"
+msgstr "با محتوای مورد خبرخوان جایگزین خواهد شد"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:409 app/campaign_help.php:244
 msgid "by the source feed item URL, which makes it a working link and"
-msgstr "zdroj feed adresu URL položky, ktoré robí, že odkaz pracovných a"
+msgstr "توسط منبع مورد خبری URL، که باعث می شود آن را به یک لینک کار و"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:409 app/campaign_help.php:244
 msgid "with the original author of the feed item."
-msgstr "s pôvodným autorom kŕmnych tovaru."
+msgstr "با نویسنده اصلی مورد خبرخوان"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:410 app/campaign_help.php:245
@@ -592,6 +587,9 @@ msgid ""
 "clickables at the bottom of every content, but before source link and author "
 "name, the post template would look like this:"
 msgstr ""
+"همچنین می توانید یک گالری با سه ستون با تمام جزئیات تصاویر قابل کلیک در "
+"پایین هر مطلب اضافه کنید، اما قبل از لینک منبع و نام نویسنده ، قالب نوشته "
+"شبیه به این است:"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:412 app/campaign_help.php:247
@@ -599,6 +597,8 @@ msgid ""
 "it's a WP shortcode for insert a gallery into the post.  You can use any "
 "shortcode here; will be processed by Wordpress."
 msgstr ""
+"این یک کد کوتاه وردپرس برای قراردادن گالری در نوشته است.شما می توانید از هر "
+"کد کوتاه معتبری استفاده کنید."
 
 #: app/campaign_edit_functions.php:450 app/campaign_edit_functions.php:516
 #: app/campaign_edit_functions.php:565 app/campaign_edit_functions.php:613
@@ -612,7 +612,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:459 app/settings_page.php:310
 msgid "Attach Images to posts."
-msgstr "Priložiť obrázky do príspevkov."
+msgstr "پیوست تصاویر به ارسال ها"
 
 #: app/campaign_edit_functions.php:461 app/settings_page.php:312
 msgid "Remove link to source images"
@@ -728,7 +728,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:695 app/campaigns_list.php:858
 msgid "Author:"
-msgstr "Autor:"
+msgstr "نویسنده:"
 
 #: app/campaign_edit_functions.php:701
 msgid "Strip All HTML Tags"
@@ -805,7 +805,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:839
 msgid "Activate scheduling"
-msgstr "Aktivovanie plánovania"
+msgstr "فعال کردن زمان بندی"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:842
@@ -813,14 +813,13 @@ msgid ""
 "Working as <a href=\"http://wikipedia.org/wiki/Cron\" target=\"_blank"
 "\">Cron</a> job schedule:"
 msgstr ""
-"Pracuje ako < href=\"http://wikipedia.org/wiki/Cron\" target = \" &quot;"
-"_blank\">Cron rozvrh práce:Trabajando como <a href=\"http://wikipedia.org/"
-"wiki/Cron\" target=\"_blank\">Cron</a> job cronograma:"
+"Working as <a href=\"http://wikipedia.org/wiki/Cron\" target=\"_blank"
+"\">Cron</a> job schedule:"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:844
 msgid "Next runtime:"
-msgstr "Budúci runtime:"
+msgstr "اجرای بعدی:"
 
 #: app/campaign_edit_functions.php:849 app/campaign_help.php:100
 msgid "Preselected schedules."
@@ -833,64 +832,64 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:866
 msgid "Minutes: "
-msgstr "Minút: "
+msgstr "دقیقه:"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:874 app/campaign_edit_functions.php:891
 #: app/campaign_edit_functions.php:908 app/campaign_edit_functions.php:925
 #: app/campaign_edit_functions.php:949
 msgid "Any (*)"
-msgstr "Akékoľvek (**)"
+msgstr "هر(*)"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:883
 msgid "Hours:"
-msgstr "Hodiny:"
+msgstr "ساعت:"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:900
 msgid "Days:"
-msgstr "Dní:"
+msgstr "روز:"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:917
 msgid "Months:"
-msgstr "Mesiacov:"
+msgstr "ماه:"
 
 # @ default
 #: app/campaign_edit_functions.php:926
 msgid "January"
-msgstr "Januára"
+msgstr "ژانویه"
 
 # @ default
 #: app/campaign_edit_functions.php:927
 msgid "February"
-msgstr "Februára"
+msgstr "فوریه"
 
 # @ default
 #: app/campaign_edit_functions.php:928
 msgid "March"
-msgstr "Marca"
+msgstr "مارچ"
 
 # @ default
 #: app/campaign_edit_functions.php:929
 msgid "April"
-msgstr "Apríla"
+msgstr "آپریل"
 
 # @ default
 #: app/campaign_edit_functions.php:930
 msgid "May"
-msgstr "Mája"
+msgstr "می"
 
 # @ default
 #: app/campaign_edit_functions.php:931
 msgid "June"
-msgstr "Júna"
+msgstr "ژوئن"
 
 # @ default
 #: app/campaign_edit_functions.php:932
 msgid "July"
-msgstr "Júla"
+msgstr "جولای"
 
 #: app/campaign_edit_functions.php:933
 msgid "August"
@@ -899,62 +898,62 @@ msgstr ""
 # @ default
 #: app/campaign_edit_functions.php:934
 msgid "September"
-msgstr "Septembra"
+msgstr "سپتامبر"
 
 # @ default
 #: app/campaign_edit_functions.php:935
 msgid "October"
-msgstr "Októbra"
+msgstr "اکتبر"
 
 # @ default
 #: app/campaign_edit_functions.php:936
 msgid "November"
-msgstr "Novembra"
+msgstr "نوامبر"
 
 # @ default
 #: app/campaign_edit_functions.php:937
 msgid "December"
-msgstr "Decembra"
+msgstr "دسامبر"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:941
 msgid "Weekday:"
-msgstr "Všedný deň:"
+msgstr "روز هفته"
 
 # @ default
 #: app/campaign_edit_functions.php:950
 msgid "Sunday"
-msgstr "Nedeľa"
+msgstr "یک شنبه"
 
 # @ default
 #: app/campaign_edit_functions.php:951
 msgid "Monday"
-msgstr "Pondelok"
+msgstr "دوشنبه"
 
 # @ default
 #: app/campaign_edit_functions.php:952
 msgid "Tuesday"
-msgstr "Utorok"
+msgstr "سه شنبه"
 
 # @ default
 #: app/campaign_edit_functions.php:953
 msgid "Wednesday"
-msgstr "Streda"
+msgstr "چهار شنبه"
 
 # @ default
 #: app/campaign_edit_functions.php:954
 msgid "Thursday"
-msgstr "Štvrtok"
+msgstr "پنج شنبه"
 
 # @ default
 #: app/campaign_edit_functions.php:955
 msgid "Friday"
-msgstr "Piatok"
+msgstr "جمعه"
 
 # @ default
 #: app/campaign_edit_functions.php:956
 msgid "Saturday"
-msgstr "Sobota"
+msgstr "شنبه"
 
 #: app/campaign_edit_functions.php:972
 msgid "Feed URL"
@@ -979,7 +978,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:1010
 msgid "Check all feeds"
-msgstr "Skontrolujte všetky kanály"
+msgstr "بررسی همه خبرخوان ها"
 
 #: app/campaign_edit_functions.php:1014
 msgid "Displaying"
@@ -988,7 +987,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:1015
 msgid "Display all feeds"
-msgstr "Zobrazenie všetkých kanálov"
+msgstr "نمایش همه خبرخوان ها"
 
 #: app/campaign_edit_functions.php:1015
 msgid "Scroll feeds list."
@@ -1013,27 +1012,27 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:1066
 msgid "E-Mail-Adress:"
-msgstr "E-mailu-Adress:"
+msgstr "آدرس ایمیل:"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:1068
 msgid "Send only E-Mail on errors."
-msgstr "Poslať len E-Mail na chyby."
+msgstr "فقط برای خطاها ایمیل بفرست"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:1078
 msgid "Tags:"
-msgstr "Tagy:"
+msgstr "برچسب ها:"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:1080
 msgid "Enter comma separated list of Tags."
-msgstr "Zadajte oddelené čiarkou zoznam značiek."
+msgstr "برای جداکردن کاما بگذارید"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:1104
 msgid "Add auto Categories"
-msgstr ""
+msgstr "افزودن خودکار دسته بندی"
 
 #: app/campaign_edit_functions.php:1108
 msgid "Parent category to auto categories"
@@ -1050,7 +1049,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:1152
 msgid "Quick add"
-msgstr "Rýchle pridanie"
+msgstr "افزودن سریع"
 
 # @ wpematico
 # @ default
@@ -1058,17 +1057,17 @@ msgstr "Rýchle pridanie"
 #: app/campaigns_list.php:953 app/lib/licenses_handlers.php:482
 #: app/lib/licenses_handlers.php:486 app/lib/licenses_handlers.php:488
 msgid "Status"
-msgstr "Stav"
+msgstr "وضعیت"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:1209 app/campaigns_list.php:956
 msgid "Published"
-msgstr "Uverejnené"
+msgstr "منتشر شده"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:1210 app/campaigns_list.php:957
 msgid "Private"
-msgstr "Súkromné"
+msgstr "شخصی"
 
 #: app/campaign_edit_functions.php:1211 app/campaigns_list.php:958
 msgid "Pending"
@@ -1077,12 +1076,12 @@ msgstr ""
 # @ wpematico
 #: app/campaign_edit_functions.php:1212 app/campaigns_list.php:959
 msgid "Draft"
-msgstr "Návrh"
+msgstr "پیش نویس"
 
 # @ wpematico
 #: app/campaign_edit_functions.php:1215 app/campaigns_list.php:935
 msgid "Post type"
-msgstr "Typ stĺpika"
+msgstr "نوع ارسال"
 
 #: app/campaign_edit_functions.php:1245
 msgid "CAMPAIGN WIZARD"
@@ -1100,9 +1099,7 @@ msgstr ""
 #: app/campaign_fetch.php:79
 #, php-format
 msgid "PHP Safe Mode is on!!! Max exec time is %1$d sec."
-msgstr ""
-"PHP núdzový režim zapnutý!!! Čas vykonania Max je %1$ d sec.PHP Modo Seguro "
-"esta activado!!! Ejecución máxima de tiempo es %1$d segs."
+msgstr "PHP Safe Mode is on!!! Max exec time is %1$d sec."
 
 # @ wpematico
 #: app/campaign_fetch.php:83
@@ -1111,10 +1108,8 @@ msgid ""
 "Memory limit set to %1$s ,because can not use PHP: memory_get_usage() "
 "function to dynamically increase the Memory!"
 msgstr ""
-"Memory limit nastavený na %1$ s, pretože nemožno použiť PHP: "
-"memory_get_usage() Funkcia dynamicky zvýšiť pamäť!Límite de Memoria "
-"configurado en %1$s, porque no se puede usar la función de PHP: "
-"memory_get_usage() para incrementar dinámicamente la memoria!"
+"Memory limit set to %1$s ,because can not use PHP: memory_get_usage() "
+"function to dynamically increase the Memory!"
 
 #: app/campaign_fetch.php:93
 #, php-format
@@ -1125,19 +1120,19 @@ msgstr ""
 #: app/campaign_fetch.php:130
 #, php-format
 msgid "Processing feed %1s."
-msgstr "Spracovanie krmiva % 1s."
+msgstr "تولید اشتراک  %1s."
 
 # @ wpematico
 #: app/campaign_fetch.php:177 app/campaign_preview.php:116
 #, php-format
 msgid "Found duplicated hash '%1s'"
-msgstr "Nájsť duplicitné hash &quot;%1&quot;"
+msgstr "مخلوط کپی یافت شد '%1s'"
 
 # @ wpematico
 #: app/campaign_fetch.php:179 app/campaign_fetch.php:191
 #: app/campaign_preview.php:118 app/campaign_preview.php:132
 msgid "Filtering duplicated posts."
-msgstr "Filtrovanie duplicitné príspevky."
+msgstr "فیلتر کردن نوشته های تکراری"
 
 #: app/campaign_fetch.php:182 app/campaign_fetch.php:194
 #: app/campaign_preview.php:122 app/campaign_preview.php:136
@@ -1153,7 +1148,7 @@ msgstr ""
 #: app/campaign_fetch.php:204 app/campaign_preview.php:155
 #, php-format
 msgid "Campaign fetch limit reached at %1s."
-msgstr "Limit načítania kampaň dosiahla v % 1s."
+msgstr "کمپین واکشی حد رسیده در %1s."
 
 #: app/campaign_fetch.php:215
 #, php-format
@@ -1164,30 +1159,28 @@ msgstr ""
 #: app/campaign_fetch.php:236
 #, php-format
 msgid "%s posts added"
-msgstr "%s príspevky pridané"
+msgstr "%s نوشته اضافه شد"
 
 # @ wpematico
 #: app/campaign_fetch.php:250
 #, php-format
 msgid "Processing item %1s"
-msgstr "Spracovanie položky typu %1"
+msgstr "مورد پردازش %1s"
 
 # @ wpematico
 #: app/campaign_fetch.php:265
 msgid "Assigning original date to post."
-msgstr "Priradenie pôvodný dátum na zaúčtovanie."
+msgstr "انتصاب تاریخ اصلی به نوشته"
 
 # @ wpematico
 #: app/campaign_fetch.php:267
 msgid "Original date out of range.  Assigning current date to post."
-msgstr ""
-"Pôvodný dátum mimo povoleného rozsahu.  Priradenie aktuálny dátum na "
-"zaúčtovanie."
+msgstr "تاریخ اصلی خارج از محدوده است. تعیین تاریخ جاری برای ارسال."
 
 # @ wpematico
 #: app/campaign_fetch.php:358
 msgid "Assigning Auto Categories."
-msgstr ""
+msgstr "تعیین خودکار دسته بندی ها."
 
 #: app/campaign_fetch.php:365
 msgid "Category exist: "
@@ -1196,7 +1189,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_fetch.php:367
 msgid "Adding Category: "
-msgstr ""
+msgstr "افزودن دسته بندی:"
 
 #: app/campaign_fetch.php:372
 msgid "Auto Added by WPeMatico"
@@ -1233,7 +1226,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_fetch.php:570
 msgid "Attaching images"
-msgstr "Upevnenie obrazov"
+msgstr "پیوست تصاویر"
 
 #: app/campaign_fetch.php:586
 msgid "Attaching audios"
@@ -1246,33 +1239,33 @@ msgstr ""
 # @ wpematico
 #: app/campaign_fetch.php:610
 msgid "Processing item pingbacks"
-msgstr "Spracovanie tovaru pingbacks"
+msgstr "پینگ بک ها مورد پردازش"
 
 # @ wpematico
 #: app/campaign_fetch.php:639 app/campaign_fetch.php:688
 #, php-format
 msgid "Campaign fetched in %1s sec."
-msgstr "Kampaň priniesla v %1 sek."
+msgstr "ثانیه %1s واکشی کمپین در"
 
 # @ wpematico
 #: app/campaign_fetch.php:667
 msgid "WPeMatico Log "
-msgstr "WPeMatico denník "
+msgstr "WPeMatico ورود به سیستم"
 
 # @ wpematico
 #: app/campaign_fetch.php:670
 msgid "Campaign Name:"
-msgstr "Názov kampane:"
+msgstr "نام کمپین:"
 
 # @ wpematico
 #: app/campaign_fetch.php:672
 msgid "Errors:"
-msgstr "Chyby:"
+msgstr "خطاها:"
 
 # @ wpematico
 #: app/campaign_fetch.php:674
 msgid "Warnings:"
-msgstr "Varovanie:"
+msgstr "هشدارها:"
 
 #: app/campaign_fetch.php:678
 msgid "WPeMatico by <a href='https://etruel.com'>etruel</a>"
@@ -1282,12 +1275,12 @@ msgstr ""
 #: app/campaign_fetch.php:688 wpematico_class.php:169 wpematico_class.php:171
 #, php-format
 msgid "Processed Posts: %1s"
-msgstr "Spracované príspevky: %1"
+msgstr "پردازش ارسال ها: %1s"
 
 # @ wpematico
 #: app/campaign_fetch.php:689
 msgid "Show detailed Log"
-msgstr "Zobraziť podrobné Log"
+msgstr "نمایش جزئیات لاگ"
 
 #: app/campaign_fetch.php:702 app/campaign_fetch.php:705
 #, php-format
@@ -1310,12 +1303,12 @@ msgstr ""
 # @ wpematico
 #: app/campaign_fetch_functions.php:84
 msgid "Cleaning Links from content."
-msgstr "Čistenie odkazy z obsahu."
+msgstr "پاک کردن لینک ها از محتوا"
 
 # @ wpematico
 #: app/campaign_fetch_functions.php:90
 msgid "Parsing Post template."
-msgstr "Parsování Post šablóny."
+msgstr "تجزیه ارسال قالب."
 
 #: app/campaign_fetch_functions.php:96
 msgid "Can't find the featured image to add to the content."
@@ -1325,19 +1318,19 @@ msgstr ""
 #: app/campaign_fetch_functions.php:212
 #, php-format
 msgid "Processing Words to Category %1s"
-msgstr "Spracovanie slová do kategórie % 1s"
+msgstr "پردازش کلمات به دسته بندی %1s"
 
 # @ wpematico
 #: app/campaign_fetch_functions.php:241
 #, php-format
 msgid "Found!: word %1s to Cat_id %2s"
-msgstr "Našiel!: slovo %1 na Cat_id % 2s"
+msgstr "یافت شد!: word %1s to Cat_id %2s"
 
 # @ wpematico
 #: app/campaign_fetch_functions.php:245
 #, php-format
 msgid "Not found word %1s"
-msgstr "Nenašla slovo %1"
+msgstr "کلمه یافت نشد %1s"
 
 #: app/campaign_fetch_functions.php:252
 msgid "Searching the category with more words."
@@ -1384,13 +1377,12 @@ msgstr ""
 # @ default
 #: app/campaign_fetch_functions.php:512
 msgid "Attaching file:"
-msgstr "Pripojenie súboru:"
+msgstr "فایل پیوست:"
 
 # @ default
 #: app/campaign_fetch_functions.php:515
 msgid "Sorry, your attach could not be inserted. Something wrong happened."
-msgstr ""
-"Ospravedlňujeme sa, váš priložiť sa nepodarilo vložiť. Niečo zlé stalo."
+msgstr "با عرض پوزش، پیوست شما نمی تواند اضافه شود. چیزی اشتباه رخ داده است."
 
 #: app/campaign_fetch_functions.php:549
 msgid "Executing featured image selector..."
@@ -1514,8 +1506,7 @@ msgid ""
 "Use the original date from the post instead of the time the post is created "
 "by WPeMatico."
 msgstr ""
-"Použiť pôvodný dátum z post miesto vytvorení post podľa WPeMatico.Usar la "
-"fecha original del feed en vez de la hora en que WPeMatico crea la entrada."
+"استفاده از تاریخ اصلی از ارسال به جای زمان پست توسط افزونه ایجاد شده است."
 
 # @ wpematico
 #: app/campaign_help.php:30
@@ -1523,30 +1514,25 @@ msgid ""
 "To avoid incoherent dates due to lousy setup feeds, WPeMatico will use the "
 "feed date only if these conditions are met:"
 msgstr ""
-"Vyhnúť nesúvislá dátumy kvôli mizerný nastavenie kanálov, bude používať "
-"WPeMatico dátum krmivo, len vtedy, ak sú splnené tieto podmienky:Para evitar "
-"fechas incoherentes debido a tantos feeds mal configurados, WPeMatico usará "
-"la fecha del feed unicamente bajo estas condiciones:"
+"برای جلوگیری از تاریخ های نامنسجم به دلیل بد راه اندازی خبرخوان ها، افزونه "
+"خواهد شد تاریخ تغذیه تنها اگر از این شرایط برآورده استفاده کنید:"
 
 # @ wpematico
 #: app/campaign_help.php:32
 msgid ""
 "The feed item date is not too far in the past (specifically, as much time as "
 "the campaign frequency)."
-msgstr ""
-"Krmivom položku dátum nie je príliš ďaleko v minulosti (špeciálne, tak veľa "
-"času ako kampaň frekvenciu).La fecha del original no está demasiado lejos en "
-"el pasado.  (específicamente, más tiempo de la frecuencia de la campaña)"
+msgstr "تاریخ مورد خبری در گذشته خیلی دور نیست"
 
 # @ wpematico
 #: app/campaign_help.php:33
 msgid "The fetched feed item date is not in the future."
-msgstr "Vzali krmivom položku dátum nie je v budúcnosti."
+msgstr "تاریخ مورد خبرخوان واکشی شده در آینده نیست"
 
 # @ wpematico
 #: app/campaign_help.php:37
 msgid "This option make the title permalink to original URL."
-msgstr "Túto možnosť, aby titul permalink na pôvodné URL."
+msgstr "این گزینه عنوان را به آدرس اصلی لینک می کند."
 
 #: app/campaign_help.php:38
 msgid ""
@@ -1621,8 +1607,8 @@ msgstr ""
 msgid ""
 "This option take out clickable links from content, leaving just the text."
 msgstr ""
-"Táto možnosť uzavrieť klikací odkazy z obsahu, opúšťa len text.Esta opción "
-"elimina los enlaces clickeables del contenido, dejando sólo el texto."
+"این گزینه لینک های قابل کلیک را از متن خارج می کند و تنها نوشته ی لینک را "
+"باقی می گذارد."
 
 #: app/campaign_help.php:77
 msgid "Skip the Wordpress post content filters."
@@ -1635,7 +1621,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_help.php:79
 msgid "Not recommended."
-msgstr "Neodporúča."
+msgstr "توصیه نمی شود."
 
 #: app/campaign_help.php:84
 msgid "Youtube feeds URLs."
@@ -1944,7 +1930,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_help.php:210 app/settings_page.php:917
 msgid "How it works:"
-msgstr "Ako to funguje:"
+msgstr "این چطور کار می کنه:"
 
 #: app/campaign_help.php:210 app/settings_page.php:917
 msgid ""
@@ -1987,7 +1973,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_help.php:227
 msgid "The feed item content."
-msgstr "Krmivom položku obsahu."
+msgstr "محتوای مورد خبرخوان"
 
 #: app/campaign_help.php:253
 msgid "Word to Category options."
@@ -2002,7 +1988,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_help.php:255
 msgid "Example:"
-msgstr "Príklad:"
+msgstr "مثال:"
 
 # @ wpematico
 #: app/campaign_help.php:256
@@ -2011,17 +1997,14 @@ msgid ""
 "post to category \"Engines\", simply type \"motor\" in the \"Word\" field, "
 "and select \"Engine\" in Categories combo."
 msgstr ""
-"Ak post obsah obsahujú slovo \"motor\" a potom budete chcieť priradiť post "
-"kategórie \"Engines\", jednoducho zadajte \"motor\" v \"Word\" pole, a "
-"vyberte \"Engine\" v kategórií combo.Si el contenido de la publicaión "
-"contiene la plabra \"motor\" y luego desea asignar la categoría de "
-"publicación \"Engines\", simplemente tipee \"motor\" en el campo \"Word\", y "
-"seleccione \"Engine\" en el combo de Categorías."
+"اگر متن شما شامل کلمه موتور است و می خواهید آن را به دسته انجین منتصب کنید, "
+"simply type \"motor\" in the \"Word\" field, and select \"Engine\" in "
+"Categories combo."
 
 # @ wpematico
 #: app/campaign_help.php:257
 msgid "Regular Expressions"
-msgstr "Regulárne výrazy"
+msgstr "عبارات منظم"
 
 #: app/campaign_help.php:258
 msgid ""
@@ -2057,7 +2040,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_help.php:267
 msgid "Basic rewriting:"
-msgstr "Základné prepisovanie:"
+msgstr "پایه بازنویسی:"
 
 # @ wpematico
 #: app/campaign_help.php:268
@@ -2065,10 +2048,8 @@ msgid ""
 "To replace all occurrences the word ass with butt, simply type ass in the "
 "\"origin field\", and butt in \"rewrite to\"."
 msgstr ""
-"Nahradiť všetky výskyty slova zadku s zadok, jednoducho zadajte zadok v "
-"\"Origin field\", a zadok v \"rewrite to\".Para reemplazar todas las "
-"apariciones de la palabra \"culo\" por \"trasero\", simplemente escriba "
-"\"culo\" en el \"origin field\", y \"trasero\" en el \"rewrite to\"."
+"بجای تکرار یک کلمه, بسادگی آنرا در این بنویسید\"منشاء درست\", و آن کلمه را "
+"\"بازنویسی به\"."
 
 #: app/campaign_help.php:269
 msgid "Title:"
@@ -2084,7 +2065,7 @@ msgstr ""
 # @ wpematico
 #: app/campaign_help.php:271
 msgid "Relinking:"
-msgstr "Prepojenie:"
+msgstr "بازلینک دهی:"
 
 # @ wpematico
 #: app/campaign_help.php:272
@@ -2093,16 +2074,13 @@ msgid ""
 "just type google in the \"origin field\" and http://google.com in the "
 "\"relink to\" field."
 msgstr ""
-"Ak chcete nájsť všetky výskyty a ich vzťah k Google, google Stačí zadať "
-"google v \"origin field\" a http://google.com v \"Relink to\" pole.Si desea "
-"buscar que todas las apariciones de Google y hacer que enlaces a Google, "
-"simplemente escriba Google en el \"origin field\" y http://google.com en el "
-"\"relink to\" campo."
+"اگر می خواهید همه تکرار ها در گوگل را بیابید فقط کافیست گوگل را در این تایپ "
+"کنید \"origin field\" and http://google.com in the \"relink to\" field."
 
 # @ wpematico
 #: app/campaign_help.php:273
 msgid "Regular expressions"
-msgstr "Regulárne výrazy"
+msgstr "عبارات منظم"
 
 # @ wpematico
 #: app/campaign_help.php:274
@@ -2112,14 +2090,10 @@ msgid ""
 "example. Instead of using many rewriting boxes to replace ass and arse with "
 "butt, you can use the | operator: (ass|arse)."
 msgstr ""
-"Pre pokročilých používateľov, regulárne výrazy sú podporované. Pomocou tohto "
-"umožní aby ste silnejší náhradníkov. Take slovo náhradu príklad. Namiesto "
-"použitia mnohých prepisovanie políčka nahradiť zadok a zadok s zadok, môžete "
-"použiť | prevádzkovateľ: (ass|arse).Para usuarios avanzados, expresiones "
-"regulares son permitidas. Su uso permite hacer reemplazos mas poderosos. "
-"Como por ejemplo el reemplazo de multiples palabras. En vez de usar muchas "
-"re-escrituras de la palabra culo y trasero, puede usar el operador | como "
-"ejemplo: (culo|trasero)."
+"برای کاربران پیشرفته، عبارات منظم پشتیبانی می شوند. به شما اجازه استفاده از "
+"جایگزینی قوی تر را می دهد. بجای جایگزینی کلمه های متعدد به عنوان مثال. "
+"(االاغ | الاغ): عملگر | به جای استفاده از جعبه های بازنویسی بسیار می توانید "
+"از این امکان بصورت کلی استفاده کنید."
 
 #: app/campaign_help.php:279
 msgid "Campaign Categories."
@@ -2141,6 +2115,8 @@ msgid ""
 "If categories are found on source item, these categories will be added to "
 "the post; If category does not exist, then will be created."
 msgstr ""
+"اگر دسته بندی در مورد منبع یافت شد نوشته به آن اضافه می شود ،در غیر اینصورت "
+"دسته بندی جدید ساخته می شود."
 
 #: app/campaign_help.php:287
 msgid "Parent category to auto categories."
@@ -2261,17 +2237,17 @@ msgstr ""
 # @ wpematico
 #: app/campaigns_list.php:186
 msgid "Run Selected Campaigns"
-msgstr ""
+msgstr "اجرای کمپین انتخاب شده"
 
 # @ wpematico
 #: app/campaigns_list.php:199
 msgid "Visit"
-msgstr ""
+msgstr "دیدن"
 
 # @ wpematico
 #: app/campaigns_list.php:228
 msgid "Please select campaign(s) to Run."
-msgstr ""
+msgstr "لطفا کمپینی را برای اجرا انتخاب کنید"
 
 #: app/campaigns_list.php:229
 msgid "Slug"
@@ -2288,19 +2264,19 @@ msgstr ""
 # @ wpematico
 #: app/campaigns_list.php:243
 msgid "(Copy)"
-msgstr "(Kópia)"
+msgstr "(کپی)"
 
 # @ wpematico
 #: app/campaigns_list.php:302 app/campaigns_list.php:343
 #: app/campaigns_list.php:375 app/campaigns_list.php:407
 #: app/campaigns_list.php:440
 msgid "No campaign ID has been supplied!"
-msgstr "Bol dodaný bez ID kampaň!"
+msgstr "هیچ شناسه کمپینی ذخیره نشده است."
 
 # @ wpematico
 #: app/campaigns_list.php:330
 msgid "Copy campaign failed, could not find original:"
-msgstr "Skopírujte kampane, nevyšlo, nemohol nájsť pôvodný:"
+msgstr "کمپین کپی شکست خورد، نمی تواند اصل را پیدا کند:"
 
 #: app/campaigns_list.php:359
 msgid "Campaign activated"
@@ -2325,38 +2301,38 @@ msgstr ""
 # @ wpematico
 #: app/campaigns_list.php:478 app/campaigns_list.php:481
 msgid "Campaign updated."
-msgstr "Kampaň aktualizovať."
+msgstr "کمپین بروزرسانی شد"
 
 # @ wpematico
 #: app/campaigns_list.php:479
 msgid "Custom field updated."
-msgstr "Vlastné pole aktualizuje."
+msgstr "قسمت سفارشی به روز شد."
 
 # @ wpematico
 #: app/campaigns_list.php:480
 msgid "Custom field deleted."
-msgstr "Vlastné pole odstráni."
+msgstr "قسمت سفارشی حذف شد."
 
 # @ default
 #: app/campaigns_list.php:483
 #, php-format
 msgid "Campaign restored to revision from %s"
-msgstr "Kampaň obnovená revízie z %s"
+msgstr "کمپین بازسازی شد تا مرور از %s"
 
 # @ wpematico
 #: app/campaigns_list.php:484
 msgid "Campaign published."
-msgstr "Kampaň uverejnené."
+msgstr "کمپین منتشر شد"
 
 # @ default
 #: app/campaigns_list.php:485
 msgid "Campaign saved."
-msgstr "Kampaň uložené."
+msgstr "کمپین ذخیره شد."
 
 # @ wpematico
 #: app/campaigns_list.php:486
 msgid "Campaign submitted."
-msgstr "Kampane posielajú."
+msgstr "کمپین ثبت شد"
 
 # @ default
 #: app/campaigns_list.php:487
@@ -2365,10 +2341,8 @@ msgid ""
 "Campaign scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
 "\"%2$s\">Preview campaign</a>"
 msgstr ""
-"Kampane naplánované na: <strong>%1$ s</strong>.<a target=\"_blank\" href= "
-"target=&quot;\"_blank\"&quot; href=&quot;&quot;></a target=\"_blank\" href=>"
-"\"%2$s\">Preview kampaneCampaña programada para: <strong>%1$s</strong>. <a "
-"target=\"_blank\" href=\"%2$s\">Previsualizar campaña</a>"
+"کمپین برنامه ریزی شده برای: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Preview campaign</a>"
 
 # @ default
 #: app/campaigns_list.php:489
@@ -2381,9 +2355,8 @@ msgstr "M j, Y @ G:i"
 msgid ""
 "Campaign draft updated. <a target=\"_blank\" href=\"%s\">Preview campaign</a>"
 msgstr ""
-"Kampaň návrh aktualizované. <a target=&quot;\"_blank\"&quot; href=&quot;\"%s"
-"\"&quot;>Ukážka kampane</a>Borrador de campaña actualizado. <a target="
-"\"_blank\" href=\"%s\">Previsualizar campaña</a>"
+"پیش نویس کمپین بروزرسانی شد. <a target=\"_blank\" href=\"%s\">Preview "
+"campaign</a>"
 
 #: app/campaigns_list.php:543
 msgid "Edit this item"
@@ -2428,47 +2401,47 @@ msgstr ""
 # @ wpematico
 #: app/campaigns_list.php:565
 msgid "Clone this item"
-msgstr "Klon túto položku"
+msgstr "شبیه این مورد"
 
 # @ wpematico
 #: app/campaigns_list.php:565 app/campaigns_list_help.php:28
 msgid "Copy"
-msgstr "Kópia"
+msgstr "کپی"
 
 # @ wpematico
 #: app/campaigns_list.php:567 app/campaigns_list_help.php:29
 msgid "Reset"
-msgstr "Reset"
+msgstr "تنظیم مجدد"
 
 # @ wpematico
 #: app/campaigns_list.php:572 app/campaigns_list_help.php:30
 msgid "Del Hash"
-msgstr "Del Hash"
+msgstr "قسمت مخلوط"
 
 # @ wpematico
 #: app/campaigns_list.php:580
 msgid "See last log of campaign. (Open a PopUp window)"
-msgstr "Pozri posledný log kampane. (Otvoriť PopUp okno)"
+msgstr "دیدن آخرین لاگ کمپین. (بازشدن یک پنجره پاپ آپ)"
 
 # @ wpematico
 #: app/campaigns_list.php:580 app/campaigns_list_help.php:31
 msgid "See Log"
-msgstr "Pozrite denník"
+msgstr "دیدن لاگ"
 
 # @ wpematico
 #: app/campaigns_list.php:585
 msgid "Clear fetching and restore campaign"
-msgstr "Jasné, očarujúce a obnoviť kampaň"
+msgstr "پاک کردن واکشی و بازیابی کمپین"
 
 # @ wpematico
 #: app/campaigns_list.php:585
 msgid "Clear campaign"
-msgstr "Jasné kampaň"
+msgstr "پاک کردن کمپین"
 
 # @ default
 #: app/campaigns_list.php:636 app/campaigns_list_help.php:13
 msgid "Campaign Name"
-msgstr "Názov kampane"
+msgstr "نام کمپین"
 
 #: app/campaigns_list.php:637 app/campaigns_list_help.php:14
 msgid "Publish as"
@@ -2481,33 +2454,33 @@ msgstr ""
 # @ default
 #: app/campaigns_list.php:640 app/campaigns_list_help.php:17
 msgid "Last Run"
-msgstr "Posledný beh"
+msgstr "آخرین اجرا"
 
 # @ default
 #: app/campaigns_list.php:641 app/campaigns_list_help.php:18
 msgid "Posts"
-msgstr "Príspevky"
+msgstr "ارسال ها"
 
 # @ wpematico
 #: app/campaigns_list.php:705 app/campaigns_list.php:750
 #: wpematico_class.php:201
 msgid "Running since:"
-msgstr "Beží od:"
+msgstr "در حال اجرا از:"
 
 # @ wpematico
 #: app/campaigns_list.php:724 app/lib/licenses_handlers.php:488
 msgid "Inactive"
-msgstr "Neaktívne"
+msgstr "غیرفعال"
 
 # @ wpematico
 #: app/campaigns_list.php:741
 msgid "Runtime:"
-msgstr "Runtime:"
+msgstr "زمان اجرا:"
 
 # @ wpematico
 #: app/campaigns_list.php:744 wpematico_class.php:211
 msgid "None"
-msgstr "Žiadny"
+msgstr "هیچ"
 
 #: app/campaigns_list.php:843
 msgid "Campaign Options"
@@ -2516,17 +2489,17 @@ msgstr ""
 # @ wpematico
 #: app/campaigns_list.php:846
 msgid "Max items to create on each fetch:"
-msgstr "Max položky vytvoriť na každom fetch:"
+msgstr "حداکثر موارد ایجاد شده در هر واکشی:"
 
 # @ wpematico
 #: app/campaigns_list.php:853
 msgid "Use feed date"
-msgstr "Použitie krmív dátum"
+msgstr "استفاده از تاریخ خبرخوان"
 
 # @ wpematico
 #: app/campaigns_list.php:864
 msgid "Discussion options:"
-msgstr "Diskusia – možnosti:"
+msgstr "تنظیمات بحث:"
 
 #: app/campaigns_list.php:869
 msgid "Open"
@@ -2543,17 +2516,17 @@ msgstr ""
 # @ wpematico
 #: app/campaigns_list.php:885
 msgid "Allow pings?"
-msgstr "Povoliť ping?"
+msgstr "اجازه به پینگ؟"
 
 # @ wpematico
 #: app/campaigns_list.php:889
 msgid "Post title links to source?"
-msgstr "Post hlavy odkazy na zdroj?"
+msgstr "لینک کردن عنوان نوشته به منبع؟"
 
 # @ wpematico
 #: app/campaigns_list.php:893
 msgid "Strip links from content"
-msgstr "Strip odkazy z obsahu"
+msgstr "لینک باریکه از محتوا"
 
 #: app/campaigns_list.php:968
 msgid "Post Format"
@@ -2642,7 +2615,7 @@ msgstr ""
 # @ default
 #: app/campaigns_list_help.php:32
 msgid "Export"
-msgstr ""
+msgstr "برون ریزی"
 
 #: app/campaigns_list_help.php:32
 msgid ""
@@ -2730,7 +2703,7 @@ msgstr ""
 # @ wpematico
 #: app/debug_page.php:147 app/settings_page.php:152
 msgid "About"
-msgstr "O"
+msgstr "درباره"
 
 #: app/debug_page.php:151 app/settings_page.php:156
 msgid "Go to the new WPeMatico WebSite"
@@ -2759,7 +2732,7 @@ msgstr ""
 # @ wpematico
 #: app/debug_page.php:172
 msgid "Buy PRO version online"
-msgstr "Kúpiť verziu PRO online"
+msgstr "خرید آنلاین نسخه حرفه ای"
 
 #: app/debug_page.php:185 app/settings_page.php:227
 msgid "Extended functionalities"
@@ -3129,7 +3102,7 @@ msgstr ""
 # @ default
 #: app/debug_page.php:898 app/wpematico_functions.php:90
 msgid "No"
-msgstr "nie"
+msgstr "خیر"
 
 #: app/debug_page.php:904
 msgid "Language WPLANG:"
@@ -4018,13 +3991,13 @@ msgstr ""
 # @ wpematico
 #: app/plugin_functions.php:36
 msgid "Load WPeMatico Settings Page"
-msgstr "Načítať stránku nastavenia WPeMatico"
+msgstr "لود صفحه تنظیمات WPeMatico"
 
 # @ wpematico
 #: app/plugin_functions.php:36 app/settings_page.php:16 wpematico_class.php:364
 #: wpematico_class.php:365
 msgid "Settings"
-msgstr "Nastavenia"
+msgstr "تنظیمات"
 
 #: app/plugin_functions.php:37
 msgid "Take a look at the all bundled Addons"
@@ -4037,7 +4010,7 @@ msgstr ""
 # @ default
 #: app/plugin_functions.php:57
 msgid "Support"
-msgstr "Podpora"
+msgstr "حمایت"
 
 #: app/plugin_functions.php:58
 msgid "Rate Plugin"
@@ -4075,7 +4048,7 @@ msgstr ""
 # @ wpematico
 #: app/settings_page.php:132
 msgid "WPeMatico settings"
-msgstr "WPeMatico nastavenia"
+msgstr "WPeMatico تنظیمات"
 
 #: app/settings_page.php:177
 msgid "Get the PRO Version"
@@ -4088,17 +4061,17 @@ msgstr ""
 # @ wpematico
 #: app/settings_page.php:187
 msgid "Disable <b><i>Check Feeds before Save</i></b>"
-msgstr "Zakázať <b> <i>Kontrola kanálov pred uložiť</i></b>"
+msgstr "غیرفعال <b><i>چک کردن خبرخوان قبل از ذخیره</i></b>"
 
 # @ wpematico
 #: app/settings_page.php:189
 msgid "Enable <b><i>Del Hash</i></b>"
-msgstr "Umožňujú <b> <i>Del Hash</i></b>"
+msgstr "فعالسازی <b><i>قسمت مخلوط</i></b>"
 
 # @ wpematico
 #: app/settings_page.php:191
 msgid "Enable <b><i>See last log</i></b>"
-msgstr "Umožňujú <b> <i>vidieť posledný log</i></b>"
+msgstr "فعالسازی <b><i>دیدن آخرین لاگ</i></b>"
 
 #: app/settings_page.php:193
 msgid "Disable <i>WPeMatico Credits</i>"
@@ -4119,27 +4092,27 @@ msgstr ""
 # @ wpematico
 #: app/settings_page.php:201 app/settings_page.php:672
 msgid "Save settings"
-msgstr "Uložiť nastavenia"
+msgstr "ذخیره تنظیمات"
 
 # @ wpematico
 #: app/settings_page.php:212
 msgid "Sending e-Mails"
-msgstr "Odosielanie e-mailov"
+msgstr "ارسال ایمیل"
 
 # @ wpematico
 #: app/settings_page.php:214
 msgid "Sender Email:"
-msgstr "Odosielateľa e-mailu:"
+msgstr "فرستنده ایمیل:"
 
 # @ wpematico
 #: app/settings_page.php:215
 msgid "Sender Name:"
-msgstr "Meno odosielateľa:"
+msgstr "نام فرستنده:"
 
 # @ wpematico
 #: app/settings_page.php:217
 msgid "Sendmail Path:"
-msgstr "Sendmail cestu:"
+msgstr "مسیر ارسال:"
 
 #: app/settings_page.php:230
 #, php-format
@@ -4161,17 +4134,17 @@ msgstr ""
 # @ wpematico
 #: app/settings_page.php:378
 msgid "Enable Features"
-msgstr "Povoliť funkcie"
+msgstr "فعال کردن ویژگی ها"
 
 # @ wpematico
 #: app/settings_page.php:380
 msgid "Enable <b><i>Rewrite</i></b> feature"
-msgstr "Povoliť <b><i>prepísanie</i></b> funkciu"
+msgstr "فعال کردن <b><i>بازنویسی</i></b>ویژگی"
 
 # @ wpematico
 #: app/settings_page.php:383
 msgid "Enable <b><i>Words to Categories</i></b> feature"
-msgstr "Zapnúť funkciu <b><i>slová do kategórií</i></b>"
+msgstr "فعال کردن <b><i>کلمه ها به دسته بندی</i></b> ویژگی"
 
 #: app/settings_page.php:397
 msgid "Availables in addons at etruel.com."
@@ -4232,7 +4205,7 @@ msgstr ""
 # @ wpematico
 #: app/settings_page.php:435 app/settings_page.php:498
 msgid "Advanced Fetching"
-msgstr "Pokročilé očarujúce"
+msgstr "واکشی پیشرفته"
 
 #: app/settings_page.php:435
 msgid "(SimplePie Settings)"
@@ -4263,7 +4236,7 @@ msgstr ""
 # @ wpematico
 #: app/settings_page.php:472
 msgid "Force <b><i>Custom Simplepie Library</i></b>"
-msgstr "Sila <b> <i>Vlastné Simplepie knižnice</i></b>"
+msgstr "اجبار <b><i>کتابخانه سیمپل پای سفارشی</i></b>"
 
 #: app/settings_page.php:475
 msgid "Set Simplepie <b><i>stupidly fast</i></b>"
@@ -4285,7 +4258,6 @@ msgstr ""
 msgid "NOTE: It is extremely dangerous to allow unfiltered content."
 msgstr ""
 
-# @ wpematico
 #: app/settings_page.php:506
 msgid "Timeout running campaign:"
 msgstr ""
@@ -4294,7 +4266,6 @@ msgstr ""
 msgid "Seconds."
 msgstr ""
 
-# @ wpematico
 #: app/settings_page.php:508
 msgid ""
 "When a campaign running is interrupted, cannot be executed again until click "
@@ -4326,12 +4297,12 @@ msgstr ""
 # @ wpematico
 #: app/settings_page.php:553
 msgid "You must set up a cron job that calls:"
-msgstr "Musíte nastaviť cron zamestnanie, ktoré vyžaduje:"
+msgstr "شما باید کران جابزی فعال کنید تا صداکند:"
 
 # @ wpematico
 #: app/settings_page.php:555 app/settings_page.php:575
 msgid "or URL:"
-msgstr "alebo URL:"
+msgstr "یا آدرس:"
 
 #: app/settings_page.php:558
 msgid "Set a password to access the external CRON"
@@ -4407,7 +4378,7 @@ msgstr ""
 # @ wpematico
 #: app/settings_page.php:719
 msgid "Settings saved."
-msgstr "Nastavenia uložené."
+msgstr "تنظیمات ذخیره شد"
 
 #: app/settings_page.php:734
 msgid "Global Settings For Images."
@@ -4439,7 +4410,7 @@ msgstr ""
 # @ wpematico
 #: app/settings_page.php:741
 msgid "Caching all images"
-msgstr "Ukladanie do vyrovnávacej pamäte všetky obrázky"
+msgstr "کش کردن همه عکس ها"
 
 # @ wpematico
 #: app/settings_page.php:742 app/settings_page.php:792
@@ -4448,14 +4419,12 @@ msgid ""
 "This featured in the general Settings section, will be overridden for the "
 "campaign-specific options."
 msgstr ""
-"To najlepšie vo všeobecnej časti nastavenie, sa prepíšu pre Voľby špecifické "
-"pre kampaň.Esta característica en la sección de Opciones Generales, "
-"sobreescribirá las opciones de campañas específicas."
+"این ویژگی در  قسمت تنظیمات عمومی،گزینه های ویژه ی کمپین را بازنویسی می کند"
 
 # @ wpematico
 #: app/settings_page.php:746
 msgid "Image Attaching"
-msgstr "Priloženie obrázka"
+msgstr "درحال پیوست تصویر"
 
 #: app/settings_page.php:747
 msgid ""
@@ -4486,7 +4455,7 @@ msgstr ""
 #: app/settings_page.php:804 app/settings_page.php:806
 #: app/settings_page.php:835 app/settings_page.php:837
 msgid "Note"
-msgstr "Poznámka"
+msgstr "توجه"
 
 #: app/settings_page.php:755
 msgid ""
@@ -4752,15 +4721,13 @@ msgid ""
 "NOTE: It is extremely dangerous to allow unfiltered content because there "
 "may be some vulnerability in the source code."
 msgstr ""
-"Poznámka: To je extrémne nebezpečné umožniť nefiltrované obsah, pretože tam "
-"môžu byť niektoré zraniteľnosti v zdrojovom kóde.NOTA: Es extremadamente "
-"peligroso permitir contenido sin filtrar porque puede haber varias "
-"vulnerabilidades en el código original."
+"توجه داشته باشید: این بسیار خطرناک است اجازه می دهد تا محتوای فیلتر نشده چرا "
+"که ممکن است برخی از آسیب پذیری در کد منبع وجود داشته باشد."
 
 # @ wpematico
 #: app/settings_page.php:891
 msgid "See How WordPress Processes Post Content: "
-msgstr "Vidieť, ako WordPress procesy Post obsah: "
+msgstr "ببینید وردپرس چگونه مطالب را پردازش می کند:"
 
 #: app/settings_page.php:892
 msgid ""
@@ -4940,10 +4907,8 @@ msgid ""
 "Show `Del Hash` link on campaigns list.  This link delete all hash codes for "
 "check duplicates on every feed per campaign."
 msgstr ""
-"Ukázať &quot;Del Hash&quot; odkaz na zoznam kampaní.  Tento odkaz odstrániť "
-"všetky hash kódy pre kontrola duplicity na každý kanál za kampaň.Mostrar "
-"enlace `Del Hash` en listado de campañas. Este enlace eliminará todos los "
-"códigos hash para chequear duplicados en cada fuente de las campañas."
+"نمایش `قسمت مخلوط` لینک در لیست کمپین. این لینک حذف تمام کدهای مخلوط برای "
+"بررسی موارد تکراری در هر فید کمپین."
 
 #: app/settings_page.php:991
 msgid "Enable See last log."
@@ -4965,9 +4930,8 @@ msgid ""
 "I really appreciate if you can left this option blank to show the plugin's "
 "credits."
 msgstr ""
-"Som naozaj ocenia, ak môžete vľavo túto voľbu prázdnu Zobraziť plugin "
-"kredity.Realmetne apreciaría si pudieras dejar en blanco esta opción para "
-"mostrar los créditos de este plugin."
+"من واقعا قدردانی می کنم اگر این گزینه را برای نشان دادن اعتبار افزونه خالی "
+"بگذارید"
 
 #: app/settings_page.php:997
 #, php-format
@@ -5021,9 +4985,8 @@ msgid ""
 "This is for cut, exclude or include posts according to the letters o words "
 "<b>counted</b> at content."
 msgstr ""
-"To je pre rez, vylúčiť alebo zahrnúť príspevky podľa písmen o slová "
-"<b>počítané</b> na obsah.Esto es para cortar, excluir o oncluir "
-"publicaciones acordes a las letras o palabras <b>contadas</b> en contenidos."
+"می شوند<b>شمرده</b> این برای برش،حذف یا شامل شدن عبارت یا کلماتی است که در "
+"متن"
 
 #: app/settings_page.php:1029
 msgid ""
@@ -5062,13 +5025,13 @@ msgstr ""
 # @ default
 #: app/wpematico_functions.php:90
 msgid "Yes"
-msgstr "áno"
+msgstr "بله"
 
 # @ wpematico
 #: app/wpematico_functions.php:91
 #, php-format
 msgid "Checking duplicated title '%1s'"
-msgstr "Kontrola zdvojený názov &quot;%1&quot;"
+msgstr "چک کردن عنوان تکراری '%1s'"
 
 #: app/wpematico_functions.php:461
 msgid "- WordPress 3.9 or higher needed!"
@@ -5093,7 +5056,7 @@ msgstr ""
 # @ wpematico
 #: app/wpematico_functions.php:487
 msgid "- WP-Cron don't working please check it!"
-msgstr "-WP-Cron nemajú pracovné skontrolujte si to!"
+msgstr "کرن وردپرس کار نمی کند،لطفا آن را چک کنید."
 
 #: app/wpematico_functions.php:775
 msgid "Category Added in a WPeMatico Campaign"
@@ -5110,13 +5073,13 @@ msgstr ""
 #: app/wpematico_functions.php:1071 app/wpematico_functions.php:1081
 #, php-format
 msgid "The feed %s has been parsed successfully."
-msgstr "Krmiva %s bol úspešne analyzovaný."
+msgstr "با موفقیت تجزیه و تحلیل شد. %s خبرخوان"
 
 # @ wpematico
 #: app/wpematico_functions.php:1074 app/wpematico_functions.php:1084
 #, php-format
 msgid "The feed %s cannot be parsed. Simplepie said: %s"
-msgstr "Krmivo %s nie je možné analyzovať. SimplePie povedal: %s"
+msgstr "تجزیه و تحلیل نمی شود %s خبرخوان. ساده می گوید: %s"
 
 #: app/wpematico_functions.php:1355
 msgid "Error with wp_remote_request:"
@@ -5133,27 +5096,27 @@ msgstr ""
 # @ wpematico
 #: app/wpematico_functions.php:1544
 msgid "[WARNING]"
-msgstr "[UPOZORNENIE]"
+msgstr "[هشدار]"
 
 # @ wpematico
 #: app/wpematico_functions.php:1549
 msgid "[ERROR]"
-msgstr "[CHYBA]"
+msgstr "[خطا]"
 
 # @ wpematico
 #: app/wpematico_functions.php:1553
 msgid "[DEPRECATED]"
-msgstr "[ODMIETANÉ]"
+msgstr "[توصیه]"
 
 # @ wpematico
 #: app/wpematico_functions.php:1556
 msgid "[STRICT NOTICE]"
-msgstr "[PRÍSNE OZNÁMENIA]"
+msgstr "[توجه شدیدی به]"
 
 # @ wpematico
 #: app/wpematico_functions.php:1559
 msgid "[RECOVERABLE ERROR]"
-msgstr "[NEOPRAVITEĽNÁ CHYBA]"
+msgstr "[خطا قابل بازیابی]"
 
 #: wpematico.php:37
 msgid "PHP 5.3.0 or higher needed!"
@@ -5166,73 +5129,73 @@ msgstr ""
 # @ wpematico
 #: wpematico_class.php:158
 msgid "Last Processed Campaigns:"
-msgstr "Posledné spracované kampane:"
+msgstr "آخرین کمپین های پردازش شده:"
 
 # @ wpematico
 #: wpematico_class.php:164 wpematico_class.php:197 wpematico_class.php:229
 msgid "Edit Campaign"
-msgstr "Upraviť kampaň"
+msgstr "ویرایش کمپین"
 
 # @ wpematico
 #: wpematico_class.php:174 wpematico_class.php:176
 #, php-format
 msgid "Fetch done in %1s sec."
-msgstr "Fetch urobil v %1 sek."
+msgstr "ثانیه انجام شد %1s واکشی در"
 
 # @ wpematico
 #: wpematico_class.php:191
 msgid "Next Scheduled Campaigns:"
-msgstr "Ďalšej plánovanej kampane:"
+msgstr "کمپین های بعدی برنامه ریزی شده:"
 
 # @ wpematico
 #: wpematico_class.php:225
 msgid "Campaigns"
-msgstr "Kampane"
+msgstr "کمپین ها"
 
 # @ wpematico
 #: wpematico_class.php:226
 msgid "Campaign"
-msgstr "Kampaň"
+msgstr "کمپین"
 
 # @ wpematico
 #: wpematico_class.php:227
 msgid "Add New"
-msgstr "Pridať nové"
+msgstr "افزودن جدید"
 
 # @ wpematico
 #: wpematico_class.php:228
 msgid "Add New Campaign"
-msgstr "Pridať novú kampaň"
+msgstr "افزودن کمپین جدید"
 
 # @ wpematico
 #: wpematico_class.php:230
 msgid "New Campaign"
-msgstr "Nová kampaň"
+msgstr "کمپین جدید"
 
 # @ wpematico
 #: wpematico_class.php:231
 msgid "All Campaigns"
-msgstr "Všetky kampane"
+msgstr "همه کمپین ها"
 
 # @ wpematico
 #: wpematico_class.php:232
 msgid "View Campaign"
-msgstr "Zobrazenie kampaň"
+msgstr "نمایش کمپین"
 
 # @ wpematico
 #: wpematico_class.php:233
 msgid "Search Campaign"
-msgstr "Hľadať kampaň"
+msgstr "جستجوی کمپین"
 
 # @ wpematico
 #: wpematico_class.php:234
 msgid "No campaign found"
-msgstr "No kampaň našiel"
+msgstr "کمپینی یافت نشد."
 
 # @ wpematico
 #: wpematico_class.php:235
 msgid "No Campaign found in Trash"
-msgstr "Žiadne kampane, nachádza v koši"
+msgstr "کمپینی در موارد پاک شده یافت نشد."
 
 #: wpematico_class.php:280
 msgid ""
@@ -5286,83 +5249,33 @@ msgstr ""
 msgid "Invalid email."
 msgstr ""
 
-# @ default
-#~ msgid "FAQ"
-#~ msgstr "FAQ"
-
-# @ wpematico
-#~ msgid "Donate"
-#~ msgstr "Darovať"
-
-# @ wpematico
-#~ msgid "Import old version"
-#~ msgstr "Import starú verziu"
-
-# @ wpematico
-#~ msgid "WPeMatico: Found campaigns from previous versions."
-#~ msgstr "WPeMatico: Našiel kampane z predchádzajúcich verzií."
-
-# @ wpematico
-#~ msgid "If you want import or delete them go to:"
-#~ msgstr "Ak chcete importovať alebo mazať prejsť na:"
-
-# @ wpematico
-#~ msgid "Run Now"
-#~ msgstr "Spustiť teraz"
-
-# @ wpematico
-#~ msgid "Deactivate this campaign"
-#~ msgstr "Deaktivovať túto kampaň"
-
-# @ wpematico
-#~ msgid "Activate schedule"
-#~ msgstr "Aktivovať plán"
-
-# @ wpematico
-#~ msgid "Deactivate"
-#~ msgstr "Deaktivovať"
-
-# @ wpematico
-#~ msgid "Activate"
-#~ msgstr "Aktivovať"
-
-# @ wpematico
-#~ msgid "Run Now this campaign"
-#~ msgstr "Beh teraz tejto kampane"
-
-# @ default
-#~ msgid "Next Run"
-#~ msgstr "Ďalšom spustení"
-
 # @ wpematico
 #~ msgid "Campaign Schedule"
-#~ msgstr "Harmonogram kampane"
+#~ msgstr "برنامه زمانبندی کمپین"
 
 # @ wpematico
 #~ msgid "A little Help"
-#~ msgstr "Trochu pomôcť"
+#~ msgstr "کمی کمک"
 
 # @ wpematico
 #~ msgid "Basics:"
-#~ msgstr "Základy:"
+#~ msgstr "پایه:"
 
 # @ wpematico
 #~ msgid ""
 #~ "The rewriting settings allow you to replace parts of the content with the "
 #~ "text you specify."
 #~ msgstr ""
-#~ "Prepisovanie nastavení umožňuje nahradenie častí obsahu s text zadáte.Las "
-#~ "opciones de Re-escritura permiten reemplazar partes del contenido con un "
-#~ "texto que se especifique."
+#~ "تنظیمات بازنویسی به شما این امکان را می دهد تا قسمت هایی از نوشته را با "
+#~ "متنی که مشخص کرده اید عوض شوند."
 
 # @ wpematico
 #~ msgid ""
 #~ "The Word to Category option allow you to assign singular category to the "
 #~ "post."
 #~ msgstr ""
-#~ "Slovo do kategórie možnosť umožňuje priradiť singulární kategórie post.La "
-#~ "opción Palabra a Categoría le permite asignar categorías singulares a la "
-#~ "publicación."
+#~ "گزینه انتصاب کلمه به دسته بندی به شما این اجازه را می دهد تا یک دسته بندی "
+#~ "خاص برای نوشته انتخاب کنید."
 
 # @ wpematico
 #~ msgid ""
@@ -5372,44 +5285,26 @@ msgstr ""
 #~ "motor and car to Engines, you can use the | operator: (motor|car). If you "
 #~ "want Case insensitive on RegEx, add \"/i\" at the end of RegEx."
 #~ msgstr ""
-#~ "Pre pokročilých používateľov, regulárne výrazy sú podporované. Pomocou "
-#~ "tohto umožní aby ste silnejší náhradníkov. Take slovo náhradu príklad. "
-#~ "Namiesto použitia mnohých Word2Cat krabice na priradenie motor a auto "
-#~ "Motory, môžete použiť | prevádzkovateľ: (motor|car). Ak chcete veci "
-#~ "necitlivé na RegEx, pridať \"/i\" na konci RegEx.Para usuarios avanzados, "
-#~ "las expresiones regulares estan permitidas. Usando esto puedes permitirte "
-#~ "hacer mejores reemplazos. Tomen palabras multiples por ejemplo. En lugar "
-#~ "de usar muchas cajas de Word2Cat para asignar 'motor' y 'autos' a "
-#~ "'maquinaria', puedes usar el operador | (motor|auto. Si desea caso "
-#~ "insensible a mayusculas con RegEx, agregue \"/i\" al final de RegEx."
-
-# @ wpematico
-#~ msgid ""
-#~ "The post template takes the full text of each feed item it encounters, "
-#~ "and then uses it as the post content.<br />A post template, if used, "
-#~ "allows you to alter that content, by adding extra information, such as "
-#~ "text, images, campaign data, etc."
-#~ msgstr ""
-#~ "Príspevok šablóny trvá úplné znenie jednotlivých kŕmnych položiek "
-#~ "stretne, a potom používa ako post obsah.<br>Príspevok šablónu, ak sú "
-#~ "použité, umožňujek zmene obsahu pridaním extra informácie, napríklad "
-#~ "text, obrázky, kampaň dáta, atď.El template de la publicación toma el "
-#~ "texto completo de cada fuente que encuentra, y luego lo utiliza como el "
-#~ "contenido de la publicaión. <br/>Un template de publicación, si esta en "
-#~ "uso, le permite alterar el contenido, agregando información extra, como "
-#~ "texto, imágenes y datos de la campaña, etc."
+#~ "برای کاربران پیشرفته، عبارات منظم پشتیبانی می شوند. به شما اجازه استفاده "
+#~ "از جایگزینی قوی تر را می دهد. بجای جایگزینی کلمه های متعدد به عنوان مثال. "
+#~ "(االاغ | الاغ): عملگر | به جای استفاده از جعبه های بازنویسی بسیار می "
+#~ "توانید از این امکان بصورت کلی استفاده کنید."
 
 # @ wpematico
 #~ msgid "Enable Post Template"
-#~ msgstr "Umožňujú Post šablóny"
+#~ msgstr "فعالسازی قالب نوشته"
+
+# @ wpematico
+#~ msgid "Some examples to help you to create custom post template."
+#~ msgstr "برخی از نمونه برای کمک به شما برای ایجاد پست سفارشی قالب."
 
 # @ wpematico
 #~ msgid "Enable Cache Images for this campaign?"
-#~ msgstr "Povoliť vyrovnávaciu pamäť obrázky pre túto kampaň?"
+#~ msgstr "فعالسازی کش تصویر برای این کمپین؟"
 
 # @ wpematico
 #~ msgid "Image Caching"
-#~ msgstr "Obrázok Caching"
+#~ msgstr "کش کردن تصویر"
 
 # @ wpematico
 #~ msgid ""
@@ -5417,23 +5312,16 @@ msgstr ""
 #~ "img&gt; tags) is Stored locally to the Wordpress UPLOADS Dir "
 #~ "(Recommended)."
 #~ msgstr ""
-#~ "Keď obrázok caching je na, kópiu každého obrázka (len v &amp;lt;img&amp;"
-#~ "gt; Tagy) je uložené lokálne do Wordpress obrázky Dir (odporúča sa)."
-#~ "Cuando el cacheo de imagen esta activado, una copia de cada imagen "
-#~ "encontrada (solo en etiquetas &lt;img&gt;) es descargada a la carpeta "
-#~ "especificada, por defecto es en la carpeta de Wordpress \"Uploads"
-#~ "\" (Recomendado)."
+#~ "وقتی کش تصویر فعال است،یک نسخه از تصاویر در دایرکتوری وردپرس شما کپی می "
+#~ "شود (توصیه می شود)"
 
 # @ wpematico
 #~ msgid ""
 #~ "If not enabled all images will linked to the image owner's server, but "
 #~ "also make your website faster for your visitors."
 #~ msgstr ""
-#~ "Ak nebolo povolené všetky obrázky budú prepojené na obraz majiteľa "
-#~ "server, ale aj aby vaše webové stránky rýchlejšie pre vaši návštevníci.Si "
-#~ "no está activada todas las imágenes estarán enlazadas al server de su "
-#~ "propietario, pero esto favorece a la velocidad de tu sitio para los "
-#~ "visitantes."
+#~ "اگر فعال نباشد تصاویر به سرور اصلی لینک می شوند،اما همچنان باید وبسایت را "
+#~ "برای کاربران سریعتر کنید."
 
 # @ wpematico
 #~ msgid ""
@@ -5441,16 +5329,12 @@ msgstr ""
 #~ "caching is taken. Enabling this feature here will be overridden only for "
 #~ "this campaign the general Settings options for images caching."
 #~ msgstr ""
-#~ "Ak to najlepšie je caching vypnuté všeobecné nastavenie možnosti pre "
-#~ "obrázky je prevzatý. Aktivácia tejto funkcie tu sa prepíšu iba pre túto "
-#~ "kampaň všeobecné nastavenie možnosti pre obrázky caching.Si esta "
-#~ "característica está deshabilitada, las opciones generales de cacheo de "
-#~ "imágenes serán tomadas. Activando esta característica aquí, "
-#~ "sobreescribirá esta opción solo para esta campaña."
+#~ "اگر این ویژگی را غیر فعال شود گزینه های تنظیمات برای تصاویر ذخیره گرفته "
+#~ "شده است."
 
 # @ wpematico
 #~ msgid "No link to source images"
-#~ msgstr "Žiadny odkaz na zdrojové obrazy"
+#~ msgstr "هیچ لینکی به تصویر منبع"
 
 # @ wpematico
 #~ msgid ""
@@ -5458,27 +5342,21 @@ msgstr ""
 #~ "of the &lt;img&gt;. <br />If disable cache images, enabling this for "
 #~ "delete \"src\" attribute of all &lt;img&gt; in the post."
 #~ msgstr ""
-#~ "Ak vybraný a obrázok nahrať get error, potom odstráňte \"src\" atribút "
-#~ "&amp;lt;img&amp;gt;.<br>Ak vypnutie cache obrázky, Zapnutie tohto pre "
-#~ "odstránenie\"src\" atribút všetkých &amp;lt;img&amp;gt; v post.Si "
-#~ "selecciona una imagen subida y obtiene un error, elimine el atributo \"src"
-#~ "\" de &lt;img&gt;. <br />Si esta deshabilitado el cacheo de imágenes, "
-#~ "activelo para borrar el atributo \"src\" de todas &lt;img&gt; en las "
-#~ "publicaciones."
+#~ "If selected and image upload get error, then delete the \"src\" attribute "
+#~ "of the &lt;img&gt;. <br />If disable cache images, enabling this for "
+#~ "delete \"src\" attribute of all &lt;img&gt; in the post."
 
 # @ wpematico
 #~ msgid "Cancel Cache Images for this campaign?"
-#~ msgstr "Zrušiť Cache obrázky pre túto kampaň?"
+#~ msgstr "لغو کردن کش کردن تصویر برای این کمپین؟"
 
 # @ wpematico
 #~ msgid ""
 #~ "Set it to 0 for unlimited. If set to a X value, only the last X items "
 #~ "will be selected, ignoring the older ones."
 #~ msgstr ""
-#~ "Nastavte na 0 pre neobmedzené. Ak nastavená na hodnotu X, len posledný X "
-#~ "položiek bude vyberajú, ignorovanie tie staršie.Configure a 0 para "
-#~ "ilimitado. Si se configura a un valor X, sólo los últimos X ítems serán "
-#~ "seleccionados, ignorando los anteriores."
+#~ "تنظیم بروی 0 برای نامحدود. اگر مقدار X داده شود، تنها تا X آخرین انتخاب "
+#~ "خواهد شد و ارسالهای قدیمی تر نادیده گرفته می شوند "
 
 # @ wpematico
 #~ msgid ""
@@ -5486,103 +5364,139 @@ msgstr ""
 #~ "moment they're created. By using this option, however, you can alter that "
 #~ "behavior."
 #~ msgstr ""
-#~ "Predvolene WPeMatico nastaví dátum a čas miest s chvíľu sme vytvorili. "
-#~ "Používať túto možnosť, však môžete zmeniť, že správanie.Por defecto, "
-#~ "WPeMatico usa la fecha y hora en que la entrada es creada.  Usando esta "
-#~ "opción puede cambiar este comportamiento."
+#~ "بطور پیش فرض افزونه تاریخ را زمان ایجاد پست می داند و شما می توانید با "
+#~ "این گزینه رفتار را تغییر دهید"
 
 # @ wpematico
 #~ msgid "The created posts will be assigned to this author."
-#~ msgstr "Vytvorené miesta bude pridelená tohto autora."
+#~ msgstr "پست هایی که ایجاد می شود به این کاربر نسبت داده می شود."
 
 # @ wpematico
 #~ msgid "Post Content Unfiltered:"
-#~ msgstr "Post obsah nefiltrovaných:"
+#~ msgstr "محتوا نوشته فیلتر نشده:"
 
 # @ wpematico
 #~ msgid "<b><i>Skip the Wordpress post content filters</i></b>"
-#~ msgstr "<b><i>Preskočiť Wordpress post obsahové filtre</i></b>"
+#~ msgstr "<b><i>صرف نظر از فیلتر محتوای پست وردپرس</i></b>"
 
 # @ wpematico
 #~ msgid "Please fill in at least one feed."
-#~ msgstr "Vyplňte prosím aspoň jeden informačný kanál."
+#~ msgstr "لطفا حداقل یک کادر را تکمیل کنید."
 
 # @ wpematico
 #~ msgid ""
 #~ "If you're not sure about the exact feed url, just type in the domain "
 #~ "name, and the feed will be autodetected."
 #~ msgstr ""
-#~ "Ak si nie ste istí o presný krmivá url, stačí len zadať názov domény, a "
-#~ "krmivá budú autodetected.Si no está seguro de la URL de la fuente, "
-#~ "solamente escriba el dominio, y la fuente será autodetectada."
+#~ "اگر در مورد آدرس دقیق خبرخوان اطمینان ندارید،تنها کافیست آدرس سایت را "
+#~ "بنویسید تا بصورت خودکار خبرخوان یافت شود"
 
 # @ wpematico
 #~ msgid "Feed URL:"
-#~ msgstr "Feed URL:"
+#~ msgstr "آدرس خبرخوان:"
 
 # @ wpematico
 #~ msgid "Check if this item work"
-#~ msgstr "Skontrolujte, či táto položka pracovať"
+#~ msgstr "چک کردن کارکرد این مورد"
 
 # @ wpematico
 #~ msgid "Checking"
-#~ msgstr "Kontrola"
+#~ msgstr "بررسی"
 
 # @ wpematico
 #~ msgid "New Feed:"
-#~ msgstr "Nové krmivo:"
+#~ msgstr "خبرخوان جدید:"
 
 # @ default
 #~ msgid "Augest"
-#~ msgstr "Augest"
+#~ msgstr "آگوست"
+
+# @ wpematico
+#~ msgid ""
+#~ "Add categories from the source post and/or assign existing categories "
+#~ "below."
+#~ msgstr ""
+#~ "افزودن دسته از نوشته منبع و / یا دسته بندی های موجود در زیر اختصاص دهید."
 
 # @ wpematico
 #~ msgid "Featured Image Into Post."
-#~ msgstr "Odporúčané obrázok do príspevku."
+#~ msgstr "تصویر برجسته درون نوشته."
 
 # @ wpematico
 #~ msgid "Adding unfiltered content"
-#~ msgstr "Pridaním nefiltrované obsahu"
+#~ msgstr "افزودن محتوای فیلتر نشده"
 
 # @ wpematico
 #~ msgid "Uploading images."
-#~ msgstr "Nahranie obrázkov."
+#~ msgstr "آپلود تصویر"
 
 # @ wpematico
 #~ msgid "Uploading image..."
-#~ msgstr "Nahrať obrázok..."
+#~ msgstr "درحال آپلود تصویر..."
+
+# @ wpematico
+#~ msgid "Run Now"
+#~ msgstr "الان اجرا کردن"
+
+# @ wpematico
+#~ msgid "Deactivate this campaign"
+#~ msgstr "غیرفعالسازی این کمپین"
+
+# @ wpematico
+#~ msgid "Activate schedule"
+#~ msgstr "غعالسازی برنامه زمان بندی"
+
+# @ wpematico
+#~ msgid "Deactivate"
+#~ msgstr "غیرفعالسازی"
+
+# @ wpematico
+#~ msgid "Activate"
+#~ msgstr "فعالسازی"
+
+# @ wpematico
+#~ msgid "Run Now this campaign"
+#~ msgstr "الان این کمپین را اجرا کن"
+
+# @ default
+#~ msgid "Next Run"
+#~ msgstr "اجرای بعدی"
+
+# @ default
+#~ msgid "Error exporting post."
+#~ msgstr "خطا در صدور ارسال."
 
 # @ wpematico
 #~ msgid "- WordPress 3.1 or higher needed!"
-#~ msgstr "-WordPress 3.1 alebo vyššia potreba!"
+#~ msgstr "نسخه وردپرس بالای 3.1 نیاز است"
 
 # @ wpematico
 #~ msgid "- PHP 5.2.0 or higher needed!"
-#~ msgstr "-PHP 5.2.0 alebo vyššia potreba!"
+#~ msgstr "پی اچ پی نسخه 5.2یا بالاتر نیاز است"
 
 # @ wpematico
 #~ msgid "Thanks for test, use and enjoy this plugin."
-#~ msgstr "Vďaka za test, používať a tešiť tento plugin."
+#~ msgstr "از امتحان،استفاده و لذت بردن از این افزونه متشکرم"
 
 # @ wpematico
 #~ msgid "If you like it, I really appreciate a donation."
-#~ msgstr "Ak máte radi to, naozaj oceňujem daru."
+#~ msgstr "اگر شما این را دوست دارید،من واقعا از کمک مالی قدردانی می کنم."
 
 # @ wpematico
 #~ msgid "Click for Donate"
-#~ msgstr "Kliknite pre darovať"
+#~ msgstr "کلیک برای حمایت مالی"
 
 # @ wpematico
 #~ msgid "Send mail method:"
-#~ msgstr "Odoslať mail metóda:"
+#~ msgstr "روش ارسال پست الکترونیکی:"
 
 # @ wpematico
 #~ msgid "PHP: mail()"
-#~ msgstr "PHP: mail)"
+#~ msgstr "PHP: mail()"
 
 # @ wpematico
 #~ msgid "Sendmail"
-#~ msgstr "Sendmail"
+#~ msgstr "ارسال ایمیل"
 
 # @ wpematico
 #~ msgid "SMTP"
@@ -5590,58 +5504,54 @@ msgstr ""
 
 # @ wpematico
 #~ msgid "SMTP Hostname:"
-#~ msgstr "Názov hostiteľa SMTP:"
+#~ msgstr "SMTP نام میزبان:"
 
 # @ wpematico
 #~ msgid "SMTP Secure Connection:"
-#~ msgstr "Zabezpečené pripojenie SMTP:"
+#~ msgstr "SMTP اتصال امن:"
 
 # @ wpematico
 #~ msgid "none"
-#~ msgstr "žiadny"
+#~ msgstr "هیچ"
 
 # @ wpematico
 #~ msgid "SMTP Username:"
-#~ msgstr "SMTP užívateľské meno:"
+#~ msgstr "SMTP نام کاربری:"
 
 # @ wpematico
 #~ msgid "SMTP Password:"
-#~ msgstr "Heslo SMTP:"
+#~ msgstr "SMTP گذرواژه:"
 
 # @ wpematico
 #~ msgid "Advanced"
-#~ msgstr "Pokročilé"
+#~ msgstr "پیشرفته"
 
 # @ wpematico
 #~ msgid ""
 #~ "Check this if you don't want automatic check feed URLs before save every "
 #~ "campaign. "
 #~ msgstr ""
-#~ "Pozrite sa na Ak chcete automatickú kontrolu krmív URL pred uložiť "
-#~ "každých kampaň. Tilda esto si no deseas chequeos automáticos de las URLs "
-#~ "de las fuentes antes de guardar cada campaña."
+#~ "اگر نمی خواهید آدرس های فید بصورت خودکار قبل از ذخیره چک شوند علامت بزنید."
 
 # @ wpematico
 #~ msgid ""
 #~ "Show `See Log` link on campaigns list.  This link show the last fetch log "
 #~ "of campaign."
 #~ msgstr ""
-#~ "Ukázať &quot;Pozri Log&quot; odkaz na zoznam kampaní.  Tento odkaz "
-#~ "Zobraziť posledný fetch protokol kampaň.Mostrar enlace `See Log` en "
-#~ "listado de campañas. Este enlace muestra el ultimo reporte de análisis de "
-#~ "la campaña."
+#~ "نمایش `مشاهده ورود` لینک در لیست کمپین. این لینک نشان می دهد آخرین واکشی "
+#~ "ورود به سیستم از کمپین."
 
 # @ wpematico
 #~ msgid "Disable <b><i>WPeMatico Credits</i> on post.</b>"
-#~ msgstr "Zakázať <b> <i>WPeMatico kredity</i> na post.</b>"
+#~ msgstr "غیرفعالسازی <b><i>WPeMatico اعتبار</i> روی ارسال</b>"
 
 # @ wpematico
 #~ msgid "Images"
-#~ msgstr "Obrázky"
+#~ msgstr "تصاویر"
 
 # @ wpematico
 #~ msgid "Cache Images."
-#~ msgstr "Cache obrázkov."
+#~ msgstr "حافظه پنهان عکس."
 
 # @ wpematico
 #~ msgid ""
@@ -5649,32 +5559,24 @@ msgstr ""
 #~ "feed (only in &lt;img&gt; tags) is downloaded to the Wordpress UPLOADS "
 #~ "Dir."
 #~ msgstr ""
-#~ "Keď obrázok cache zapnutá, kópiu každého obrázka nájsť v obsahu každého "
-#~ "krmivo (len vo &amp;lt;img&amp;gt; Tagy) prevezme na Wordpress obrázky "
-#~ "Dir.Cuando el cacheo de imágenes esta activado, una copia de cada imagen "
-#~ "encontrada en el contenido de cada fuente (sólo en etiquetas &lt;img&gt;) "
-#~ "es descargada a la carpeta UPLOADS de Wordpress."
+#~ "وقتی کش تصویر روشن هست،هر عکسی که در محتوای خبرخوان موجود هست در آپلود "
+#~ "دایرکتوری وردپرس هاست شما کپی می شود."
 
 # @ wpematico
 #~ msgid ""
 #~ "If selected and image upload get error, then delete the \"src\" attribute "
 #~ "of the &lt;img&gt;. Check this for don't link images from external sites."
 #~ msgstr ""
-#~ "Ak vybraný a obrázok nahrať get error, potom odstráňte \"src\" atribút "
-#~ "&amp;lt;img&amp;gt;. Skontrolujte, či to pre neodkazujte obrázky z "
-#~ "externých lokalít.Si está seleccionado y una imagen subida obtiene un "
-#~ "error, eliminará el atributo \"src\" de &lt;img&gt;. <br />, actívelo "
-#~ "para no enlazar imágenes de sitios externos."
+#~ "اگر تصویر آپلود شده خطا داد سورس را پاک کنید &lt;img&gt;. این را برای "
+#~ "تصاویر از سایت های خارجی چک کنید"
 
 # @ wpematico
 #~ msgid ""
 #~ "By default when image caching is on (and everything is working fine), a "
 #~ "copy of every image found is added to Wordpress Media."
 #~ msgstr ""
-#~ "V predvolenom nastavení, keď obraz caching je o (a všetko je v poriadku), "
-#~ "kópiu každý obrázok našiel je pridaný do Wordpress médií.Por defecto "
-#~ "cuando el cacheo de imágenes esta activado (y todo funciona bien), una "
-#~ "copia de cada imagen encontrada es agregada a los medios de Wordpress."
+#~ "بطور پیشفرض وقتی کش تصویر روشن است و همه چیز خوب کار می کند،یک کپی از هر "
+#~ "تصویری در رسانه ی وردپرس یافت می شود."
 
 # @ wpematico
 #~ msgid ""
@@ -5682,80 +5584,69 @@ msgstr ""
 #~ "in WP media library; but if you see that the job process is too slowly "
 #~ "you can deactivate this here."
 #~ msgstr ""
-#~ "Ak je povolená Image priloženie všetkých obrázkov bude pripojené k post "
-#~ "majiteľ v WP knižnice médií; ale keď vidíte, že proces práce je príliš "
-#~ "pomaly si môžete Deaktivujte toto tu.Si está activado Adjuntamiento de "
-#~ "Imágenes, todas las imágenes serán adjuntadas al dueño de la publicaión "
-#~ "en la librería de medios de WP; pero si percibes que el proceso es muy "
-#~ "lento, puedes desactivarlo desde aquí."
+#~ "اگر پیوست تصویر را فعال کنید تصاویر به پست مالک در وردپرس کتابخانه رسانه "
+#~ "های متصل میشود، اما اگر شما می بینید که روند کار بیش از حد آرام است شما "
+#~ "می توانید این را در اینجا غیر فعال کنید."
 
 # @ wpematico
 #~ msgid "Enable first image found on content as Featured Image."
-#~ msgstr "Povoliť prvý obrázok našiel na obsah ako predstavoval obraz."
+#~ msgstr "اولین تصویر در محتوا را بعنوان تصویر برجسته انتخاب کردن"
 
 # @ wpematico
 #~ msgid ""
 #~ "If you need use this feature, you can activate here.  Not recommended if "
 #~ "you will not use this."
 #~ msgstr ""
-#~ "Ak potrebujete použiť túto funkciu, môžete aktivovať tu.  Neodporúča Ak "
-#~ "ste nebudete používať.Si necesitas usar esta característica, puedes "
-#~ "activarla aquí. No es recomendado que lo hagas si no vas a usarla."
+#~ "اگر به این ویژگی نیاز دارید در اینجا فعال کنید.اگر استفاده نمی کنید توصیه "
+#~ "نمی شود"
 
 # @ wpematico
 #~ msgid ""
 #~ "If you need this feature in every campaign, you can activate here.  Not "
 #~ "recommended if you will not use this."
 #~ msgstr ""
-#~ "Ak potrebujete túto funkciu v každej kampane, môžete aktivovať tu.  Nie "
-#~ "odporúča, ak nebudete používať to.Si necesitas esta característica en "
-#~ "cada campaña, puedes activarla aquí. No es recomendado hacerlo si no vas "
-#~ "a usarla."
+#~ "اگر این ویژگی را در هر کمپینی نیاز دارید اینجا فعالسازی کنید،اگر استفاده "
+#~ "نمی کنید توصیه نمی شود."
 
 # @ wpematico
 #~ msgid "Enable <b><i>Keyword Filtering</i></b> feature"
-#~ msgstr "Zapnúť funkciu <b><i>Kľúčového slova filtrovanie</i></b>"
+#~ msgstr "فعال کردن <b><i>فیلتر کلیدواژه</i></b> ویژگی"
 
 # @ wpematico
 #~ msgid ""
 #~ "If you need this feature in every campaign, you can activate here.  ONLY "
 #~ "AVAILABLE AT PRO VERSION."
 #~ msgstr ""
-#~ "Ak potrebujete túto funkciu v každej kampane, môžete aktivovať tu.  LEN K "
-#~ "DISPOZÍCII NA VERZIU PRO.Si necesitas esta característica en cada "
-#~ "campaña, puedes activarla aquí. SOLO DISPONIBLE EN LA VERSION PRO."
+#~ "اگر این ویژگی را در هر کمپینی نیاز دارید اینجا فعالسازی کنید،تنها در نسخه "
+#~ "حرفه ای موجود است."
 
 # @ wpematico
 #~ msgid ""
 #~ "This is for exclude or include posts according to the keywords "
 #~ "<b>founded</b> at content or title."
 #~ msgstr ""
-#~ "To je pre vylúčiť alebo zahrnúť príspevky podľa kľúčových slov "
-#~ "<b>založená</b>b > v obsahu alebo názve.Esto es para incluir o excluir "
-#~ "publicaciones acordes a las palabras clave <b>encontradas</b> en "
-#~ "contenidos o títulos."
+#~ "در عنوان یا محتوا <b>یافت می شوند</b> این برای رد کردن یا شامل شدن "
+#~ "کلیدواژه هایی در ارسال هست که"
 
 # @ wpematico
 #~ msgid "Enable <b><i>Word count Filters</i></b> feature"
-#~ msgstr "Zapnúť funkciu <b><i>Word count filtre</i></b>"
+#~ msgstr "ویژگی <b><i>فیلتر شمارش کلمه</i></b> فعالسازی"
 
 # @ wpematico
 #~ msgid "Enable <b><i>Custom Title</i></b> feature"
-#~ msgstr "Povoliť <b><i>Vlastné názov</i></b> funkcie"
+#~ msgstr "ویژگی <b><i>عنوان سفارشی</i></b> فعالسازی"
 
 # @ wpematico
 #~ msgid ""
 #~ "If you want a custom title for posts of a campaign, you can activate "
 #~ "here.  ONLY AVAILABLE AT PRO VERSION."
 #~ msgstr ""
-#~ "Ak chcete vlastný názov pre príspevky kampane, môžete aktivovať tu.  K "
-#~ "DISPOZÍCII LEN VO VERZII PRO.Si deseas un título personalizado para "
-#~ "publicaciones de uan campaña, puedes activarla aquí. SOLO DISPONIBLE EN "
-#~ "LA VERSION PRO."
+#~ "اگر برای ارسال های کمپین عنوان سفارشی می خواهید در اینجا فعال کنید،تنها "
+#~ "در نسخه حرفه ای موجود است."
 
 # @ wpematico
 #~ msgid "Enable Special <b><i>1 Minute fetch</i></b> feature"
-#~ msgstr "Zapnúť funkciu špeciálne <b><i>1 minúta priniesla</i></b>"
+#~ msgstr "فعال کردن <b><i>یک دقیقه واکشی</i></b>خاص ویژگی"
 
 # @ wpematico
 #~ msgid ""
@@ -5763,16 +5654,12 @@ msgstr ""
 #~ "every campaign, you can activate here.    Only recommended for short "
 #~ "posts and really fast servers.  ONLY AVAILABLE AT PRO VERSION."
 #~ msgstr ""
-#~ "Ak chcete vidieť možnosti načítania RSS príspevky len každú 1 minútu na "
-#~ "každej kampane, môžete aktivovať tu.    Odporúča sa len pre krátke "
-#~ "príspevky a naozaj rýchle servery.  K DISPOZÍCII LEN VO VERZII PRO.Si "
-#~ "deseas ver la opción para analizar las publicaciones RSS cada 1 minuto en "
-#~ "cada campaña, activa aquí. Sólo recomendado para publicaciones breves y "
-#~ "servidores rápidos. SOLO DISPONIBLE EN LA VERSION PRO."
+#~ "اگر می خواهید واکشی هر یک دقیقه انجام شود می توانید فعال کنید.تنها برای "
+#~ "پست های کوتاه و سرور های قوی توصیه می شود.تنها در نسخه حرفه ای موجود است"
 
 # @ wpematico
 #~ msgid "Enable attempt to <b><i>Get Full Content</i></b> feature"
-#~ msgstr "Povoliť pokus <b><i>Získať úplný obsah</i></b> funkcie"
+#~ msgstr "فعال کردن تلاش برای <b><i>گرفتن محتوای کامل</i></b> ویژگی"
 
 # @ wpematico
 #~ msgid ""
@@ -5780,74 +5667,71 @@ msgstr ""
 #~ "can activate here.  Not recommended if you will not use this.  ONLY "
 #~ "AVAILABLE AT PRO VERSION."
 #~ msgstr ""
-#~ "Ak chcete pokúšať o získanie obsahu celé položky kampane, môžete "
-#~ "aktivovať tu.  Neodporúča, ak nebudete používať to.  K DISPOZÍCII LEN V "
-#~ "PRO VERZIA.Si deseas intentar obtener el contenido completo de una "
-#~ "campaña, puedes activarlo aquí. No es recomendado hacerlo si no usarás "
-#~ "esta opción. SOLO DISPONIBLE EN LA VERSION PRO."
+#~ "اگر می خواهید به تلاش برای به دست آوردن مطالب مورد کامل از کمپین، شما می "
+#~ "توانید در اینجا فعال کنید. توصیه نمی شود اگر شما از این استفاده نمی کنید، "
+#~ "تنها در نسخه حرفه ای موجود است."
+
+# @ wpematico
+#~ msgid "Click here for test if SimplePie lib works well on your server."
+#~ msgstr "اینجا کلیک کنید برای تست کارکرد سیمپل پای بر روی سرور شما"
 
 # @ wpematico
 #~ msgid "Check this if you want to ignore Wordpress Simplepie library. "
 #~ msgstr ""
-#~ "Pozrite sa Ak chcete ignorovať Wordpress Simplepie knižnice. Active esto "
-#~ "si quiere ignorar la librería Simplepie incluida en Wordpress."
+#~ "اگر می خواهید کتابخانه سیمپل پای وردپرس را نادیده بگیرید این را علامت "
+#~ "بزنید."
 
 # @ wpematico
 #~ msgid "<b><i>Allow option on campaign for skip the content filters</i></b>"
-#~ msgstr ""
-#~ "<b><i>Povoliť možnosť na kampaň pre preskočiť obsah filtre</i></"
-#~ "b><b><i>Permitir opción en campaña para saltear los filtros de contenido."
-#~ "</i></b>"
+#~ msgstr "<b><i>این گزینه در کمپین برای طرف نظر از فیلترهای محتوا است</i></b>"
 
 # @ wpematico
 #~ msgid "Dashboard widget"
-#~ msgstr "Dashboard widget"
+#~ msgstr "ابزارک داشبورد"
 
 # @ wpematico
 #~ msgid "Disable <b><i>Wordpress Dashboard Widget</i></b>"
-#~ msgstr "Zakázať <b> <i>Wordpress Dashboard Widget</i></b>"
+#~ msgstr "غیرفعال <b><i>ابزارک داشبورد وردپرس</i></b>"
 
 # @ wpematico
 #~ msgid ""
 #~ "Check this if you don't want display the widget dashboard.  Anyway, only "
 #~ "admins will see it."
 #~ msgstr ""
-#~ "Pozrite sa ak nechcete zobraziť panel widget.  Mimochodom, len admini "
-#~ "uvidia.Tilda esto si no deseas que se visualice el widget de escritorio. "
-#~ "Sino, sólo los administradores podrán verlo."
+#~ "علامت زدن اگر شما نمی خواهید ابزارک داشبورد نمایش داده شود. به هر حال، "
+#~ "فقط مدیر خواهد دید."
 
 # @ wpematico
 #~ msgid "Select user roles that can see dashboard widget:"
-#~ msgstr "Vyberte roly používateľov, ktoré môžete vidieť dashboard widget:"
+#~ msgstr "انتخاب نقش های کاربر که می تواند ابزارک داشبورد را ببیند:"
 
 # @ wpematico
 #~ msgid "Disable WP-Cron"
-#~ msgstr "Vypnúť WP-Cron"
+#~ msgstr "غیرفعال کردن کران جابز وردپرس"
 
 # @ wpematico
 #~ msgid "Use Cron job of Hoster and disable WP_Cron"
-#~ msgstr "Pomocou cronu krčma a zakázať WP_Cron"
+#~ msgstr "استفاده از برنامه cron خود میزبان و غیر فعال کردن WP_Cron"
 
 # @ wpematico
 #~ msgid "NOTE:"
-#~ msgstr "POZNÁMKA:"
+#~ msgstr "توجه:"
 
 # @ wpematico
 #~ msgid "Checking this, deactivate all Wordpress cron schedules."
-#~ msgstr "Túto kontrolu, deaktivovať všetky Wordpress cron plány."
+#~ msgstr "علانت زدن این، غیر فعال کردن تمام  برنامه cron وردپرس."
 
 # @ wpematico
 #~ msgid ""
 #~ "If also want to run the wordpress cron with external cron you can set up "
 #~ "a cron job that calls:"
 #~ msgstr ""
-#~ "Ak aj chcete spustiť wordpress cron s vonkajšie cron môžete nastaviť "
-#~ "cronu, ktorý volá:Si deseas ejecutar el cronograma con cronogramas "
-#~ "externos a Wordpress, puedes configurarlos un cronograma que llame:"
+#~ "اگر هم می خواهید برای اجرای برنامه cron وردپرس با cron خارجی شما می "
+#~ "توانید راه اندازی یک کار برنامه cron که می خواند:"
 
 # @ wpematico
 #~ msgid "Adding %1s"
-#~ msgstr "Pridanie % 1s"
+#~ msgstr "افزودن %1s"
 
 # @ wpematico
 #~ msgid ""
@@ -5855,78 +5739,85 @@ msgstr ""
 #~ "these campaigns and then delete old campaigns for remove the header "
 #~ "warning."
 #~ msgstr ""
-#~ "Všetky staré WPeMatico kampane bol pridaný do aktuálnej % 1s.  Teraz "
-#~ "môžete skontrolovať tieto kampane a potom odstrániť staré kampane pre "
-#~ "odstrániť hlavičky varovanie.Todas las antiguas campañas de WPeMatico "
-#~ "fueron agregadas a %1s. Ahora puedes tildar esas campañas y luego "
-#~ "eliminar viejas campañas para remover el encabezado de precaución."
+#~ "همه کمپین های افزونه قدیمی به این افزوده شدند %1s.  حالا می توانید کمپین "
+#~ "ها را چک کنید و قدیمی ها را برای هشدار سرصفحه حذف کنید"
 
 # @ wpematico
 #~ msgid "Cleaned. Go to %1s."
-#~ msgstr "Vyčistiť. Prejdite na % 1s."
+#~ msgstr "پاک شد. برو به %1s."
 
 # @ wpematico
 #~ msgid "WPeMatico import old version campaigns"
-#~ msgstr "WPeMatico import starú verziu kampane"
+#~ msgstr "افزونه کمپین های نسخه قدیمی را درون ریزی کرد"
 
 # @ wpematico
 #~ msgid "Importing Old Campaigns"
-#~ msgstr "Import staré kampane"
+#~ msgstr "درون ریزی کمپین های قدیمی"
 
 # @ wpematico
 #~ msgid "Check this option to restore and add all campaigns from old Version."
-#~ msgstr ""
-#~ "Začiarknite túto možnosť, obnoviť a pridať všetky kampane z starú verziu."
-#~ "Chequea esta opción para restaurar y agregar todas las campañas de una "
-#~ "versión antigua."
+#~ msgstr "برای بازیابی و افزودن همه کمپین ها از نسخه قبلی این را علامت بزنید"
 
 # @ wpematico
 #~ msgid ""
 #~ "After WPeMatico 1.0 the campaigns are saved on database in different way, "
 #~ "and now the campaigns are not compatibles with old versions."
 #~ msgstr ""
-#~ "Po WPeMatico 1.0 kampane sú uložené v databáze iným spôsobom, a teraz "
-#~ "kampane nie sú kompatibilné so starými verziami.Posterior a WPeMatico 1.0 "
-#~ "las campañas son guardadas en una base de datos de diferente manera, y "
-#~ "ahora las campañas no son compatibles con versiones antiguas."
+#~ "از نسخه یک به بعد این افزونه کمپین ها به شیوه دیگری در دیتابیس ذخیره می "
+#~ "شوند و با نسخه های قدیمی سازگار نیستند"
 
 # @ wpematico
 #~ msgid ""
 #~ "Note: If already have campaigns on current WPeMatico campaigns list, the "
 #~ "old campaigns will be added to the current list."
 #~ msgstr ""
-#~ "Poznámka: Ak už máte kampane na aktuálny zoznam WPeMatico kampane, staré "
-#~ "kampane sa pridajú do aktuálneho zoznamu.Nota: Si actualmente posees "
-#~ "campañas en este listado de campañas de WPeMatico, las campañas antiguas "
-#~ "serán agregadas a este listado."
+#~ "توجه:اگر از قبل کمپین هایی بر روی این افزونه داشته اید،کمپین هایی قدیمی "
+#~ "به این لیست افزوده خواهند شد."
 
 # @ wpematico
 #~ msgid "Delete campaigns from prior versions of WPeMatico 1.0."
-#~ msgstr "Odstrániť predchádzajúce verzie 1.0 WPeMatico kampane."
+#~ msgstr "حذف کمپین های قبل از نسخه 1 این افزونه"
 
 # @ wpematico
 #~ msgid ""
 #~ "This option delete all old campaigns from database and remove the ugly "
 #~ "header warning."
 #~ msgstr ""
-#~ "Táto možnosť odstrániť všetky staré kampane z databázy a škaredý Hlavička "
-#~ "upozornenie.Esta opción elimina todas las campañas viejas de la base de "
-#~ "datos y remueve el encabezado molesto de precaución."
+#~ "این گزینه همه کمپین های قدیمی را از دیتابیس پاک می کند و هشدار زشت سرصفحه "
+#~ "را حذف می کند"
 
 # @ wpematico
 #~ msgid "Warning:"
-#~ msgstr "Upozornenie:"
+#~ msgstr "هشدار:"
 
 # @ wpematico
 #~ msgid "This can't be undone. You'll never see this list again."
-#~ msgstr ""
-#~ "Táto akcia nedá vrátiť späť. Ste nikdy vidieť tento zoznam znova.Esto no "
-#~ "tiene vuelta atrás. Nunca podrá volver a ver este listado otra vez."
+#~ msgstr "این قابل بازگشت نیست. شما هرگز این لیست را دوباره نمی بینید."
 
 # @ wpematico
 #~ msgid "Campaigns found and ready to import and/or delete."
-#~ msgstr "Kampane našiel a pripravený na import a/alebo odstrániť."
+#~ msgstr "کمپین هایی یافت شدند و آماده درون ریزی یا حذف می باشند"
 
 # @ wpematico
 #~ msgid "Submit"
-#~ msgstr "Predložiť"
+#~ msgstr "درج"
+
+# @ default
+#~ msgid "FAQ"
+#~ msgstr "سوالات متداول"
+
+# @ wpematico
+#~ msgid "Donate"
+#~ msgstr "کمک مالی"
+
+# @ wpematico
+#~ msgid "Import old version"
+#~ msgstr "درون ریزی نسخه قدیمی"
+
+# @ wpematico
+#~ msgid "WPeMatico: Found campaigns from previous versions."
+#~ msgstr "WPeMatico:کمپین های یافت شده از نسخه قبلی"
+
+# @ wpematico
+#~ msgid "If you want import or delete them go to:"
+#~ msgstr "اگر می خواهید پاک کنید یا درون ریزی کنید بروید به:"

@@ -20,27 +20,31 @@ class WPeMatico_Campaign_edit_functions {
 
 		do_action('wpematico_create_metaboxes_before', $campaign_data, $cfg); 
 	//	add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
-		add_meta_box( 'campaign_types', __( 'Campaign Type','wpematico'),  array('WPeMatico_Campaign_edit', 'campaign_type_box'), 'wpematico', 'side', 'high' );
+		add_meta_box( 'campaign_types', '<span class="dashicons dashicons-tickets-alt"> </span> '.__( 'Campaign Type','wpematico'),  array('WPeMatico_Campaign_edit', 'campaign_type_box'), 'wpematico', 'side', 'high' );
 		if ( current_theme_supports( 'post-formats' ) )
-		add_meta_box( 'post_format-box',__('Campaign Posts Format','wpematico'). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['postformat'].'" title="'.$helptip['postformat'].'"></span>', array( 'WPeMatico_Campaign_edit' ,'format_box'),'wpematico','side', 'default' );
-		add_meta_box( 'category-box',__('Campaign Categories','wpematico'). '<span class="dashicons dashicons-warning help_tip"  title-heltip="'.$helptip['category'].'"   title="'. $helptip['category'].'"></span>', array( 'WPeMatico_Campaign_edit' ,'cat_box'),'wpematico','side', 'default' );
-		add_meta_box( 'post_tag-box', __('Tags generation', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['tags'].'" title="'. $helptip['tags'].'"></span>', array(  'WPeMatico_Campaign_edit'  ,'tags_box' ),'wpematico','side', 'default' );
-		add_meta_box( 'log-box', __('Send log', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['sendlog'].'"  title="'. $helptip['sendlog'].'"></span>', array(  'WPeMatico_Campaign_edit'  ,'log_box' ),'wpematico','side', 'default' );
+		add_meta_box( 'post_format-box', '<span class="dashicons dashicons-format-status"> </span> '.__('Campaign Posts Format','wpematico'). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['postformat'].'" title="'.$helptip['postformat'].'"></span>', array( 'WPeMatico_Campaign_edit' ,'format_box'),'wpematico','side', 'default' );
+		add_meta_box( 'category-box', '<span class="dashicons dashicons-category"> </span> '.__('Campaign Categories','wpematico'). '<span class="dashicons dashicons-warning help_tip"  title-heltip="'.$helptip['category'].'"   title="'. $helptip['category'].'"></span>', array( 'WPeMatico_Campaign_edit' ,'cat_box'),'wpematico','side', 'default' );
+		add_meta_box( 'post_tag-box', '<span class="dashicons dashicons-tag"> </span> '.__('Tags generation', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['tags'].'" title="'. $helptip['tags'].'"></span>', array(  'WPeMatico_Campaign_edit'  ,'tags_box' ),'wpematico','side', 'default' );
+		add_meta_box( 'log-box', '<span class="dashicons dashicons-paperclip"> </span> '.__('Send log', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['sendlog'].'"  title="'. $helptip['sendlog'].'"></span>', array(  'WPeMatico_Campaign_edit'  ,'log_box' ),'wpematico','side', 'default' );
 
-		add_meta_box( 'feeds-box', __('Feeds for this Campaign', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['feeds'].'" title="'. $helptip['feeds'].'"></span>', array( 'WPeMatico_Campaign_edit'  ,'feeds_box' ),'wpematico','normal', 'default' );
+		add_meta_box( 'feeds-box', '<span class="dashicons dashicons-rss"> </span> '.__('Feeds for this Campaign', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['feeds'].'" title="'. $helptip['feeds'].'"></span>', array( 'WPeMatico_Campaign_edit'  ,'feeds_box' ),'wpematico','normal', 'default' );
 		add_meta_box( 'youtube-box', '<span class="dashicons dashicons-video-alt3"> </span> '.__('YouTube feeds for this Campaign', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['feed_url'].'" title="'. $helptip['feed_url'].'"></span>', array( 'WPeMatico_Campaign_edit'  ,'youtube_box' ),'wpematico','normal', 'high' );
 		
-		add_meta_box( 'options-box', __('Options for this campaign', 'wpematico' ), array(  'WPeMatico_Campaign_edit'  ,'options_box' ),'wpematico','normal', 'default' );
-		add_meta_box( 'cron-box', __('Schedule Cron', 'wpematico' ), array(  'WPeMatico_Campaign_edit'  ,'cron_box' ),'wpematico','normal', 'default' );
-		add_meta_box( 'images-box', __('Options for images', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['imgoptions'].'"  title="'. $helptip['imgoptions'].'"></span>', array(  'WPeMatico_Campaign_edit'  ,'images_box' ),'wpematico','normal', 'default' );
-		add_meta_box( 'audios-box', __('Options for audios', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['audio_options'].'"  title="'. $helptip['audio_options'].'"></span>', array(  'WPeMatico_Campaign_edit'  ,'audio_box' ),'wpematico','normal', 'default' );
-		add_meta_box( 'videos-box', __('Options for videos', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['video_options'].'"  title="'. $helptip['video_options'].'"></span>', array(  'WPeMatico_Campaign_edit'  ,'video_box' ),'wpematico','normal', 'default' );
+		add_meta_box( 'bbpress-box', '<span class="dashicons dashicons-bbpress-logo"> </span> '.__('bbPress Forums Options', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['bbpress'].'" title="'. $helptip['bbpress'].'"></span>', array( 'WPeMatico_Campaign_edit'  ,'bbpress_box' ),'wpematico','normal', 'high' );
 		
-		add_meta_box( 'template-box', __('Post Template', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['postemplate'].'" title="'. $helptip['postemplate'].'"></span>', array(  'WPeMatico_Campaign_edit'  ,'template_box' ),'wpematico','normal', 'default' );
+		add_meta_box( 'options-box', '<span class="dashicons dashicons-admin-settings"> </span> '.__('Options for this campaign', 'wpematico' ), array(  'WPeMatico_Campaign_edit'  ,'options_box' ),'wpematico','normal', 'default' );
+		add_meta_box( 'cron-box', '<span class="dashicons dashicons-backup"> </span> '.__('Schedule Cron', 'wpematico' ), array(  'WPeMatico_Campaign_edit'  ,'cron_box' ),'wpematico','normal', 'default' );
+		add_meta_box( 'images-box', '<span class="dashicons dashicons-images-alt2"> </span> '.__('Options for images', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['imgoptions'].'"  title="'. $helptip['imgoptions'].'"></span>', array(  'WPeMatico_Campaign_edit'  ,'images_box' ),'wpematico','normal', 'default' );
+		add_meta_box( 'audios-box', '<span class="dashicons dashicons-media-audio"> </span> '.__('Options for audios', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['audio_options'].'"  title="'. $helptip['audio_options'].'"></span>', array(  'WPeMatico_Campaign_edit'  ,'audio_box' ),'wpematico','normal', 'default' );
+		add_meta_box( 'videos-box', '<span class="dashicons dashicons-media-video"> </span> '.__('Options for videos', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['video_options'].'"  title="'. $helptip['video_options'].'"></span>', array(  'WPeMatico_Campaign_edit'  ,'video_box' ),'wpematico','normal', 'default' );
+
+		add_meta_box( 'duplicate-box', '<span class="dashicons dashicons-feedback"> </span> '.__('Duplicate controls', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['duplicate_options'].'"  title="'. $helptip['duplicate_options'].'"></span>', array(  'WPeMatico_Campaign_edit'  ,'duplicate_box' ),'wpematico','normal', 'default' );
+		
+		add_meta_box( 'template-box', '<span class="dashicons dashicons-layout"> </span> '.__('Post Template', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['postemplate'].'" title="'. $helptip['postemplate'].'"></span>', array(  'WPeMatico_Campaign_edit'  ,'template_box' ),'wpematico','normal', 'default' );
 		if ($cfg['enableword2cats'])   // Si está habilitado en settings, lo muestra 
-		add_meta_box( 'word2cats-box', __('Word to Category options', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['wordcateg'].'"   title="'. $helptip['wordcateg'].'"></span>', array(  'WPeMatico_Campaign_edit'  ,'word2cats_box' ),'wpematico','normal', 'default' );
+		add_meta_box( 'word2cats-box', '<span class="dashicons dashicons-category"> </span> '.__('Word to Category options', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['wordcateg'].'"   title="'. $helptip['wordcateg'].'"></span>', array(  'WPeMatico_Campaign_edit'  ,'word2cats_box' ),'wpematico','normal', 'default' );
 		if ($cfg['enablerewrite'])   // Si está habilitado en settings, lo muestra 
-		add_meta_box( 'rewrite-box', __('Rewrite options', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['rewrites'].'" title="'. $helptip['rewrites'].'"></span>', array(  'WPeMatico_Campaign_edit'  ,'rewrite_box' ),'wpematico','normal', 'default' );
+		add_meta_box( 'rewrite-box', '<span class="dashicons dashicons-image-rotate-right"> </span> '.__('Rewrite options', 'wpematico' ). '<span class="dashicons dashicons-warning help_tip" title-heltip="'.$helptip['rewrites'].'" title="'. $helptip['rewrites'].'"></span>', array(  'WPeMatico_Campaign_edit'  ,'rewrite_box' ),'wpematico','normal', 'default' );
 		//***** Call nonstatic
 		if( $cfg['nonstatic'] ) { NoNStatic :: meta_boxes($campaign_data, $cfg); }
 		// Publish Meta_box edited
@@ -167,6 +171,7 @@ class WPeMatico_Campaign_edit_functions {
 		$options=array(
 			array( 'value'=> 'feed', 'text' => __('Feed Fetcher (Default)', 'wpematico' ), "show"=>array('feeds-box') ),
 			array( 'value'=> 'youtube','text' => __('You Tube Fetcher', 'wpematico' ), "show"=>array('feeds-box','youtube-box') ),
+			array( 'value'=> 'bbpress','text' => __('bbPress Forums', 'wpematico' ), "show"=>array('feeds-box','bbpress-box') ),
 			);
 		$options = apply_filters('wpematico_campaign_type_options', $options);
 
@@ -340,7 +345,7 @@ public static function template_box( $post ) {
 		<p class="he20"><b><?php _e('Modify, manage or add extra content to every post fetched.', 'wpematico' ) ?></b></p>
 		<div id="wpe_post_template_edit" class="inlinetext" style="background: #c1fefe;;padding: 0.5em;">
 			<label for="campaign_enable_template">
-				<input name="campaign_enable_template" id="campaign_enable_template" class="checkbox" value="1" type="checkbox"<?php checked($campaign_enable_template,true) ?> /> <?php _e('Enable Post Template', 'wpematico' ) ?>
+				<input name="campaign_enable_template" id="campaign_enable_template" class="checkbox" value="1" type="checkbox"<?php checked($campaign_enable_template,true) ?> /> <?php _e('Use custom posts template', 'wpematico' ) ?>
 			</label>
 			<div id="postemplatearea" style="<?php echo (checked($campaign_enable_template,true))?'':'display:none'; ?>">
 				<textarea class="large-text" id="campaign_template" name="campaign_template" /><?php echo stripslashes($campaign_template) ?></textarea><br/>
@@ -450,19 +455,19 @@ public static function template_box( $post ) {
 		<div id="div_no_setting_img" style="margin-left: 20px; <?php if (!$campaign_no_setting_img) echo 'display:none;';?>">
 			<p>
 				<input name="campaign_imgcache" id="campaign_imgcache" class="checkbox left" value="1" type="checkbox" <?php checked($campaign_imgcache,true); ?> />
-				<b><label for="campaign_imgcache"><?php echo __('Cache Images.', 'wpematico' ); ?></label></b> <span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['imgcache']; ?>"></span>
+				<b><label for="campaign_imgcache"><?php echo __('Store images locally.', 'wpematico' ); ?></label></b> <span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['imgcache']; ?>"></span>
 			</p>
 			<div id="nolinkimg" style="margin-left: 20px; <?php if (!$campaign_imgcache) echo 'display:none;';?>">
 				
 				<input class="checkbox" value="1" type="checkbox" <?php checked($campaign_attach_img,true); ?> name="campaign_attach_img" id="campaign_attach_img" /><b>&nbsp;<label for="campaign_attach_img"><?php _e('Attach Images to posts.', 'wpematico' ); ?></label></b><span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['imgattach']; ?>"></span><br/>
 				
-				<input name="campaign_nolinkimg" id="campaign_nolinkimg" class="checkbox" value="1" type="checkbox" <?php checked($campaign_nolinkimg,true); ?> /><label for="campaign_nolinkimg"><?php _e('No link to source images', 'wpematico' ); ?></label> <span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['gralnolinkimg']; ?>"></span><br/>
+				<input name="campaign_nolinkimg" id="campaign_nolinkimg" class="checkbox" value="1" type="checkbox" <?php checked($campaign_nolinkimg,true); ?> /><label for="campaign_nolinkimg"><?php _e('Remove link to source images', 'wpematico' ); ?></label> <span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['gralnolinkimg']; ?>"></span><br/>
 				
 				<input class="checkbox" value="1" type="checkbox" <?php checked($campaign_image_srcset,true); ?> name="campaign_image_srcset" id="campaign_image_srcset" /><b>&nbsp;<label for="campaign_image_srcset"><?php esc_attr_e('Use srcset attribute instead of src of <img> tag.', 'wpematico' ); ?></label></b><span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['image_srcset']; ?>"></span><br/>
 				
 			</div>
 			<p></p>
-			<input class="checkbox" value="1" type="checkbox" <?php checked($campaign_featuredimg, true); ?> name="campaign_featuredimg" id="campaign_featuredimg" /><b>&nbsp;<label for="campaign_featuredimg"><?php _e('Enable first image found on content as Featured Image.', 'wpematico' ); ?></label></b><span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['featuredimg']; ?>"></span>
+			<input class="checkbox" value="1" type="checkbox" <?php checked($campaign_featuredimg, true); ?> name="campaign_featuredimg" id="campaign_featuredimg" /><b>&nbsp;<label for="campaign_featuredimg"><?php _e('Set first image in content as Featured Image.', 'wpematico' ); ?></label></b><span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['featuredimg']; ?>"></span>
 			<br />
 			
 
@@ -482,7 +487,7 @@ public static function template_box( $post ) {
 			<input class="checkbox" value="1" type="checkbox" <?php checked($campaign_rmfeaturedimg, true); ?> name="campaign_rmfeaturedimg" id="campaign_rmfeaturedimg" /><b>&nbsp;<label for="campaign_rmfeaturedimg"><?php _e('Remove Featured Image from content.', 'wpematico' ); ?></label></b> <span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['rmfeaturedimg']; ?>"></span>
 			<p></p>
 			<div id="custom_uploads" style="<?php if (!$campaign_imgcache && !$campaign_featuredimg) echo 'display:none;';?>">
-				<input class="checkbox" value="1" type="checkbox" <?php checked($campaign_customupload, true); ?> name="campaign_customupload" id="campaign_customupload" /><b>&nbsp;<label for="campaign_customupload"><?php _e('Custom function for uploads.', 'wpematico' ); ?></label></b><span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['customupload']; ?>"></span>
+				<input class="checkbox" value="1" type="checkbox" <?php checked($campaign_customupload, true); ?> name="campaign_customupload" id="campaign_customupload" /><b>&nbsp;<label for="campaign_customupload"><?php _e('Use custom upload.', 'wpematico' ); ?></label></b><span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['customupload']; ?>"></span>
 				<br/>
 			</div>
 			<?php
@@ -519,19 +524,19 @@ public static function template_box( $post ) {
 			?>
 			<p>
 				<input name="campaign_audio_cache" id="campaign_audio_cache" class="checkbox left" value="1" type="checkbox" <?php checked($campaign_audio_cache,true); ?> />
-				<b><label for="campaign_audio_cache"><?php echo __('Cache Audios.', 'wpematico' ); ?></label></b> <span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['audio_cache']; ?>"></span>
+				<b><label for="campaign_audio_cache"><?php echo __('Store audios locally.', 'wpematico' ); ?></label></b> <span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['audio_cache']; ?>"></span>
 			</p>
 			<div id="nolink_audio" style="margin-left: 20px; <?php if (!$campaign_audio_cache) echo 'display:none;';?>">
 				
 				<input class="checkbox" value="1" type="checkbox" <?php checked($campaign_attach_audio,true); ?> name="campaign_attach_audio" id="campaign_attach_audio" /><b>&nbsp;<label for="campaign_attach_audio"><?php _e('Attach Audios to posts.', 'wpematico' ); ?></label></b><span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['audio_attach']; ?>"></span><br/>
 				
 				<input name="campaign_nolink_audio" id="campaign_nolink_audio" class="checkbox" value="1" type="checkbox" <?php checked($campaign_nolink_audio,true); ?> />
-				<?php echo '<label for="campaign_nolink_audio">' . __('No link to source audios', 'wpematico' ) . '</label>'; ?> <span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['gralnolink_audio']; ?>"></span>
+				<?php echo '<label for="campaign_nolink_audio">' . __('Remove link to source audios', 'wpematico' ) . '</label>'; ?> <span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['gralnolink_audio']; ?>"></span>
 				
 			</div>
 			<p></p>
 			<div id="custom_uploads_audios" style="<?php if (!$campaign_audio_cache) echo 'display:none;';?>">
-				<input class="checkbox" value="1" type="checkbox" <?php checked($campaign_customupload_audio, true); ?> name="campaign_customupload_audio" id="campaign_customupload_audio" /><b>&nbsp;<label for="campaign_customupload_audio"><?php _e('Custom function for uploads.', 'wpematico' ); ?></label></b><span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['customupload_audios']; ?>"></span>
+				<input class="checkbox" value="1" type="checkbox" <?php checked($campaign_customupload_audio, true); ?> name="campaign_customupload_audio" id="campaign_customupload_audio" /><b>&nbsp;<label for="campaign_customupload_audio"><?php _e('Use custom upload.', 'wpematico' ); ?></label></b><span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['customupload_audios']; ?>"></span>
 				<br/>
 			</div>
 			<?php
@@ -565,23 +570,72 @@ public static function template_box( $post ) {
 		<div id="div_no_setting_video" style="margin-left: 20px; <?php if (!$campaign_no_setting_video) echo 'display:none;';?>">
 			<p>
 				<input name="campaign_video_cache" id="campaign_video_cache" class="checkbox left" value="1" type="checkbox" <?php checked($campaign_video_cache,true); ?> />
-				<b><label for="campaign_video_cache"><?php echo __('Cache Videos.', 'wpematico' ); ?></label></b> <span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['video_cache']; ?>"></span>
+				<b><label for="campaign_video_cache"><?php echo __('Store videos locally.', 'wpematico' ); ?></label></b> <span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['video_cache']; ?>"></span>
 			</p>
 			<div id="nolink_video" style="margin-left: 20px; <?php if (!$campaign_video_cache) echo 'display:none;';?>">
 				
 				<input class="checkbox" value="1" type="checkbox" <?php checked($campaign_attach_video,true); ?> name="campaign_attach_video" id="campaign_attach_video" /><b>&nbsp;<label for="campaign_attach_video"><?php _e('Attach Videos to posts.', 'wpematico' ); ?></label></b><span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['video_attach']; ?>"></span><br/>
 				
 				<input name="campaign_nolink_video" id="campaign_nolink_video" class="checkbox" value="1" type="checkbox" <?php checked($campaign_nolink_video,true); ?> />
-				<?php echo '<label for="campaign_nolink_video">' . __('No link to source videos', 'wpematico' ) . '</label>'; ?> <span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['gralnolink_video']; ?>"></span>
+				<?php echo '<label for="campaign_nolink_video">' . __('Remove link to source videos', 'wpematico' ) . '</label>'; ?> <span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['gralnolink_video']; ?>"></span>
 				
 			</div>
 			<p></p>
 			<div id="custom_uploads_videos" style="<?php if (!$campaign_video_cache) echo 'display:none;';?>">
-				<input class="checkbox" value="1" type="checkbox" <?php checked($campaign_customupload_video, true); ?> name="campaign_customupload_video" id="campaign_customupload_video" /><b>&nbsp;<label for="campaign_customupload_video"><?php _e('Custom function for uploads.', 'wpematico' ); ?></label></b><span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['customupload_videos']; ?>"></span>
+				<input class="checkbox" value="1" type="checkbox" <?php checked($campaign_customupload_video, true); ?> name="campaign_customupload_video" id="campaign_customupload_video" /><b>&nbsp;<label for="campaign_customupload_video"><?php _e('Use custom upload.', 'wpematico' ); ?></label></b><span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['customupload_videos']; ?>"></span>
 				<br/>
 			</div>
 			<?php
 				do_action('wpematico_video_box_setting_after');
+			?>
+		</div>
+		
+		<?php
+		do_action('wpematico_video_box_out_setting');
+	}
+	/**
+	* Static function video_box
+	* Create a meta-box on campaigns for videos management.
+	* @access public
+	* @return void
+	* @since 2.0
+	*/
+	public static function duplicate_box( $post ) { 
+		global $post, $campaign_data, $cfg, $helptip;
+		$campaign_no_setting_duplicate = $campaign_data['campaign_no_setting_duplicate'];
+		$campaign_allowduplicates = $campaign_data['campaign_allowduplicates'];
+		$campaign_allowduptitle = $campaign_data['campaign_allowduptitle'];
+		$campaign_allowduphash = $campaign_data['campaign_allowduphash'];
+		$campaign_add_ext_duplicate_filter_ms = $campaign_data['campaign_add_ext_duplicate_filter_ms'];
+		$campaign_jumpduplicates = $campaign_data['campaign_jumpduplicates'];
+
+
+		?>
+		
+		<input name="campaign_no_setting_duplicate" id="campaign_no_setting_duplicate" class="checkbox" value="1" type="checkbox" <?php checked($campaign_no_setting_duplicate, true); ?> />
+		<label for="campaign_no_setting_duplicate"><?php echo __('Don&#x27;t use general Settings', 'wpematico' ); ?></label> <span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['duplicate_options']; ?>"></span>
+		
+		<div id="div_no_setting_duplicate" style="margin-left: 20px; <?php if (!$campaign_no_setting_duplicate) echo 'display:none;';?>">
+			
+			<p></p>
+			<input class="checkbox" value="1" type="checkbox" <?php checked($campaign_allowduplicates, true); ?> name="campaign_allowduplicates" id="campaign_allowduplicates" /><b> <label for="campaign_allowduplicates"> <?php _e('Deactivate duplicate controls.', 'wpematico'); ?></label> </b>  <span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['allowduplicates']; ?>"></span>
+			<br>
+			<div id="enadup" style="padding-left:20px; <?php if(!$campaign_allowduplicates) echo 'display:none;'; ?>">
+				<small><?php _e('NOTE: If disable both controls, all items will be fetched again and again... and again, ad infinitum.  If you want allow duplicated titles, just activate "Allow duplicated titles".', 'wpematico'); ?></small><br />
+				<input class="checkbox" value="1" type="checkbox" <?php checked($campaign_allowduptitle, true); ?> name="campaign_allowduptitle" id="campaign_allowduptitle" /><b>&nbsp;<?php echo '<label for="campaign_allowduptitle">' . __('Allow duplicates titles.', 'wpematico') . '</label>'; ?></b><br />
+				<input class="checkbox" value="1" type="checkbox" <?php checked($campaign_allowduphash, true); ?> name="campaign_allowduphash" id="campaign_allowduphash" /><b>&nbsp;<?php echo '<label for="campaign_allowduphash">' . __('Allow duplicates hashes. (Not Recommended)', 'wpematico') . '</label>'; ?></b>
+			</div>
+			<div id="div_add_extra_duplicate_filter_meta_source" <?php if($cfg['disableccf'] || $campaign_allowduptitle) echo 'style="display:none;"' ?>>
+				<input name="campaign_add_ext_duplicate_filter_ms" id="campaign_add_ext_duplicate_filter_ms" class="checkbox" value="1" type="checkbox" <?php checked($campaign_add_ext_duplicate_filter_ms, true); ?> />
+				<label for="campaign_add_ext_duplicate_filter_ms"><b><?php _e('Add an extra duplicate filter by source permalink in meta field value.', 'wpematico'); ?></b></label>  <span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['add_extra_duplicate_filter_meta_source']; ?>"></span>
+				<br /> 
+			</div>
+			<p></p>
+			<input name="campaign_jumpduplicates" id="campaign_jumpduplicates" class="checkbox" value="1" type="checkbox" <?php checked($campaign_jumpduplicates, true); ?> />
+			<label for="campaign_jumpduplicates"><b><?php _e('Continue Fetching if found duplicated items.', 'wpematico'); ?></b></label>  <span class="dashicons dashicons-warning help_tip" title="<?php echo $helptip['jumpduplicates']; ?>"></span>
+			<p></p>
+			<?php
+				do_action('wpematico_duplicate_box_setting_after');
 			?>
 		</div>
 		
@@ -633,7 +687,7 @@ public static function options_box( $post ) {
 		</p>
 
 		<p>
-			<label for="campaign_commentstatus"><?php echo __('Discussion options:', 'wpematico' ); ?></label>
+			<label for="campaign_commentstatus"><?php echo __('Comments options:', 'wpematico' ); ?></label>
 			<select id="campaign_commentstatus" name="campaign_commentstatus">
 				<option value="open"<?php echo ($campaign_commentstatus =="open" || $campaign_commentstatus =="") ? 'SELECTED' : ''; ?> >Open</option>
 				<option value="closed" <?php echo ($campaign_commentstatus =="closed") ? 'SELECTED' : ''; ?> >Closed</option>
@@ -971,8 +1025,98 @@ public static function feeds_box( $post ) {
 	//********************************
 	public static function youtube_box( $post ) {
 		global $post, $campaign_data, $helptip;
+		$campaign_youtube_ign_image = $campaign_data['campaign_youtube_ign_image'];
+		$campaign_youtube_image_only_featured = $campaign_data['campaign_youtube_image_only_featured'];
+		$campaign_youtube_ign_description = $campaign_data['campaign_youtube_ign_description'];
+		?><div class="ytpreview">
+			<h4 id="titlefeatured" style="display: <?php echo ($campaign_youtube_ign_image && !$campaign_youtube_image_only_featured)? 'none' : 'flex'; ?>;">Featured Image</h4>
+			<div class="featured-box" style="display: <?php echo ($campaign_youtube_ign_image && !$campaign_youtube_image_only_featured)? 'none' : 'flex'; ?>;">
+				<span id="imgfeatured" class="dashicons dashicons-format-image"></span>
+			</div>
+
+			<h4 id="titlecontent">Post Title</h4>
+			<div class="images-box" style="display: <?php echo ($campaign_youtube_ign_image)? 'none' : 'flex'; ?>;">
+				<span id="imgcontent" class="dashicons dashicons-format-image" ></span>
+			</div>
+
+			<div class="ytvideo-box">
+				<span id="videocontent" class="dashicons dashicons-controls-play"></span>
+			</div>
+			<div id="descritptioncontent" class="" style="display: <?php echo ($campaign_youtube_ign_description)? 'none' : 'flex'; ?>;">
+				Lorem ipsum dolor sit amet, duo cibo voluptua platonem ne, veritus volutpat constituto est.
+			</div>	
+		</div>
+		
+		<div class="yt-help">
+			<?php echo html_entity_decode($helptip['feed_url']); ?>
+			<p><strong><?php _e('Ignore:', 'wpematico'); ?></strong></p>
+			
+			<label><input class="checkbox" <?php checked($campaign_youtube_ign_image, true); ?> type="checkbox" name="campaign_youtube_ign_image" value="1" id="campaign_youtube_ign_image"> <?php _e('Image', 'wpematico'); ?></label><br />
+			<div id="div_youtube_img_feature" style="margin-left: 17px; <?php echo (empty($campaign_youtube_ign_image)? 'display: none;' : ''); ?> ">
+				<label><input class="checkbox" <?php checked($campaign_youtube_image_only_featured, true); ?> type="checkbox" name="campaign_youtube_image_only_featured" value="1" id="campaign_youtube_image_only_featured"> <?php _e('Use only as featured image', 'wpematico'); ?></label><br />
+			</div>
+			<label><input class="checkbox" <?php checked($campaign_youtube_ign_description, true); ?> type="checkbox" name="campaign_youtube_ign_description" value="1" id="campaign_youtube_ign_description"> <?php _e('Hide description', 'wpematico'); ?></label><br />
+		</div>
+		<?php
+	}
+
+	public static function bbpress_box( $post ) {
+		global $post, $campaign_data, $helptip;
+		$campaign_bbpress_forum = $campaign_data['campaign_bbpress_forum'];
+		$campaign_bbpress_topic = $campaign_data['campaign_bbpress_topic'];
+
 		?>
-		<?php echo html_entity_decode($helptip['feed_url']); ?>
+		<?php if (!class_exists('bbPress')) : ?>
+			<p style="color: red;"><?php _e('You shouldn\'t use this campaign type if you don\'t have installed and activated the bbPress Plugin', 'wpematico'); ?></p>
+			<p style="color: red;"><?php _e('If you want to install the forums plugins in your site go to your "Plugins" page, "Add New", then install and activate the bbPress Plugin from Automattic.', 'wpematico'); ?></p>
+		<?php else: ?>
+		<p><?php _e('If you do not select a forum, this will create new forums. Otherwise, this will create new topics in the selected forum.', 'wpematico' ); ?></p>
+		<p>
+			<strong class="label"><?php _e('Forum', 'wpematico'); ?>:</strong>
+			<label class="screen-reader-text" for="parent_id"><?php _e('Forum', 'wpematico'); ?></label>
+			<?php bbp_dropdown( array(
+				'post_type'          => bbp_get_forum_post_type(),
+				'selected'           => $campaign_bbpress_forum,
+				'numberposts'        => -1,
+				'orderby'            => 'title',
+				'order'              => 'ASC',
+				'walker'             => '',
+
+				// Output-related
+				'select_id'          => 'campaign_bbpress_forum',
+				'tab'                => bbp_get_tab_index(),
+				'options_only'       => false,
+				'show_none'          => __( '&mdash; Create new forums &mdash;', 'wpematico' ),
+				'disable_categories' => false,
+				'disabled'           => ''
+			) ); ?>	
+		</p>
+		<div id="inside_forums" style="margin-left: 30px; <?php echo (empty($campaign_bbpress_forum)? 'display: none;' : ''); ?>">
+			<p>
+				<strong class="label"><?php _e('Topic', 'wpematico'); ?>:</strong>
+				<label class="screen-reader-text" for="parent_id"><?php _e('Topic', 'wpematico'); ?></label>
+				<?php bbp_dropdown( array(
+					'post_type'          => bbp_get_topic_post_type(),
+					'selected'           => $campaign_bbpress_topic,
+					'numberposts'        => -1,
+					'orderby'            => 'title',
+					'order'              => 'ASC',
+					'walker'             => '',
+
+					// Output-related
+					'select_id'          => 'campaign_bbpress_topic',
+					'tab'                => bbp_get_tab_index(),
+					'options_only'       => false,
+					'show_none'          => __( '&mdash; Create new topics &mdash;', 'wpematico' ),
+					'disable_categories' => false,
+					'disabled'           => ''
+				) ); ?>	
+			</p>
+
+		</div>
+
+		<?php endif; ?>
+
 		<?php
 	}
 

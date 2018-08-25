@@ -120,6 +120,7 @@ class WPeMatico_Campaign_edit extends WPeMatico_Campaign_edit_functions {
 	#log-box h2.hndle {background: #55a288;}
 	#feeds-box h2.hndle {background: #eb9600;}
 	#youtube-box h2.hndle {background: red; color: white;}
+	#bbpress-box h2.hndle {background: #8DC770;}
 	#options-box h2.hndle {background: #84f384;}
 	#cron-box h2.hndle {background: #d4b388;} /* cron en otra metabox */
 	#images-box h2.hndle {background: #e1fb34;}
@@ -190,6 +191,7 @@ class WPeMatico_Campaign_edit extends WPeMatico_Campaign_edit_functions {
 					'text_fail_run_campaign'		=> sprintf(__('An error has occurred, this could be because the web server does not have all the requirements of WPeMatico please check your <a href="%s">System Status</a>, if everything is ok try again.', 'wpematico'), admin_url('edit.php?post_type=wpematico&page=wpematico_settings&tab=debug_info') ),
 					'text_wizard'		=> __('Wizard', 'wpematico'),
 
+					'general_settings' => $cfg,
 					'image_run_loading' =>  get_bloginfo('wpurl').'/wp-admin/images/wpspin_light.gif',
 					'id_campaign' =>  $post->ID,
 					'name_campaign' =>  $name_campaign,

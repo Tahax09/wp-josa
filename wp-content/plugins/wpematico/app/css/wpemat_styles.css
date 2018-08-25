@@ -476,14 +476,85 @@ a.wpelinks {
     padding: 0px;
     width: 227px
 }
-#licenses .postbox .inside .postbox {
-    float: left;
-    display: block;
-    margin: 10px;
-    height: 350px;
-}
 #licenses .postbox .inside {
-    display: inline-block;
+    display: block;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+#licenses .postbox .inside form{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    margin: -15px;
+    padding-bottom: 2.5rem;
+}
+#licenses .postbox .inside .postbox-license{
+    background: #fff;
+    width: 100%;
+}
+#licenses .postbox .inside .postbox-license .inside{
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid #e5e5e5;
+    width: auto;
+}
+#licenses .postbox .inside .postbox-license .regular-text{
+    width: 100%;
+}
+#licenses .postbox .inside .postbox-license .form-table th{
+    width: 100%;
+}
+#licenses .postbox .inside .postbox-license .form-table td{
+    width: 100%;
+    padding: 15px 0;
+}
+#licenses .postbox .inside .postbox-license .form-table td label{
+    font-weight: 600;
+}
+#licenses .postbox .inside .postbox-license .form-table .tr_license_status{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#licenses .postbox .inside .postbox-license .form-table .tr_license_status td{
+    width: auto;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+#licenses .postbox .inside .postbox-license .form-table .tr_license_status td .btn_license_check{
+    margin-bottom: 10px;
+}
+#licenses .postbox .inside form p.submit{
+    display: block;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    margin: 0;
+    padding: 0;
+}
+@media (min-width: 768px){
+    #licenses .postbox .inside .postbox-license{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media (min-width: 992px){
+    #licenses .postbox .inside .postbox-license{
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+@media (max-width: 782px){
+    #licenses .postbox .inside form{
+        padding-bottom: 3.5rem;
+    }
 }
 .help_tip {
     cursor: help;
@@ -1032,6 +1103,9 @@ div#optionslayer-right {
     background-color: #f1f1f1;
     box-shadow: 0 0 14px rgba(0, 0, 0, .7);
 }
+#thickbox_wizard .left{
+    float: none !important;
+}
 #thickbox_wizard h2 {
     text-align: center;
     font-family: helvetica;
@@ -1256,3 +1330,100 @@ div#optionslayer-right {
   border-top: 3px solid #AD0C32;
 }
 /* End CSS Corner Ribbon */
+
+/* Youtube Campaign  */
+#youtube-box .inside{
+    display: flex;
+    align-items: center;
+}
+.ytpreview {
+    border: 1px lightgray solid;
+    padding: 10px;
+    margin: 7px 0;
+	color: gray;
+    width: 100%;
+    box-sizing: border-box;
+    width: 150px;
+    min-width: 150px;
+    margin-right: 1rem;
+}
+.ytpreview .dashicons {
+    font-size: 2em;
+    display: block;
+	color: #fff;
+    height: initial;
+    width: initial;
+}
+.ytpreview h4{
+    margin: 0 0 0rem;
+    font-weight: 400;
+    font-size: .85em;
+}
+.ytpreview #titlecontent {
+    color: #000;
+	font-weight: bold;
+}
+.ytpreview #descritptioncontent{
+    font-size: 9px;
+    line-height: 1;
+}
+.featured-box,
+.ytvideo-box,
+.images-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 .25rem;
+}
+.featured-box{
+    height: 35px;
+}
+.ytpreview .featured-box .dashicons{
+    font-size: 1.5em;
+}
+.featured-box,
+.images-box{
+    background-color: #8cd6f3;
+}
+.featured-box{
+    width: 60%;
+}
+.images-box{
+    width: 75%;
+}
+.ytvideo-box,
+.images-box{
+    height: 50px;
+}
+.ytvideo-box{
+    background-color: #aaa;
+}
+.ytvideo-box #videocontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 1.5em;
+}
+.yt-help{
+    width: 100%;
+}
+@media (max-width: 500px){
+    #youtube-box .inside{
+        flex-direction: column;
+        align-items: initial;
+    }
+    #youtube-box .inside .ytpreview{
+        order: 2;
+    }
+}
+/* End Youtube Campaign  */
+/* bbPress Campaign  */
+.dashicons-bbpress-logo:before {
+	content: "\f477";
+}
+/* End bbPress Campaign  */

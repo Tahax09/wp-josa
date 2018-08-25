@@ -1,4 +1,4 @@
-﻿=== WPeMatico ===
+﻿=== WPeMatico RSS Feed Fetcher ===
 Contributors: etruel, sniuk 
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B8V39NWK3NFQU
 Tags: RSS, RSS to Post, Feed to Post, autoblog,rss aggregator, Feed, rss to post, syndication, Post, Posts, aggregation, atom, bot, content, writing
@@ -137,12 +137,6 @@ You can submit any bug in the [bugtracker](https://bitbucket.org/etruel/wpematic
 
 ---
 
-> #### **[Chinese tags](https://etruel.com/downloads/wpematico-chinese-tags):**
-> * Automatic chinese tags generated from content phrases, require WPeMatico Free & Professional add-on.
-> * Like almost all things in automatic mode, bear in mind that it is not perfect. However, it is better than nothing ;)
-
----
-
 #### FREE & Premium Technical Support
 > #### **[FREE Technical Support](https://etruel.com/my-account/support):**
 > * Ask for any problem you may have and you'll get support for free.
@@ -270,6 +264,18 @@ Also we need tutorials on text, pdf, videos. All are welcome.
 You can send your files to [NetMdP](http://www.netmdp.com/wpematico/) or to e-mail etruel@gmail.com
 
 == Changelog ==
+= 2.0 Aug 1, 2018 =
+* New major version! We're introducing the new Robotico 2.0!
+* Many code improvements. Graphics designs and cosmetic changes.
+* Added a New Campaign type to publish to BBPress forums as forums, topics or replies.
+* Added a preview template for the Youtube campaign types with options to include/exclude image and descriptions of videos.
+* Added options to manage duplicated posts individually by campaign.
+* Added option to disable the description of categories created by WPeMatico.
+* Added some hooks to handle the cron schedules of WPeMatico.
+* Updated pot file to translate well the plugin.  Our goal for the next versions is brings wpematico in your language!
+* Some fixes in add-ons page.
+* Some fixes in licenses page, style and messages.
+
 = 1.9.4 May 04, 2018 =
 * Added a new option to use as category the word most used into Word to Category feature.
 * Added scheduled crons in System status tab.
@@ -1111,6 +1117,6 @@ This is a big update. Lots of things you asked for, are ready in 1.0 version.
 
 == Upgrade Notice ==
 
-= 1.9.4 =
+= 2.0 =
 * **NOTE: Highly recommended to test it in development ambients before update**
 * Many improvements and fixes. See changelog for more details.

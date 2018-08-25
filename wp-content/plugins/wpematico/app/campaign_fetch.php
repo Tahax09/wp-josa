@@ -107,8 +107,11 @@ class wpematico_campaign_fetch extends wpematico_campaign_fetch_functions {
 		//add_action('Wpematico_init_fetching', array($this, 'wpematico_init_fetching') ); 
 		add_filter('wpematico_custom_chrset', array( 'WPeMatico_functions' , 'detect_encoding_from_headers'), 999, 1);   // move all encoding functions to wpematico_campaign_fetch_functions
 
-		if($this->campaign['campaign_type']=="youtube") 
+		if($this->campaign['campaign_type']=="youtube")  {
 			add_filter('wpematico_get_post_content_feed', array( 'wpematico_campaign_fetch_functions' , 'wpematico_get_yt_rss_tags'),999,4);
+			add_filter('wpematico_get_item_images', array( 'wpematico_campaign_fetch_functions' , 'wpematico_get_yt_image'),999,4);
+			
+		}
 		
 		$priority = 10;
 		if( $this->cfg['add_extra_duplicate_filter_meta_source'] &&  !$this->cfg['disableccf']) {
@@ -131,7 +134,7 @@ class wpematico_campaign_fetch extends wpematico_campaign_fetch_functions {
 		$prime = true;
 
 		// Access the feed
-		if($this->campaign['campaign_type']=="feed" or $this->campaign['campaign_type']=="youtube" ) { 		// Access the feed
+		if($this->campaign['campaign_type']=="feed" or $this->campaign['campaign_type']=="youtube" or $this->campaign['campaign_type']=="bbpress" ) { 		// Access the feed
 			$wpe_url_feed = apply_filters('wpematico_simplepie_url', $feed, $kf, $this->campaign);
 			/**
 			* @since 1.8.0
@@ -150,6 +153,8 @@ class wpematico_campaign_fetch extends wpematico_campaign_fetch_functions {
 			$simplepie = apply_filters('Wpematico_process_fetching', $this->campaign);
 		}
 		
+		$duplicate_options = WPeMatico::get_duplicate_options($this->cfg, $this->campaign);
+
 		do_action('Wpematico_process_fetching_'.$this->campaign['campaign_type'], $this);  // Wpematico_process_fetching_feed
 		foreach($simplepie->get_items() as $item) {
 			if($prime){
@@ -159,8 +164,8 @@ class wpematico_campaign_fetch extends wpematico_campaign_fetch_functions {
 			}
 
 			$this->currenthash[$feed] = md5($item->get_permalink()); // el hash del item actual del feed feed 
-			if( !$this->cfg['allowduplicates'] || !$this->cfg['allowduptitle'] || !$this->cfg['allowduphash']  || $this->cfg['add_extra_duplicate_filter_meta_source']){
-				if( !$this->cfg['allowduphash'] ){
+			if( !$duplicate_options['allowduplicates'] || !$duplicate_options['allowduptitle'] || !$duplicate_options['allowduphash']  || $duplicate_options['add_extra_duplicate_filter_meta_source']){
+				if( !$duplicate_options['allowduphash'] ){
 					// chequeo a la primer coincidencia sale del foreach
 					$lasthashvar = '_lasthash_'.sanitize_file_name($feed);
 					$hashvalue = get_post_meta( $this->campaign_id, $lasthashvar, true );
@@ -170,7 +175,7 @@ class wpematico_campaign_fetch extends wpematico_campaign_fetch_functions {
 								( $hashvalue == $this->currenthash[$feed] ); 
 					if ($dupi) {
 						trigger_error(sprintf(__('Found duplicated hash \'%1s\'', 'wpematico' ),$item->get_permalink()).': '.$this->currenthash[$feed] ,E_USER_NOTICE);
-						if( !$this->cfg['jumpduplicates'] ) {
+						if( !$duplicate_options['jumpduplicates'] ) {
 							trigger_error(__('Filtering duplicated posts.', 'wpematico' ),E_USER_NOTICE);
 							break;
 						}else {
@@ -179,10 +184,10 @@ class wpematico_campaign_fetch extends wpematico_campaign_fetch_functions {
 						}
 					}
 				}
-				if( !$this->cfg['allowduptitle'] ){
+				if( !$duplicate_options['allowduptitle'] ){
 					if(WPeMatico::is_duplicated_item($this->campaign, $feed, $item)) {
 						trigger_error(sprintf(__('Found duplicated title \'%1s\'', 'wpematico' ),$item->get_title()).': '.$this->currenthash[$feed] ,E_USER_NOTICE);
-						if( !$this->cfg['jumpduplicates'] ) {
+						if( !$duplicate_options['jumpduplicates'] ) {
 							trigger_error(__('Filtering duplicated posts.', 'wpematico' ),E_USER_NOTICE);
 							break;
 						}else {
@@ -364,7 +369,13 @@ class wpematico_campaign_fetch extends wpematico_campaign_fetch_functions {
 							if (isset($this->campaign['campaign_parent_autocats']) && $this->campaign['campaign_parent_autocats'] > 0) {
 								$parent_cat = $this->campaign['campaign_parent_autocats'];
 							}
-							$arg = array('description' => apply_filters('wpematico_addcat_description', __("Auto Added by WPeMatico", 'wpematico' ), $catname), 'parent' => $parent_cat);
+							$arg_description = __('Auto Added by WPeMatico', 'wpematico' );
+							if( isset($this->cfg['disable_categories_description']) && $this->cfg['disable_categories_description'] ) {
+								$arg_description = '';
+							}
+							$arg_description = apply_filters('wpematico_addcat_description', $arg_description, $catname);
+
+							$arg = array('description' => $arg_description, 'parent' => $parent_cat);
 							$term = wp_insert_term($catname, "category", $arg);
 						}
 						$this->current_item['categories'][] = $term['term_id'];
@@ -377,6 +388,9 @@ class wpematico_campaign_fetch extends wpematico_campaign_fetch_functions {
 		$this->current_item['allowpings'] = $this->campaign['campaign_allowpings'];
 		$this->current_item['commentstatus'] = $this->campaign['campaign_commentstatus'];
 		$this->current_item['customposttype'] = $this->campaign['campaign_customposttype'];
+		
+		
+
 		$this->current_item['campaign_post_format'] = $this->campaign['campaign_post_format'];
 
 		//********** Do filters
@@ -399,6 +413,21 @@ class wpematico_campaign_fetch extends wpematico_campaign_fetch_functions {
 		   $this->current_item['meta'] = apply_filters('wpem_meta_data', $this->current_item['meta'] );
 		}
 		
+		if ($this->campaign['campaign_type'] == 'bbpress') {
+			if (empty($this->campaign['campaign_bbpress_forum'] )) {
+				$this->current_item['customposttype'] = 'forum';
+			} else {
+				$this->current_item['customposttype'] = 'topic';
+				if (!empty($this->campaign['campaign_bbpress_topic'] )) {
+					$this->current_item['customposttype'] = 'reply';
+				} 
+			}
+			
+			
+		}
+		
+		
+
 		// Create post
 		$title = $this->current_item['title'];
 		$content= $this->current_item['content'];
@@ -429,6 +458,16 @@ class wpematico_campaign_fetch extends wpematico_campaign_fetch_functions {
 		if(isset($this->campaign['campaign_parent_page']) && $this->campaign['campaign_parent_page']) {
 			$post_parent = $this->campaign['campaign_parent_page'];
 		}
+
+		if ($this->campaign['campaign_type'] == 'bbpress') {
+			if ($this->current_item['customposttype'] == 'topic') {
+				$post_parent = $this->campaign['campaign_bbpress_forum'];
+			}
+			if ($this->current_item['customposttype'] == 'reply') {
+				$post_parent = $this->campaign['campaign_bbpress_topic'];
+			}
+		}
+
 		$args = array(
 			'post_title' 	          => apply_filters('wpem_parse_title', $title),
 			'post_content'  	      => apply_filters('wpem_parse_content', $content),
@@ -448,6 +487,52 @@ class wpematico_campaign_fetch extends wpematico_campaign_fetch_functions {
 			remove_filter('content_save_pre', 'wp_filter_post_kses');
 //			remove_filter('content_filtered_save_pre', 'wp_filter_post_kses');
 			$post_id = wp_insert_post( $args );
+
+
+			if ($this->campaign['campaign_type'] == 'bbpress') {
+
+			
+				if ($this->current_item['customposttype'] == 'topic') {
+
+					if (function_exists('bbp_bump_forum_topic_count') && function_exists('bbp_update_forum_last_active_time')) {
+						bbp_bump_forum_topic_count($this->campaign['campaign_bbpress_forum']);
+
+						bbp_update_forum_last_active_time($this->campaign['campaign_bbpress_forum'], current_time('mysql'));
+						bbp_update_forum_last_topic_id($this->campaign['campaign_bbpress_forum'], $post_id );
+						bbp_update_forum_last_reply_id($this->campaign['campaign_bbpress_forum'], $post_id );
+						bbp_update_forum_last_active_id($this->campaign['campaign_bbpress_forum'], $post_id);
+						bbp_update_topic_last_active_time($post_id, current_time('mysql'));
+
+					}
+
+					$meta['_bbp_forum_id'] = $this->campaign['campaign_bbpress_forum'];
+					$meta['_bbp_topic_id'] = $post_id;
+					$meta['_bbp_reply_count'] = 0;
+
+					
+				}
+				if ($this->current_item['customposttype'] == 'reply') {
+
+					if (function_exists('bbp_bump_topic_reply_count') && function_exists('bbp_update_topic_last_active_time')) {
+
+						bbp_bump_forum_reply_count($this->campaign['campaign_bbpress_forum']);
+						bbp_update_forum_last_active_time($this->campaign['campaign_bbpress_forum'], current_time('mysql'));
+						bbp_update_forum_last_active_id($this->campaign['campaign_bbpress_forum'], $this->campaign['campaign_bbpress_topic']);
+
+						bbp_bump_topic_reply_count($this->campaign['campaign_bbpress_topic']);
+						bbp_update_topic_last_active_time($this->campaign['campaign_bbpress_topic'], current_time('mysql'));
+						bbp_update_topic_last_active_id($this->campaign['campaign_bbpress_topic'], $post_id);
+
+					}
+
+					$meta['_bbp_forum_id'] = $this->campaign['campaign_bbpress_forum'];
+					$meta['_bbp_topic_id'] = $this->campaign['campaign_bbpress_topic'];
+
+				}
+			}
+
+
+
 			add_filter('content_save_pre', 'wp_filter_post_kses');
 //			add_filter('content_filtered_save_pre', 'wp_filter_post_kses');
 
