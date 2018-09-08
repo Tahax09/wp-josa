@@ -20,6 +20,9 @@ body {
   font-family: 'Aleo', Arial, sans-serif;
   color: $josaBlack;
 }
+.font-weight-bold {
+  font-family: AleoBold;
+}
 .wrapper {
   background-color: $josaLightWarmGrey;
 }
@@ -38,9 +41,8 @@ body {
   }
 }
 
-h1, h2 {
-  font-family: aleoLight;
-  font-weight: light;
+h1, h2, h3, h4, h5, h6 {
+  font-family: aleo;
 }
 #page-wrapper {
   .row {
@@ -133,7 +135,20 @@ h1, h2 {
   }
   .all-users {
     background: $josaBlue;
-    color: $josaWhite;
+    color: $gray-100;
     height: 100%;
   }
+}
+
+
+.mc_merge_var {
+  @extend .form-group;
+}
+.mc_input {
+  @extend .form-control;
+}
+
+#mc_signup_submit {
+  @extend .btn;
+  @extend .btn-info;
 }

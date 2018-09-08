@@ -34,9 +34,9 @@ class Social_widget extends WP_Widget {
           <img src="<?= $source_image ?>" alt="<?= $categories[0]->name ?>">
         </div>
         <div class="col-9">
-          <h5 class="mb-4 text-break">
+          <p class="mb-4 text-break">
             <?= strip_tags(get_the_title()) ?>
-          </h5>
+          </p>
           <?php
             $img = $this->getImage();
           ?>
