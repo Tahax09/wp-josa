@@ -48,7 +48,7 @@ class Profiles_widget extends WP_Widget {
           </a>
       <?php endforeach; ?>
 
-      <?php if (true || $total - $this->limit > 0):?>
+      <?php if ($total - $this->limit > 0):?>
         <div class="col-4 col-md-2 d-flex align-items-center mb-3">
           <a class="all-users flex-fill text-center pt-3" href="/all-users">
             +<?= $total - $this->limit ?>
