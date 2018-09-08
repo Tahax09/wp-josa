@@ -117,3 +117,23 @@ h1, h2 {
   }
 
 }
+.bg-dark {
+  color: $josaWhite;
+}
+
+.img-full {
+  width: 100%;
+}
+
+.profiles-container {
+  .profile-img {
+    img {
+      width: 100%;
+    }
+  }
+  .all-users {
+    background: $josaBlue;
+    color: $josaWhite;
+    height: 100%;
+  }
+}

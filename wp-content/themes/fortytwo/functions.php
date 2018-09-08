@@ -4,6 +4,7 @@ require get_stylesheet_directory() . '/inc/content-types.php';
 require get_stylesheet_directory() . '/widgets/instagram-widget.php';
 require get_stylesheet_directory() . '/widgets/social-widget.php';
 require get_stylesheet_directory() . '/widgets/programs-widget.php';
+require get_stylesheet_directory() . '/widgets/profiles-widget.php';
 require get_stylesheet_directory() . '/shortcodes/widget.php';
 
 define('ACF_EARLY_ACCESS', '5');

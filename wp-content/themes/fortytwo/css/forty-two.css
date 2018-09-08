@@ -10868,3 +10868,17 @@ h1, h2 {
 
 #wrapper-footer a, #wrapper-footer-full a {
   color: #ffffff; }
+
+.bg-dark {
+  color: #ffffff; }
+
+.img-full {
+  width: 100%; }
+
+.profiles-container .profile-img img {
+  width: 100%; }
+
+.profiles-container .all-users {
+  background: #3897c0;
+  color: #ffffff;
+  height: 100%; }
