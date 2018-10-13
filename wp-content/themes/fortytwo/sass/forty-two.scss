@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .homepage_section {
   h2 {
-    font-size: 2.5em;
+    font-size: 2.3rem;
   }
 
   @include media-breakpoint-only(md) {
@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .hero-bg {
     background: $josaBlue;
-    height: 150px;
+    height: 100px;
     margin-top: -40px;
     z-index: 0;
   }
@@ -151,4 +151,16 @@ h1, h2, h3, h4, h5, h6 {
 #mc_signup_submit {
   @extend .btn;
   @extend .btn-info;
+}
+
+.custom-logo-link {
+  img {
+    max-width: 240px;
+  }
+}
+.bot-1-bg {
+  background-image: url('/wp-content/themes/fortytwo/img/bot-1.svg');
+}
+.btn {
+  text-transform: uppercase;
 }

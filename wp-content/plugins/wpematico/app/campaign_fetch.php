@@ -154,7 +154,7 @@ class wpematico_campaign_fetch extends wpematico_campaign_fetch_functions {
 		}
 		
 		$duplicate_options = WPeMatico::get_duplicate_options($this->cfg, $this->campaign);
-
+		
 		do_action('Wpematico_process_fetching_'.$this->campaign['campaign_type'], $this);  // Wpematico_process_fetching_feed
 		foreach($simplepie->get_items() as $item) {
 			if($prime){
@@ -263,11 +263,11 @@ class wpematico_campaign_fetch extends wpematico_campaign_fetch_functions {
 			if (($itemdate > $this->campaign['lastrun']) && $itemdate < current_time('timestamp', 1)) {  
 				$this->current_item['date'] = $itemdate;
 				trigger_error(__('Assigning original date to post.', 'wpematico' ),E_USER_NOTICE);
-			}else{
+			} else {
 				trigger_error(__('Original date out of range.  Assigning current date to post.', 'wpematico' ) ,E_USER_NOTICE);
 			}
 		}
-		
+
 		// Item title
 		$this->current_item['title'] = $item->get_title();
 		$this->current_item['title'] = htmlspecialchars_decode($this->current_item['title']);
@@ -295,6 +295,13 @@ class wpematico_campaign_fetch extends wpematico_campaign_fetch_functions {
 
 		$this->current_item['content'] = html_entity_decode($this->current_item['content'], ENT_COMPAT | ENT_HTML401, 'UTF-8');
 		
+
+		
+		$this->current_item = apply_filters('wpematico_item_pre_media', $this->current_item, $this->campaign, $feed, $item);
+		if ($this->current_item == -1) {
+			return -1;
+		}
+
 		/**
 		* @since 1.7.0
 		* Parse and upload audio
@@ -347,6 +354,13 @@ class wpematico_campaign_fetch extends wpematico_campaign_fetch_functions {
 		
 		$this->current_item = apply_filters('wpematico_item_filters_pos_img', $this->current_item, $this->campaign );
 		
+		
+		$this->current_item = apply_filters('wpematico_item_pos_media', $this->current_item, $this->campaign, $feed, $item);
+		if ($this->current_item == -1) {
+			return -1;
+		}
+
+
 		//********** Do parses contents and titles
 		$this->current_item = $this->Item_parsers($this->current_item,$this->campaign,$feed,$item,$realcount, $feedurl );
 		if($this->current_item == -1 ) return -1;

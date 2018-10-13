@@ -771,8 +771,13 @@ class WPeMatico_functions {
 		  foreach($post_data['campaign_newcat'] as $k => $on) {
 			$catname = $post_data['campaign_newcatname'][$k];
 			if(!empty($catname))  {
-			  //$post_data['post_category'][] = wp_insert_category(array('cat_name' => $catname));
-			  $arg = array('description' => apply_filters('wpematico_addcat_description', __("Category Added in a WPeMatico Campaign", 'wpematico' ), $catname), 'parent' => "0");
+			  	
+			  	$arg_description = apply_filters('wpematico_addcat_description', __('Category Added in a WPeMatico Campaign', 'wpematico' ), $catname);
+				if( isset($cfg['disable_categories_description']) && $cfg['disable_categories_description'] ) {
+					$arg_description = '';
+				}
+
+			  $arg = array('description' => $arg_description, 'parent' => "0");
 			  $newcat = wp_insert_term($catname, "category", $arg);
 			  $post_data['post_category'][] = (is_array($newcat)) ? $newcat['term_id'] : $newcat;
 			}
@@ -1031,16 +1036,13 @@ class WPeMatico_functions {
 	*
 	*/
 	public static function Test_feed($args='') {
-		$force_feed = false;
+		
 		if (is_array($args)) {
 			extract($args);
 			$ajax=false;
 		} else {
 			if(!isset($_POST['url'])) return false;
 			$url=$_POST['url'];
-			if (!empty($_POST['force_feed'])) {
-				$force_feed = true;
-			}
 			$ajax=true;
 		}
 		/**
@@ -1052,11 +1054,10 @@ class WPeMatico_functions {
 			'stupidly_fast' => true,
 			'max' 			=> 0,
 			'order_by_date' => false,
-			'force_feed' 	=> $force_feed,
+			'force_feed' 	=> false,
 		);
-
+		
 		$fetch_feed_params = apply_filters('wpematico_fetch_feed_params_test', $fetch_feed_params, 0, $_POST);
-
 		$feed = self::fetchFeed($fetch_feed_params);
 
 		$errors = $feed->error(); // if no error returned
@@ -1071,7 +1072,24 @@ class WPeMatico_functions {
 		}
 		if ($ajax) {
 			if(empty($errors)) {
-				$response['message'] = sprintf(__('The feed %s has been parsed successfully.', 'wpematico' ), $url);
+				
+				$response['message'] = sprintf(__('The feed <strong>%s</strong> has been parsed successfully.', 'wpematico' ), $url);
+				$response['message'] .= '<br/> <strong> ' . __('Feed Title:', 'wpematico' ) . '</strong> ' . $feed->get_title();
+				$response['message'] .= '<br/> <strong> ' . __('Generator:', 'wpematico' ) . '</strong> ' . self::get_generator_feed($feed);
+				$response['message'] .= '<br/> <strong> ' . __('Charset Enconding:', 'wpematico' ) . '</strong> ' . $feed->get_encoding();
+				
+				foreach($feed->get_items() as $item) {
+					$response['message'] .= '<br/><hr/> <strong> ' . __('Last Item Title:', 'wpematico' ) . '</strong> ' . $item->get_title();
+					$description = $item->get_content();
+					$description = strip_tags($description); 
+					if (strlen($description) > 53) {
+	  					$description = mb_substr($description, 0, 50);
+	  					$description .= '...'; 
+	  				}
+					$response['message'] .= '<br/> <strong> ' . __('Description:', 'wpematico' ) . '</strong> ' . $description;
+					break;
+				}
+
 				$response['success'] = true;
 			}else{
 				$response['message'] = sprintf(__('The feed %s cannot be parsed. Simplepie said: %s', 'wpematico' ), $url, $errors).'<br />'.$professional_notice;
@@ -1090,7 +1108,23 @@ class WPeMatico_functions {
 		}
 
 	}
-  
+  	
+  	public static function get_generator_feed($feed) {
+  		$generator_text = __('Undetected', 'wpematico' );
+		if ($generator_tag = $feed->get_channel_tags('', 'generator')) {
+			$generator_text = $generator_tag[0]['data'];
+		} else if ($generator_tag = $feed->get_channel_tags(SIMPLEPIE_NAMESPACE_ATOM_10, 'generator')) {
+			$generator_text = $generator_tag[0]['data'];
+		} else if ($generator_tag = $feed->get_channel_tags(SIMPLEPIE_NAMESPACE_ATOM_03, 'generator')) {
+			$generator_text = $generator_tag[0]['data'];
+		} else if ($generator_tag = $feed->get_channel_tags(SIMPLEPIE_NAMESPACE_RDF, 'generator')) {
+			$generator_text = $generator_tag[0]['data'];
+		} else if ($generator_tag = $feed->get_channel_tags(SIMPLEPIE_NAMESPACE_RSS_20, 'generator')) {
+			$generator_text = $generator_tag[0]['data'];
+		}
+		return $generator_text;
+  	}
+
 	################### ARRAYS FUNCS
 	/* * filtering an array   */
     public static function filter_by_value ($array, $index, $value){

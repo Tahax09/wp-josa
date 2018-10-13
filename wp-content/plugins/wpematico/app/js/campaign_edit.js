@@ -177,7 +177,8 @@ jQuery(document).ready(function($){
 		$('div#feed_ID'+oldval).fadeIn();
 		$('input[name="campaign_feeds['+oldval+']"]').focus();
 		feed_new.attr('id','feed_ID'+newval);
-		$('input', feed_new).eq(0).attr('name','campaign_feeds['+ newval +']');
+//		$('input', feed_new).eq(0).attr('name','campaign_feeds['+ newval +']');
+		$('input[name*="campaign_feeds"]', feed_new).eq(0).attr('name','campaign_feeds['+ newval +']');
 		$('.deletefeed', feed_new).eq(0).attr('onclick', "delete_feed_url('#feed_ID"+ newval +"');");
 		$('.deletefeed', feed_new).eq(0).attr('id', 'deletefeed_'+newval);
 		$('.deletefeed', feed_new).eq(0).attr('data', "#feed_ID"+ newval);
@@ -702,6 +703,7 @@ function wpe_others_events($) {
 		$('#rew_max').val( parseInt($('#rew_max').val(),10) + 1 );
 		newval = $('#rew_max').val();					
 		nuevo= $('#nuevorew').clone();
+		nuevo.attr('id', 'rewrite_row_'+newval);
 		$('input', nuevo).eq(0).attr('name','campaign_word_option_title['+ newval +']');
 		$('input', nuevo).eq(1).attr('name','campaign_word_option_regex['+ newval +']');
 		$('textarea', nuevo).eq(0).attr('name','campaign_word_origin['+ newval +']');
@@ -709,7 +711,7 @@ function wpe_others_events($) {
 		$('textarea', nuevo).eq(2).attr('name','campaign_word_relink['+ newval +']');
 		$('input', nuevo).eq(0).removeAttr('checked');
 		$('input', nuevo).eq(1).removeAttr('checked');
-		$('#rw3', nuevo).show();
+		//$('#rw3', nuevo).show();
 		$('textarea', nuevo).eq(0).text('');
 		$('textarea', nuevo).eq(1).text('');
 		$('textarea', nuevo).eq(2).text('');

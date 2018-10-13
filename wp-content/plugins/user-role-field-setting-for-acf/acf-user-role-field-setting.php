@@ -4,7 +4,7 @@
 		Plugin Name: ACF User Role Field Setting
 		Plugin URI: https://wordpress.org/plugins/user-role-field-setting-for-acf/
 		Description: Set user types that should be allowed to edit fields
-		Version: 2.1.13
+		Version: 2.1.14
 		Author: John A. Huebner II
 		Author URI: https://github.com/Hube2/
 		License: GPL
@@ -77,7 +77,7 @@
 			if ($return_field) {
 				return $field;
 			}
-			preg_match('/(\[[^\]]+\])/', $field['name'], $matches);
+			preg_match('/(\[[^\]]+\])$/', $field['name'], $matches);
 			$name = $matches[1];
 			if (!in_array($name, $this->removed)) {
 				$this->removed[] = $name;

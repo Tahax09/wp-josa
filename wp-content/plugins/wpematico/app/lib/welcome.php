@@ -138,6 +138,13 @@ class WPEMATICO_Welcome {
 	 * @return void
 	 */
 	public function welcome_message() {
+
+		$stored_wpematico_version = get_option( 'wpematico_db_version' );
+		if (version_compare(WPEMATICO_VERSION, $stored_wpematico_version, '!=')) { 
+			set_transient( '_wpematico_user_has_seen_welcome_page', true, DAY_IN_SECONDS);
+			echo '<div style="display: block !important;" class="notice notice-error below-h2">' . __( 'WPeMatico could not update the version in your database. Please if your website has an object cache disable it.', 'wpematico') . '</div>';
+	    }
+
 		list( $display_version ) = explode( '-', WPEMATICO_VERSION );
 		?>
 		<div id="wpematico-header">
@@ -625,7 +632,7 @@ class WPEMATICO_Welcome {
 					    </label>
 					 </p>
 					 
-					<p class="wpbutton-submit-subscription"><input type="submit" class="button button-primary"  value="<?php _e('Subscribe'); ?>">
+					<p class="wpbutton-submit-subscription"><input type="submit" class="button button-primary"  value="<?php _e('Subscribe', 'wpematico'); ?>">
 					</p>
 				</form>
 			<?php 
@@ -720,6 +727,10 @@ class WPEMATICO_Welcome {
 		if ( ! get_transient( '_wpematico_activation_redirect' ) )
 			return;
 		
+		// If a user has seen the welcome page then not redirect him again. 
+		if ( get_transient( '_wpematico_user_has_seen_welcome_page' ) ) {
+			return;
+		}
 		// redirect if ! AJAX
 		if((defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) || (defined('DOING_AJAX') && DOING_AJAX) || isset($_REQUEST['bulk_edit']))
 			return;
@@ -738,7 +749,7 @@ class WPEMATICO_Welcome {
 		
 		$upgrade = get_option( 'wpematico_db_version' );
 		wp_cache_delete( 'wpematico_db_version', 'options');
-		update_option( 'wpematico_db_version', WPEMATICO_VERSION );
+		update_option( 'wpematico_db_version', WPEMATICO_VERSION, false );
 		 
 		/* It'll be used on future.
 		if (defined('WPE_PREVENT_REDIRECT_ACTIVE')) {
