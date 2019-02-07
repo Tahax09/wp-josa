@@ -11,7 +11,7 @@ class Programs_widget extends WP_Widget {
   function widget($args, $instance) {
     extract( $args );
     $terms = get_terms('programs', array(
-      'hide_empty' => true,
+      'hide_empty' => false,
     ));
 
     usort($terms, function($a, $b) {
@@ -25,24 +25,29 @@ class Programs_widget extends WP_Widget {
     echo $before_widget;
     foreach ($terms as $term): ?>
       <div class="row mb-5 programs-posts-entry">
-        <div class="col-3">
-         <?php
-          $image = function_exists('get_field') ? get_field('image', $term) : [];
-          if (!empty($image) && $image['url']) : ?>
-            <img src="<?= $image['url'] ?>" alt="<?= $term->name ?>">
-          <?php endif; ?>
-        </div>
-        <div class="col-9">
-          <h5 class="mb-4 text-break text-info">
-            <?= $term->name ?>
-          </h5>
-          <div>
-            <?= $term->description ?>
+          <div class="col-12">
+              <div class="media">
+                  <?php
+                   $image = function_exists('get_field') ? get_field('image', $term) : [];
+                   if (!empty($image) && $image['url']) : ?>
+                     <img class="mr-3" src="<?= $image['url'] ?>" alt="<?= $term->name ?>">
+                   <?php endif; ?>
+
+                  <div class="media-body mb-4">
+                      <h5 class="mb-4 text-break text-info">
+                        <?= $term->name ?>
+                      </h5>
+                      <div>
+                        <?= $term->description ?>
+                        <!-- TODO: Change in V2
+                          <a href="<?= get_term_link($term->term_id) ?>" class="mt-4 btn btn-outline-secondary">
+                            <?=  __( 'KNOW MORE', 'fortytwo' ) ?>
+                          </a>
+                        -->
+                      </div>
+                  </div>
+              </div>
           </div>
-          <a href="<?= get_term_link($term->term_id) ?>" class="mt-4 btn btn-outline-secondary">
-            <?=  __( 'KNOW MORE', 'fortytwo' ) ?>
-          </a>
-        </div>
       </div>
     <?php endforeach; ?>
     <?php

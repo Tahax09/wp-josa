@@ -17,7 +17,7 @@
 @include font-face(AleoBold, "./../fonts/aleo/bold/Aleo-Bold", bold, eot woff2 woff ttf otf);
 
 body {
-  font-family: 'Aleo', Arial, sans-serif;
+  font-family: 'Lato', Arial, sans-serif;
   color: $josaBlack;
 }
 .font-weight-bold {
@@ -41,9 +41,16 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: aleo;
+h1, h2, h3, h4 {
+  font-family: 'AleoLight', serif;
 }
+
+h5, h6 {
+  font-family: 'Lato', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 #page-wrapper {
   .row {
    // background-color: $josaWhite;
@@ -55,6 +62,9 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
 }
 
+.social-posts-entry-logo {
+    width: 70px;
+}
 .social-post-img {
   object-fit: cover;
   max-height: 230px;
@@ -85,6 +95,8 @@ h1, h2, h3, h4, h5, h6 {
 .homepage_section {
   h2 {
     font-size: 2.3rem;
+    position: absolute;
+    bottom: 30%;
   }
 
   @include media-breakpoint-only(md) {
@@ -162,5 +174,57 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url('/wp-content/themes/fortytwo/img/bot-1.svg');
 }
 .btn {
-  text-transform: uppercase;
+    text-transform: uppercase;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+}
+
+.programs-posts-entry {
+    img {
+        width: 100px;
+    }
+    strong {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+}
+
+#mc-indicates-required {
+    display: none;
+}
+
+#bot-1 {
+    width: 500px !important;
+}
+
+#bot-2 {
+    width: 454px !important;
+}
+@include media-breakpoint-up(md) {
+    #bot-1 {
+        width: 500px;
+        right: -20px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+    }
+
+    #bot-2 {
+        max-width: 454px;
+        right: -10px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 235px !important;
+    }
+}
+.site-info img {
+    max-width: 200px;
+}
+.cc-logo {
+    width: 50px;
+}
+.cc-text {
+    font-size: 0.8rem;
+    opacity: 0.8;
 }
