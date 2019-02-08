@@ -50,12 +50,13 @@ class Social_widget extends WP_Widget {
           </div>
         </div>
     <?php endwhile; ?>
-
+    <!-- <?php // TODO: Enable when updates page is ready ?>
     <div class="row">
       <div class="col-12 justify-content-end d-flex">
         <a href="/?post_type=social" class="btn btn-outline-info"><?= __( 'All Updates', 'fortytwo' ) ?></a>
       </div>
     </div>
+    -->
     <?php
     echo $after_widget;
     wp_reset_query();
