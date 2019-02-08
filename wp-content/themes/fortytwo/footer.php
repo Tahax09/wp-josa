@@ -19,7 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row">
 
-			<div class="col-md-12">
+			<div class="col-md-12 p-5">
 
 				<footer class="site-footer" id="colophon">
 					<div class="row">

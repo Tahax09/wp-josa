@@ -63,7 +63,7 @@ h5, h6 {
 }
 
 .social-posts-entry-logo {
-    width: 70px;
+    width: 4rem;
 }
 .social-post-img {
   object-fit: cover;
@@ -95,8 +95,10 @@ h5, h6 {
 .homepage_section {
   h2 {
     font-size: 2.3rem;
-    position: absolute;
-    bottom: 30%;
+    @include media-breakpoint-up(md) {
+        position: absolute;
+        bottom: 30%;
+    }
   }
 
   @include media-breakpoint-only(md) {
@@ -181,7 +183,7 @@ h5, h6 {
 
 .programs-posts-entry {
     img {
-        width: 100px;
+        width: 5rem;
     }
     strong {
         display: block;
@@ -194,15 +196,21 @@ h5, h6 {
 }
 
 #bot-1 {
-    width: 500px !important;
+    width: 250px !important;
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
 }
 
 #bot-2 {
-    width: 454px !important;
+    width: 230px !important;
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
 }
 @include media-breakpoint-up(md) {
     #bot-1 {
-        width: 500px;
+        width: 500px !important;
         right: -20px;
         position: absolute;
         bottom: 0;
@@ -210,21 +218,28 @@ h5, h6 {
     }
 
     #bot-2 {
-        max-width: 454px;
+        width: 454px !important;
         right: -10px;
         position: absolute;
         bottom: 0;
         display: block;
-        width: 235px !important;
     }
 }
-.site-info img {
-    max-width: 200px;
+.site-info {
+    text-align: center;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(md) {
+        text-align: left;
+        margin-bottom: 0px;
+    }
+    img {
+        max-width: 200px;
+    }
 }
 .cc-logo {
     width: 50px;
 }
 .cc-text {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     opacity: 0.8;
 }
