@@ -44,7 +44,7 @@ class Social_widget extends WP_Widget {
                       <?php if ($img) : ?>
                           <img class="mb-4 social-post-img" src="<?= $img ?>" aria-hidden />
                       <?php endif; ?>
-                      <p class="text-black-50"><?= get_the_date() ?></p>
+                      <p class="text-black-50 small font-weight-light"><?= get_the_date() ?></p>
                   </div>
               </div>
           </div>
