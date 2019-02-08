@@ -11,10 +11,10 @@
 // Any additional imported files //
 @import "theme/forty-two";  // <--------- Add your styles into this file
 
-@include font-face(Aleo, "./../fonts/aleo/regular/Aleo-Regular", normal, eot woff2 woff ttf otf);
-@include font-face(AleoLight, "./../fonts/aleo/light/Aleo-Light", light, eot woff2 woff ttf otf);
-@include font-face(AleoItalic, "./../fonts/aleo/italic/Aleo-Italic", italic, eot woff2 woff ttf otf);
-@include font-face(AleoBold, "./../fonts/aleo/bold/Aleo-Bold", bold, eot woff2 woff ttf otf);
+@include font-face(Aleo, "../fonts/aleo/regular/Aleo-Regular", normal, eot woff2 woff ttf otf);
+@include font-face(AleoLight, "../fonts/aleo/light/Aleo-Light", light, eot woff2 woff ttf otf);
+@include font-face(AleoItalic, "../fonts/aleo/italic/Aleo-Italic", italic, eot woff2 woff ttf otf);
+@include font-face(AleoBold, "../fonts/aleo/bold/Aleo-Bold", bold, eot woff2 woff ttf otf);
 
 body {
   font-family: 'Lato', Arial, sans-serif;
