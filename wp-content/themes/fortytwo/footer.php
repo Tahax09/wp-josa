@@ -36,7 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								  <div class="align-self-center ">
 									  <img class="media-object pr-3 cc-logo" src="wp-content/themes/fortytwo/img/cc.svg" alt="" />
 								  </div>
-								  <div class="media-body cc-text">
+								  <div class="media-body smaller font-weight-light text-white-50 small">
 								    All the content on this website is licensed under a Creative Commons Attribution-ShareAlike Unported license, except where otherwise mentioned.
 								  </div>
 								</div>
