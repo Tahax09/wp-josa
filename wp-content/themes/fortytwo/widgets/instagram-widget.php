@@ -16,7 +16,7 @@ class Instagram_widget extends WP_Widget {
       'post_status' => 'publish',
       'posts_per_page' => 6,
       'orderby' => 'ID',
-      'order' => 'DESC'
+      'order' => 'rand'
     ));
 
     echo $before_widget;
