@@ -21,6 +21,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
@@ -32,7 +34,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md navbar-dark bg-primary ">
+		<nav class="navbar navbar-expand-md navbar-dark bg-primary p-5 p-md-0 pt-md-5">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container" >
