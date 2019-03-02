@@ -1,3 +1,10 @@
+NOte:
+This is a regular wordpress site, you do not need docker to run it, you can use a regular wordpress installation.
+for DB dump and other info, please ask on JOSA's slack channel #josa-website.
+
+
+If you want to use docker, follow the following steps:
+
 First time you clone this repo, you will need to run docker, then you will need to activate versionpress and apply changes from git.
 
 ## in your terminal:
