@@ -1,3 +1,10 @@
+Note:
+This is a regular wordpress site, you do not need docker to run it, you can use a regular wordpress installation.
+for DB dump and other info, please ask on JOSA's slack channel #josa-website.
+
+
+If you want to use docker, follow the following steps:
+
 First time you clone this repo, you will need to run docker, then you will need to activate versionpress and apply changes from git.
 
 ## in your terminal:
@@ -9,15 +16,22 @@ First time you clone this repo, you will need to run docker, then you will need 
 3- Run the following command to initialize the docker environment: 
 `docker-compose up -d`
 
-Wait for few minutes, when docker is done pulling images and setting up containers, login into your wp container bash and apply the following commands
+Wait for few minutes, when docker is done pulling images and setting up containers, once ready, you will need to import the database dump
+first, you will need to know the DB contianer id
 
 ```
-wp core install --url=http://localhost:8080 --title=JOSADev --admin_user=admin --admin_password=JOSAIsAwesome --admin_email=dev@josa.org
-wp plugin activate versionpress
-wp vp apply-changes
+docker ps
+```
+find the container with `mariadb` image name, then use the continaer id in the following command, after replacing the path to the database dump file, then you should be ready to start development.
+
+```
+docker exec -i $contianer_id mysql -u root -pJOSARootPassword wordpress <  /absolute/path/to/db/dump.sql
 ```
 
-The setup should be complete by now and you should see the josa home page.
+The setup should be complete by now and you should see the josa home page on `localhost:8080`
+
+
+## troubleshooting
 
 If `permission denied` error occured on any of the previous steps:
 
